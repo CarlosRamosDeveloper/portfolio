@@ -5,7 +5,7 @@ export const PortfolioIcon = () => {
     <>
       <div>
         <Link to="/">
-          <h1 className="text-3xl">Carlos Ramos Iserte</h1>
+          <h1 className="text-3xl m-5">Carlos Ramos Iserte</h1>
         </Link>
       </div>
     </>
