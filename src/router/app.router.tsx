@@ -22,7 +22,7 @@ export const appRouter = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: '/projects',
+        path: '/featured',
         element: <ProjectsPage />,
       },
       {

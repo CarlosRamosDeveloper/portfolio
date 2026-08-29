@@ -1,10 +1,10 @@
-import { ExperienceCardsList } from '@/portfolio/pages/experience/components/ExperienceCardsList';
+import { ExperienceCardsList } from './components';
 
 export const ExperiencePage = () => {
   return (
     <>
       <div>
-        <h1 className="flex flex-1 text-center">Experiencia y formación</h1>
+        <h1 className="flex flex-1 text-center">Experiencia laboral</h1>
         <ExperienceCardsList />
       </div>
 

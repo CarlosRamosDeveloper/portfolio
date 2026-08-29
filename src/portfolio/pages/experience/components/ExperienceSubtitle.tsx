@@ -3,5 +3,5 @@ interface Props {
 }
 
 export const ExperienceSubtitle = ({ text }: Props) => {
-  return <p className="flex text-xs p-3">{text}</p>;
+  return <p className="flex text-sm px-5 py-2">{text}</p>;
 };

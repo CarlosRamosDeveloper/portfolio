@@ -1,2 +1,2 @@
 export type { JobExperience } from './JobExperience';
-export type { Technology } from './Technology';
+export type { Technologies } from './Technologies';

@@ -1,6 +1,7 @@
 import type { JobExperience } from '@/interfaces';
-import { ExperienceSubtitle } from '.';
+import { ExperienceDescriptionList, ExperienceSubtitle } from '.';
 import { Separator, TechCard } from '@/portfolio/components';
+import { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
 
 interface Props {
   experience: JobExperience;
@@ -11,7 +12,7 @@ export const ExperienceCard = ({ experience }: Props) => {
     <>
       <div className="my-6 w-100 border rounded-2xl">
         <div className="flex p-3 justify-between text-xl">
-          <div>{experience.company}</div>
+          <div className="font-semibold text-xl">{experience.company}</div>
           <div className="ml-4">
             {experience.startingYear}
             {experience.startingYear !== experience.finishingYear && (
@@ -19,6 +20,9 @@ export const ExperienceCard = ({ experience }: Props) => {
             )}
           </div>
         </div>
+        <ExperienceWorkingPositionText
+          workingPosition={experience.workingPosition}
+        />
         {experience.subtitle && (
           <ExperienceSubtitle text={experience.subtitle} />
         )}
@@ -31,7 +35,9 @@ export const ExperienceCard = ({ experience }: Props) => {
           {experience.description && (
             <>
               <Separator />
-              <p className="p-3">{experience.description}</p>
+              <ExperienceDescriptionList
+                descriptions={experience.description}
+              />
             </>
           )}
         </div>

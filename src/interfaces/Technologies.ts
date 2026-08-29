@@ -1,4 +1,4 @@
-export type Technology =
+export type Technologies =
   | 'Angular'
   | 'Bitbucket'
   | 'Docker'
@@ -21,7 +21,7 @@ export type Technology =
   | 'React'
   | 'Spring'
   | 'Subversion'
-  | 'Symphony'
+  | 'Symfony'
   | 'TypeScript'
   | 'Vue'
   | 'Zustrand';
