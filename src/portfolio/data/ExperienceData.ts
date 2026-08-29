@@ -1,0 +1,68 @@
+import type { JobExperience } from '@/interfaces';
+
+export const ExperienceData: JobExperience[] = [
+  //   {
+  //     id: 0,
+  //     company: '',
+  //     workingPosition: '',
+  //     subtitle: '',
+  //     startingYear: 202,
+  //     finishingYear: 202,
+  //     techStack: [],
+  //     description: [],
+  //   },
+  {
+    id: 1,
+    company: 'Soluciones 480',
+    workingPosition: 'Desarrollador FullStack Trainee',
+    subtitle: 'Formación de formación en centros de trabajo dual de 6 meses',
+    startingYear: 2021,
+    finishingYear: 2022,
+    techStack: ['Java', 'Flutter', 'MySQL', 'Jira'],
+    description: [
+      'Formación con Java y Flutter',
+      'Migración de aplicación escrita en Xamarin a Flutter',
+    ],
+  },
+  {
+    id: 2,
+    company: 'Fujitsu',
+    workingPosition: 'Desarrollador FullStack Junior',
+    subtitle: 'Desarrollo en el sector bancario',
+    startingYear: 2023,
+    finishingYear: 2024,
+    techStack: ['Java', 'Spring', 'MySQL', 'PostgreSQL', 'React', 'Subversion'],
+    description: [
+      'Trabajo en cliente en entorno multidisciplinar',
+      'Métodologías agile mediante el uso de la plataforma "Rally"',
+      'Detección y resolución de bugs en el sistema',
+      'Implementación de nuevas funcionalidades',
+    ],
+  },
+  {
+    id: 3,
+    company: 'BorealOS',
+    workingPosition: 'Desarrollador FullStack',
+    subtitle: 'Desarrollador FullStack',
+    startingYear: 2026,
+    finishingYear: 2026,
+    techStack: [
+      'Vue',
+      'Docker',
+      'React Native',
+      'OpenCode',
+      'Symphony',
+      'PHP',
+      'Odoo',
+      'Bitbucket',
+      'JavaScript',
+    ],
+    description: [
+      'Trabajo de proyecto en producción',
+      'Metodologías Agile',
+      'Detección y resolución de bugs',
+      'Migración y estandarización del código tras la actualización del sistema de linting, resolviendo más de 30.000 incidencias y adaptando el proyecto a las nuevas reglas y buenas prácticas.',
+      'Identifiqué y optimicé un cuello de botella en el proceso de eliminación de archivos del backend PHP, reduciendo el tiempo de ejecución de ~50 segundos para 10 archivos a menos de 4 segundos para 200, aproximadamente 250× más rápido.',
+    ],
+  },
+];
