@@ -16,8 +16,8 @@ export const ExperienceData: JobExperience[] = [
     company: 'Soluciones 480',
     workingPosition: 'Desarrollador FullStack',
     subtitle: 'Formación Profesional Dual en empresa durante 6 meses',
-    startingYear: 2021,
-    finishingYear: 2022,
+    startDate: 2021,
+    endDate: 2022,
     techStack: ['Java', 'Flutter', 'MySQL', 'Jira', 'Gitlab', 'GitFlow'],
     description: [
       'Formación con Java y Flutter',
@@ -30,8 +30,8 @@ export const ExperienceData: JobExperience[] = [
     company: 'Fujitsu',
     workingPosition: 'Desarrollador FullStack Junior',
     subtitle: 'Sector bancario',
-    startingYear: 2023,
-    finishingYear: 2024,
+    startDate: 2023,
+    endDate: 2024,
     techStack: [
       'Java',
       'Spring',
@@ -53,8 +53,8 @@ export const ExperienceData: JobExperience[] = [
     company: 'BorealOS',
     workingPosition: 'Desarrollador FullStack',
     subtitle: 'Desarrollo y mantenimiento de aplicaciones en producción',
-    startingYear: 2026,
-    finishingYear: 2026,
+    startDate: 2026,
+    endDate: 2026,
     techStack: [
       'Vue',
       'Docker',

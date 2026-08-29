@@ -14,9 +14,9 @@ export const ExperienceCard = ({ experience }: Props) => {
         <div className="flex p-3 justify-between text-xl">
           <div className="font-semibold text-xl">{experience.company}</div>
           <div className="ml-4">
-            {experience.startingYear}
-            {experience.startingYear !== experience.finishingYear && (
-              <> - {experience.finishingYear || 'Actualmente'}</>
+            {experience.startDate}
+            {experience.startDate !== experience.endDate && (
+              <> - {experience.endDate || 'Actualmente'}</>
             )}
           </div>
         </div>
