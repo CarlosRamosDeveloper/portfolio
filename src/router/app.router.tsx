@@ -1,9 +1,12 @@
 import { createBrowserRouter } from 'react-router';
 
 import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
-import { LandingPage } from '@/portfolio/pages/LandingPage';
-import { AboutPage } from '@/portfolio/pages/AboutPage';
-import { ProjectsPage } from '@/portfolio/pages/ProjectsPage';
+import {
+  AboutPage,
+  ExperiencePage,
+  LandingPage,
+  ProjectsPage,
+} from '@/portfolio/pages';
 
 export const appRouter = createBrowserRouter([
   {
@@ -21,6 +24,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/projects',
         element: <ProjectsPage />,
+      },
+      {
+        path: '/experience',
+        element: <ExperiencePage />,
       },
     ],
   },
