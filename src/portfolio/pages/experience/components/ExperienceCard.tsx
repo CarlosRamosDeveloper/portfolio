@@ -1,6 +1,6 @@
 import type { JobExperience } from '@/interfaces';
-import { Separator, TechCard } from '.';
-import { ExperienceSubtitle } from '../pages/experience/components';
+import { ExperienceSubtitle } from '.';
+import { Separator, TechCard } from '@/portfolio/components';
 
 interface Props {
   experience: JobExperience;

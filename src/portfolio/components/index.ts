@@ -1,4 +1,3 @@
-export { ExperienceCard } from './ExperienceCard';
 export { NavigateButton } from './NavigateButton';
 export { PortfolioFooter } from './PortfolioFooter';
 export { PortfolioHeader } from './PortfolioHeader';
