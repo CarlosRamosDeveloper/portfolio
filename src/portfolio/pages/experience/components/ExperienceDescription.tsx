@@ -3,5 +3,5 @@ interface Props {
 }
 
 export const ExperienceDescription = ({ description }: Props) => {
-  return <div className="px-2 py-0.5 text-base">-{description}</div>;
+  return <div className="px-2 pl-2 pb-2 text-base">-{description}</div>;
 };

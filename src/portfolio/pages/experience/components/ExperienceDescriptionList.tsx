@@ -7,7 +7,7 @@ interface Props {
 export const ExperienceDescriptionList = ({ descriptions }: Props) => {
   return (
     <>
-      <div className="py-2">
+      <div className="py-2 m-1">
         {descriptions.map((description) => (
           <ExperienceDescription description={description} />
         ))}
