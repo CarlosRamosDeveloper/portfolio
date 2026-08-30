@@ -5,8 +5,8 @@ export interface JobExperience {
   company: string;
   workingPosition: string;
   subtitle?: string;
-  startDate: number;
-  endDate: number | null;
+  startYear: number;
+  endYear: number | null;
   techStack: Technologies[];
   description: string[];
 }
