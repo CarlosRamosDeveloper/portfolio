@@ -4,4 +4,3 @@ export { PortfolioHeader } from './PortfolioHeader';
 export { PortfolioIcon } from './PortfolioIcon';
 export { PortfolioNavBar } from './PortfolioNavBar';
 export { Separator } from './Separator';
-export { TechCard } from './TechCard';

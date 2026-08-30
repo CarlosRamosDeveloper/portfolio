@@ -1,7 +1,11 @@
 import type { JobExperience } from '@/interfaces';
-import { ExperienceDescriptionList, ExperienceSubtitle } from '.';
-import { Separator, TechCard } from '@/portfolio/components';
+import {
+  ExperienceDate,
+  ExperienceDescriptionList,
+  ExperienceSubtitle,
+} from '.';
 import { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
+import { TechStackList } from './TechStackList';
 
 interface Props {
   experience: JobExperience;
@@ -9,39 +13,17 @@ interface Props {
 
 export const ExperienceCard = ({ experience }: Props) => {
   return (
-    <>
-      <div className="my-6 w-100 border rounded-2xl">
-        <div className="flex p-3 justify-between text-xl">
-          <div className="font-semibold text-xl">{experience.company}</div>
-          <div className="ml-4">
-            {experience.startYear}
-            {experience.startYear !== experience.endYear && (
-              <> - {experience.endYear || 'Actualmente'}</>
-            )}
-          </div>
-        </div>
-        <ExperienceWorkingPositionText
-          workingPosition={experience.workingPosition}
-        />
-        {experience.subtitle && (
-          <ExperienceSubtitle text={experience.subtitle} />
-        )}
-        <Separator />
-        <div className="flex flex-wrap gap-2 p-3">
-          {experience.techStack.map((tech) => TechCard(tech))}
-        </div>
-
-        <div>
-          {experience.description && (
-            <>
-              <Separator />
-              <ExperienceDescriptionList
-                descriptions={experience.description}
-              />
-            </>
-          )}
-        </div>
+    <div className="my-6 w-100 border rounded-2xl">
+      <div className="flex p-3 justify-between">
+        <div className="font-semibold text-xl">{experience.company}</div>
+        <ExperienceDate start={experience.startYear} end={experience.endYear} />
       </div>
-    </>
+      <ExperienceWorkingPositionText
+        workingPosition={experience.workingPosition}
+      />
+      <ExperienceSubtitle text={experience.subtitle} />
+      <TechStackList techStack={experience.techStack} />
+      <ExperienceDescriptionList descriptions={experience.description} />
+    </div>
   );
 };
