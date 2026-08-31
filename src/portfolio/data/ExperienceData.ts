@@ -28,7 +28,7 @@ export const ExperienceData: JobExperience[] = [
   {
     id: 2,
     company: 'Fujitsu',
-    workingPosition: 'Desarrollador FullStack Junior',
+    workingPosition: 'Desarrollador FullStack',
     subtitle: 'Sector bancario',
     startYear: 2023,
     endYear: 2024,
