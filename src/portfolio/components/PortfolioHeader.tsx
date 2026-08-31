@@ -1,11 +1,13 @@
-import { HeaderSettings, PortfolioIcon, PortfolioNavBar } from '.';
+import { PortfolioIcon, PortfolioNavBar, PortfolioSettings } from '.';
 
 export const PortfolioHeader = () => {
   return (
     <div className="flex flex-col items-center">
-      <PortfolioIcon />
+      <div className="flex flex-row items-center">
+        <PortfolioIcon />
+        <PortfolioSettings />
+      </div>
       <PortfolioNavBar />
-      <HeaderSettings />
     </div>
   );
 };

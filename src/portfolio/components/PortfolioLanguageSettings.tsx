@@ -1,6 +1,6 @@
 import { useTheme } from '../hooks/useTheme';
 
-export const HeaderSettings = () => {
+export const PortfolioLanguageSettings = () => {
   const { setTheme } = useTheme();
   return (
     <>
