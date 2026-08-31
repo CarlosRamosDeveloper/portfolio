@@ -37,6 +37,11 @@
     --color-popover: var(--popover);
     --color-card-foreground: var(--card-foreground);
     --color-card: var(--card);
+    --color-card-secondary: var(--card-secondary);
+    --color-card-secondary: var(--card-secondary);
+    --color-card-secondary-foreground: var(--card-secondary-foreground);
+    --color-card-details: var(--card-details);
+    --color-card-details-foreground: var(--card-details-foreground);
     --color-foreground: var(--foreground);
     --color-background: var(--background);
     --radius-sm: calc(var(--radius) * 0.6);
@@ -45,7 +50,7 @@
     --radius-xl: calc(var(--radius) * 1.4);
     --radius-2xl: calc(var(--radius) * 1.8);
     --radius-3xl: calc(var(--radius) * 2.2);
-    --radius-4xl: calc(var(--radius) * 2.6);
+    --radius-4xl: calc(var(--radius) * 2.6);    
 }
 
 :root {
@@ -53,6 +58,10 @@
     --foreground: oklch(0.145 0 0);
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
+    --card-secondary: #eef2ff;
+    --card-secondary-foreground: #3730a3;
+    --card-details: #ecfdf5;
+    --card-details-foreground: #065f46;
     --popover: oklch(1 0 0);
     --popover-foreground: oklch(0.145 0 0);
     --primary: oklch(0.205 0 0);
@@ -80,7 +89,7 @@
     --sidebar-accent: oklch(0.97 0 0);
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
-    --sidebar-ring: oklch(0.708 0 0);
+    --sidebar-ring: oklch(0.708 0 0);    
 }
 
 .dark {
@@ -88,6 +97,10 @@
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);
+    --card-secondary: #eef2ff;
+    --card-secondary-foreground: #3730a3;
+    --card-details: #052e1b;
+    --card-details-foreground: #d1fae5;
     --popover: oklch(0.205 0 0);
     --popover-foreground: oklch(0.985 0 0);
     --primary: oklch(0.922 0 0);
@@ -114,9 +127,13 @@
     --sidebar-accent: oklch(0.269 0 0);
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
-    --sidebar-ring: oklch(0.556 0 0);
+    --sidebar-ring: oklch(0.556 0 0);    
 }
 
+.colorblind {
+    --background: #5d9b2a;
+    --foreground: #852020;
+}
 @layer base {
   * {
     @apply border-border outline-ring/50;
