@@ -1,18 +1,39 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
 import { Settings } from 'lucide-react';
 
 import { PortfolioLanguageSettings } from '.';
 
 export const PortfolioSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const settingsRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    console.log('UseEffect: Entrando en efecto');
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        settingsRef.current &&
+        !settingsRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+        console.log('UseEffect: Dentro del mouse event');
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      console.log('UseEffect: Saliendo del efecto');
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen]);
 
   const handleVisibilityToggle = () => {
     setIsOpen((prev) => !prev);
-    console.log(isOpen);
   };
 
   return (
-    <div className="relative">
+    <div className="relative" ref={settingsRef}>
       <button
         className="cursor-pointer"
         type="button"
