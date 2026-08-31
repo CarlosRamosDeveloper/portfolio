@@ -1,8 +1,11 @@
 import { Outlet } from 'react-router';
 
 import { PortfolioFooter, PortfolioHeader } from '../components';
+import { useTheme } from '../hooks/useTheme';
 
 export const PorfolioLayout = () => {
+  useTheme();
+
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-500 to-cyan-900 flex flex-col">
       <PortfolioHeader />
