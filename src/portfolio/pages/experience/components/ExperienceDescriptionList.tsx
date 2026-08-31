@@ -10,7 +10,7 @@ export const ExperienceDescriptionList = ({ descriptions }: Props) => {
   return (
     <>
       <Separator />
-      <div className="py-2 m-1">
+      <div className="py-2 bg-card-secondary">
         {descriptions.map((description) => (
           <ExperienceDescription description={description} />
         ))}

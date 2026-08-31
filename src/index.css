@@ -97,8 +97,8 @@
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);
-    --card-secondary: #eef2ff;
-    --card-secondary-foreground: #3730a3;
+    --card-secondary: #3730a3;
+    --card-secondary-foreground:  #eef2ff;
     --card-details: #052e1b;
     --card-details-foreground: #d1fae5;
     --popover: oklch(0.205 0 0);
