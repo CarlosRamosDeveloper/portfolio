@@ -13,7 +13,7 @@ interface Props {
 
 export const ExperienceCard = ({ experience }: Props) => {
   return (
-    <div className="my-6 w-100 border rounded-2xl bg-card text-card-foreground">
+    <div className="my-6 w-100 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">
         <div className="font-semibold text-xl">{experience.company}</div>
         <ExperienceDate start={experience.startYear} end={experience.endYear} />
