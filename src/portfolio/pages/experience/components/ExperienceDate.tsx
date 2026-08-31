@@ -5,7 +5,7 @@ interface Props {
 
 export const ExperienceDate = ({ start, end = null }: Props) => {
   return (
-    <div className="text-xl">
+    <div className="text-xl text-muted-foreground">
       {start}
       {start !== end && <> - {end ?? 'Actualmente'}</>}
     </div>

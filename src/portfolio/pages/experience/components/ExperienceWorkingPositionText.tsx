@@ -3,5 +3,5 @@ interface Props {
 }
 
 export const ExperienceWorkingPositionText = ({ workingPosition }: Props) => {
-  return <div className="px-3 text-base">{workingPosition}</div>;
+  return <div className="px-3 text-base font-medium">{workingPosition}</div>;
 };

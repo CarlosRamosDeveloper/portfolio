@@ -6,7 +6,7 @@ export const TechCard = ({ techName }: Props) => {
   return (
     <>
       <div
-        className="rounded-full border border-border bg-muted px-3 py-1 text-sm"
+        className="rounded-full border bg-muted px-3 py-1 text-sm border-card-secondary-foreground"
         key={techName}
       >
         {techName}
