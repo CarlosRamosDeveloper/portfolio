@@ -1,18 +1,4 @@
-import type { Technologies } from './Technologies';
-
-type EducationType =
-  | 'vocational_training'
-  | 'course'
-  | 'specialization'
-  | 'certification';
-
-interface EducationProject {
-  name: string;
-  description: string[];
-  techStack: Technologies[];
-  repository?: string;
-  navigation?: string;
-}
+import type { EducationProject, EducationType, Technologies } from '.';
 
 export interface Education {
   id: number;
