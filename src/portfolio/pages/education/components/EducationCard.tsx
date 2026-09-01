@@ -4,7 +4,8 @@ import {
   ExperienceDescriptionList,
 } from '../../experience/components';
 import { TechStackList } from '../../experience/components/TechStackList';
-import { EducationTypeItem } from './EducationTypeItem';
+import { EducationLabelType } from '.';
+import { InstitutionLabel } from './InstitutionLabel';
 
 interface Props {
   education: Education;
@@ -19,7 +20,10 @@ export const EducationCard = ({ education }: Props) => {
         <div className="font-semibold text-xl">{education.title}</div>
         <ExperienceDate start={education.startYear} end={education.endYear} />
       </div>
-      <EducationTypeItem type={education.type} />
+      <div className="flex flex-1 justify-between">
+        <InstitutionLabel institutionName={education.institution} />
+        <EducationLabelType type={education.type} />
+      </div>
       {/* <ExperienceWorkingPositionText
         workingPosition={experience.workingPosition}
       /> */}

@@ -11,6 +11,10 @@ const EDUCATION_TYPE_LABELS: Record<EducationType, string> = {
   specialization: 'Curso de especialización',
 };
 
-export const EducationTypeItem = ({ type }: Props) => {
-  return <div>{EDUCATION_TYPE_LABELS[type]}</div>;
+export const EducationLabelType = ({ type }: Props) => {
+  return (
+    <div className="text-sm text-muted-foreground pb-3 px-5">
+      {EDUCATION_TYPE_LABELS[type]}
+    </div>
+  );
 };
