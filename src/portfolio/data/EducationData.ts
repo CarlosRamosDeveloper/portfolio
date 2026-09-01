@@ -12,17 +12,17 @@ export const EducationData: Education[] = [
   //     description: [],
   //     projects: []
   //   },
-  {
-    id: 0,
-    title: '',
-    type: 'vocational_training',
-    institution: '',
-    startYear: 20,
-    endYear: 20,
-    techStack: [],
-    description: [],
-    projects: [],
-  },
+  // {
+  //   id: 0,
+  //   title: '',
+  //   type: 'vocational_training',
+  //   institution: '',
+  //   startYear: 20,
+  //   endYear: 20,
+  //   techStack: [],
+  //   description: [],
+  //   projects: [],
+  // },
   {
     id: 1,
     title: 'Desarrollo de Aplicaciones Web',

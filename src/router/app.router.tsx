@@ -4,8 +4,8 @@ import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
 import {
   AboutPage,
   ExperiencePage,
+  FeaturedPage,
   LandingPage,
-  ProjectsPage,
 } from '@/portfolio/pages';
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 
@@ -24,7 +24,7 @@ export const appRouter = createBrowserRouter([
       },
       {
         path: '/featured',
-        element: <ProjectsPage />,
+        element: <FeaturedPage />,
       },
       {
         path: '/experience',
