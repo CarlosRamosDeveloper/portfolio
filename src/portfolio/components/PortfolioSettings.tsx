@@ -44,7 +44,7 @@ export const PortfolioSettings = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-64 rounded-lg border border-border bg-card p-4 text-card-foreground shadow-lg">
+        <div className="absolute right-0 top-full mt-2 min-w-max rounded-lg border border-border bg-card p-4 text-card-foreground shadow-lg">
           <div>
             <h2 className="font-semibold"> Configuración</h2>
           </div>
