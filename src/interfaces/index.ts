@@ -1,2 +1,3 @@
+export type { Education } from './Education';
 export type { JobExperience } from './JobExperience';
 export type { Technologies } from './Technologies';

@@ -11,6 +11,16 @@ export const ExperienceData: JobExperience[] = [
   //     techStack: [],
   //     description: [],
   //   },
+  // {
+  //   id: 0,
+  //   company: 'test',
+  //   workingPosition: 'test',
+  //   subtitle: 'test',
+  //   startYear: 2027,
+  //   endYear: null,
+  //   techStack: [],
+  //   description: [],
+  // },
   {
     id: 1,
     company: 'Soluciones 480',
@@ -74,15 +84,5 @@ export const ExperienceData: JobExperience[] = [
       'Migración y estandarización del código tras la actualización del sistema de linting, resolviendo más de 30.000 incidencias y adaptando el proyecto a las nuevas reglas y buenas prácticas.',
       'Identifiqué y optimicé un cuello de botella en el proceso de eliminación de archivos del backend PHP, reduciendo el tiempo de ejecución de ~50 segundos para 10 archivos a menos de 4 segundos para 200, aproximadamente 250× más rápido.',
     ],
-  },
-  {
-    id: 4,
-    company: 'test',
-    workingPosition: 'test',
-    subtitle: 'test',
-    startYear: 2027,
-    endYear: null,
-    techStack: [],
-    description: [],
   },
 ];
