@@ -7,6 +7,7 @@ import {
   LandingPage,
   ProjectsPage,
 } from '@/portfolio/pages';
+import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 
 export const appRouter = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/experience',
         element: <ExperiencePage />,
+      },
+      {
+        path: '/education',
+        element: <EducationPage />,
       },
     ],
   },

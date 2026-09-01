@@ -7,7 +7,7 @@ export const PortfolioNavBar = () => {
         <NavigateButton path="experience" label="Experiencia Laboral" />
       </div>
       <div>
-        <NavigateButton path="/" label="Formación" />
+        <NavigateButton path="/education" label="Formación" />
       </div>
       <div>
         <NavigateButton path="featured" label="Proyectos Destacados" />
