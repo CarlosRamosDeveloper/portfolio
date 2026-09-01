@@ -13,7 +13,7 @@ const EDUCATION_TYPE_LABELS: Record<EducationType, string> = {
 
 export const EducationLabelType = ({ type }: Props) => {
   return (
-    <div className="text-sm text-muted-foreground pb-3 px-5">
+    <div className="text-sm text-muted-foreground pb-3 px-2">
       {EDUCATION_TYPE_LABELS[type]}
     </div>
   );

@@ -12,7 +12,7 @@ export const TechStackList = ({ techStack }: Props) => {
     <>
       <Separator />
       <div className="p-1 bg-card-details">
-        <div className="flex flex-wrap gap-2 m-0.5 p-1">
+        <div className="flex flex-wrap gap-2 m-0.5 p-1 justify-between">
           {techStack.map((tech) => (
             <TechCard key={tech} techName={tech} />
           ))}

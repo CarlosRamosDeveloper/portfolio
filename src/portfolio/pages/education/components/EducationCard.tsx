@@ -4,7 +4,7 @@ import {
   ExperienceDescriptionList,
 } from '../../experience/components';
 import { TechStackList } from '../../experience/components/TechStackList';
-import { EducationLabelType } from '.';
+import { EducationalProjectList, EducationLabelType } from '.';
 import { InstitutionLabel } from './InstitutionLabel';
 
 interface Props {
@@ -24,12 +24,9 @@ export const EducationCard = ({ education }: Props) => {
         <InstitutionLabel institutionName={education.institution} />
         <EducationLabelType type={education.type} />
       </div>
-      {/* <ExperienceWorkingPositionText
-        workingPosition={experience.workingPosition}
-      /> */}
-      {/* <ExperienceSubtitle text={experience.subtitle} /> */}
       <TechStackList techStack={education.techStack} />
       <ExperienceDescriptionList descriptions={education.description || []} />
+      <EducationalProjectList projects={education.projects || []} />
     </div>
   );
 };
