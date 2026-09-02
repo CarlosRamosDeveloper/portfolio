@@ -5,7 +5,7 @@ import {
   ExperienceSubtitle,
 } from '.';
 import { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
-import { TechStackList } from './TechStackList';
+import { TechStackList } from '../../components';
 
 interface Props {
   experience: JobExperience;

@@ -1,4 +1,4 @@
-import { Separator } from '@/portfolio/components';
+import { Separator } from '@/portfolio/layout/components';
 import { ExperienceDescription } from './ExperienceDescription';
 
 interface Props {
@@ -11,8 +11,8 @@ export const ExperienceDescriptionList = ({ descriptions }: Props) => {
     <>
       <Separator />
       <div className="py-2 bg-card-secondary">
-        {descriptions.map((description) => (
-          <ExperienceDescription description={description} />
+        {descriptions.map((description, index) => (
+          <ExperienceDescription description={description} key={index} />
         ))}
       </div>
     </>

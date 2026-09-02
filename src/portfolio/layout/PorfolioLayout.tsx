@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router';
 
-import { PortfolioFooter, PortfolioHeader } from '../components';
+import { PortfolioFooter, PortfolioHeader } from './components';
 import { useTheme } from '../hooks/useTheme';
 
 export const PorfolioLayout = () => {

@@ -3,17 +3,16 @@ import {
   ExperienceDate,
   ExperienceDescriptionList,
 } from '../../experience/components';
-import { TechStackList } from '../../experience/components/TechStackList';
+
 import { EducationalProjectList, EducationLabelType } from '.';
 import { InstitutionLabel } from './InstitutionLabel';
+import { TechStackList } from '../../components';
 
 interface Props {
   education: Education;
 }
 
 export const EducationCard = ({ education }: Props) => {
-  console.log('EducationCard: ', education.title);
-
   return (
     <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">

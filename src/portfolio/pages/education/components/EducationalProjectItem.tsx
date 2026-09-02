@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
 import type { EducationProject } from '@/interfaces';
-import { Separator } from '@/portfolio/components';
+import { Separator } from '@/portfolio/layout/components';
 import { EducationalRepositoryItem, EducationProjectTitle } from '.';
 import { ExperienceDescriptionList } from '../../experience/components';
-import { TechStackList } from '../../experience/components/TechStackList';
+import { TechStackList } from '../../components';
 
 interface Props {
   project: EducationProject;
