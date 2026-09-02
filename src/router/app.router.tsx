@@ -1,10 +1,44 @@
-import { Home } from '@/Home';
 import { createBrowserRouter } from 'react-router';
+
+import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
+import {
+  AboutPage,
+  ContactPage,
+  ExperiencePage,
+  FeaturedPage,
+  LandingPage,
+} from '@/portfolio/pages';
+import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 
 export const appRouter = createBrowserRouter([
   {
     path: '/',
-    index: true,
-    element: <Home />,
+    element: <PorfolioLayout />,
+    children: [
+      {
+        index: true,
+        element: <LandingPage />,
+      },
+      {
+        path: '/about',
+        element: <AboutPage />,
+      },
+      {
+        path: '/featured',
+        element: <FeaturedPage />,
+      },
+      {
+        path: '/experience',
+        element: <ExperiencePage />,
+      },
+      {
+        path: '/education',
+        element: <EducationPage />,
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />,
+      },
+    ],
   },
 ]);
