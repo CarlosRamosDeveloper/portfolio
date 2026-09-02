@@ -1,14 +1,10 @@
-import { Mail } from 'lucide-react';
+import { ContactComponentsList } from '@/portfolio/components';
 
 export const ContactPage = () => {
   return (
-    <div>
-      <section>
-        <Mail />
-        Email de contacto
-      </section>
-      <section>Icono Linkedin Enlace a Linkedin</section>
-      <section>Icono Github Enlace a Github</section>
+    <div className="w-full">
+      <h2 className="text-center text-2xl font-semibold">Datos de Contacto</h2>
+      <ContactComponentsList />
     </div>
   );
 };
