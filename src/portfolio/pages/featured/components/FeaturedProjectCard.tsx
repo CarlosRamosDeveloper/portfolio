@@ -20,6 +20,7 @@ export const FeaturedProjectCard = ({ project }: Props) => {
       <TechStackList techStack={project.techStack} />
       <FeaturedNavigation url={project.repository} type="repository" />
       <FeaturedNavigation url={project.url} type="page" />
+      <FeaturedNavigation url={project.video} type="demo" />
     </div>
   );
 };

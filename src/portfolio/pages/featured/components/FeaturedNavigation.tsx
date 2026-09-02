@@ -1,12 +1,15 @@
-type ItemType = 'page' | 'repository';
+type ItemType = 'page' | 'repository' | 'demo';
 
 interface Props {
   url?: string | null;
   type?: ItemType;
 }
 
-const repositoryText = 'Acceder al repositorio';
-const pageText = 'Acceder al proyecto';
+const COMPONENT_TEXT: Record<ItemType, string> = {
+  page: 'Acceder al proyecto',
+  repository: 'Acceder al repositorio',
+  demo: 'Ver demo',
+};
 
 export const FeaturedNavigation = ({ url, type }: Props) => {
   const handleNavigate = () => {
@@ -14,9 +17,10 @@ export const FeaturedNavigation = ({ url, type }: Props) => {
   };
   if (!url) return null;
   if (!type) return null;
+
   return (
-    <div onClick={handleNavigate} className="cursor-pointer">
-      {type === 'repository' ? repositoryText : pageText}
+    <div onClick={handleNavigate} className="cursor-pointer p-3">
+      {COMPONENT_TEXT[type]}
     </div>
   );
 };
