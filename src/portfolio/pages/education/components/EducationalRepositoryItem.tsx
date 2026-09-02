@@ -1,3 +1,5 @@
+import { Separator } from '@/portfolio/components';
+
 interface Props {
   repositoryUrl?: string;
 }
@@ -5,8 +7,13 @@ interface Props {
 export const EducationalRepositoryItem = ({ repositoryUrl }: Props) => {
   if (!repositoryUrl) return null;
   return (
-    <a className="text-xs px-2" href={repositoryUrl} target="_blank">
-      Ver repositorio
-    </a>
+    <div>
+      <Separator />
+      <div className="m-1 px-6">
+        <a className="text-xs" href={repositoryUrl} target="_blank">
+          Ir al repositorio
+        </a>
+      </div>
+    </div>
   );
 };
