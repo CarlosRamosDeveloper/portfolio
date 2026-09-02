@@ -7,7 +7,7 @@ interface Props {
 
 export const FeaturedProjectsList = ({ projects }: Props) => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       {projects.map((project, index) => (
         <FeaturedProjectCard key={index} project={project} />
       ))}
