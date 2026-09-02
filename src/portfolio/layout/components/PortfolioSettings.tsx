@@ -10,20 +10,18 @@ export const PortfolioSettings = () => {
 
   useEffect(() => {
     if (!isOpen) return;
-    console.log('UseEffect: Entrando en efecto');
     const handleClickOutside = (event: MouseEvent) => {
       if (
         settingsRef.current &&
         !settingsRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
-        console.log('UseEffect: Dentro del mouse event');
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
+
     return () => {
-      console.log('UseEffect: Saliendo del efecto');
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [isOpen]);
