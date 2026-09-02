@@ -22,6 +22,7 @@ export const ContactComponentsList = ({ isFooter = false }: Props) => {
   const handleNavigate = (url: string) => {
     window.open(url);
   };
+
   return (
     <div className="mx-auto flex w-full max-w-3xl items-center justify-center">
       <ContactComponent
