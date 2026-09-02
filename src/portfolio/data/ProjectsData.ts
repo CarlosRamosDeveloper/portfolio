@@ -1,19 +1,19 @@
 import type { Project } from '@/interfaces/Project';
 
 export const ProjectsData: Project[] = [
-  {
-    id: 0,
-    name: '',
-    shortDescription: '',
-    description: [],
-    isFeatured: false,
-    status: 'design',
-    techStack: [],
-    repository: '',
-    screenshots: [],
-    url: null,
-    video: null,
-  },
+  // {
+  //   id: 0,
+  //   name: '',
+  //   shortDescription: '',
+  //   description: [],
+  //   isFeatured: false,
+  //   status: 'design',
+  //   techStack: [],
+  //   repository: '',
+  //   screenshots: [],
+  //   url: null,
+  //   video: null,
+  // },
   {
     id: 1,
     name: 'PasswordAppManager',
