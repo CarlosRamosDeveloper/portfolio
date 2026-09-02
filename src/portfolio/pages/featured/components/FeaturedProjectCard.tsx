@@ -1,9 +1,11 @@
 import type { Project } from '@/interfaces';
+import {
+  FeaturedNavigation,
+  FeaturedProjectLabel,
+  FeaturedProjectStatusSection,
+  FeaturedTitle,
+} from '.';
 import { TechStackList } from '../../components';
-import { FeaturedProjectStatusSection } from './FeaturedProjectStatusSection';
-import { FeaturedTitle } from './FeaturedTitle';
-import { FeaturedProjectLabel } from './FeaturedProjectLabel';
-import { FeaturedNavigation } from './FeaturedNavigation';
 
 interface Props {
   project: Project;
