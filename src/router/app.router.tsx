@@ -3,6 +3,7 @@ import { createBrowserRouter } from 'react-router';
 import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
 import {
   AboutPage,
+  ContactPage,
   ExperiencePage,
   FeaturedPage,
   LandingPage,
@@ -33,6 +34,10 @@ export const appRouter = createBrowserRouter([
       {
         path: '/education',
         element: <EducationPage />,
+      },
+      {
+        path: '/contact',
+        element: <ContactPage />,
       },
     ],
   },
