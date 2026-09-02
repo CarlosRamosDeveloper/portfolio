@@ -1,6 +1,6 @@
 import type { EducationProject } from '@/interfaces';
 import { EducationalProjectItem } from './EducationalProjectItem';
-import { Separator } from '@/portfolio/layout/components';
+import { Separator } from '../../components';
 
 interface Props {
   projects: EducationProject[];

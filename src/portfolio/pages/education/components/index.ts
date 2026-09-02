@@ -1,9 +1,8 @@
-export { EducationProjectTitle } from './EducationProjectTitle';
-
 export { EducationalProjectItem } from './EducationalProjectItem';
-export { EducationalRepositoryItem } from './EducationalRepositoryItem';
 export { EducationalProjectList } from './EducationalProjectList';
+export { EducationalRepositoryItem } from './EducationalRepositoryItem';
 export { EducationCard } from './EducationCard';
 export { EducationCardList } from './EducationCardList';
 export { EducationLabelType } from './EducationLabelType';
+export { EducationProjectTitle } from './EducationProjectTitle';
 export { InstitutionLabel } from './InstitutionLabel';

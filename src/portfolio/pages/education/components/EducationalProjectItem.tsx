@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
 import type { EducationProject } from '@/interfaces';
-import { Separator } from '@/portfolio/layout/components';
 import { EducationalRepositoryItem, EducationProjectTitle } from '.';
-import { ExperienceDescriptionList, TechStackList } from '../../components';
+import { DescriptionList, Separator, TechStackList } from '../../components';
 
 interface Props {
   project: EducationProject;
@@ -29,7 +28,7 @@ export const EducationalProjectItem = ({ project }: Props) => {
         <div>
           <EducationalRepositoryItem repositoryUrl={project.repository} />
           <TechStackList techStack={project.techStack} />
-          <ExperienceDescriptionList descriptions={project.description} />
+          <DescriptionList descriptions={project.description} />
         </div>
       )}
 

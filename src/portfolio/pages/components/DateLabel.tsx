@@ -3,7 +3,7 @@ interface Props {
   end?: number | null;
 }
 
-export const ExperienceDate = ({ start, end = null }: Props) => {
+export const DateLabel = ({ start, end = null }: Props) => {
   return (
     <div className="text-xl text-muted-foreground min-w-max">
       {start}

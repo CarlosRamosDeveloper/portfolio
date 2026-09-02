@@ -5,4 +5,3 @@ export { PortfolioIcon } from './PortfolioIcon';
 export { PortfolioLanguageSettings } from './PortfolioLanguageSettings';
 export { PortfolioNavBar } from './PortfolioNavBar';
 export { PortfolioSettings } from './PortfolioSettings';
-export { Separator } from './Separator';

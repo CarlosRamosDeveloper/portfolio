@@ -1,4 +1,4 @@
-import { Separator } from '@/portfolio/layout/components';
+import { Separator } from '../../components';
 
 interface Props {
   repositoryUrl?: string;

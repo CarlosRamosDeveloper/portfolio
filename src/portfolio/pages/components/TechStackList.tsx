@@ -1,7 +1,5 @@
 import type { Technologies } from '@/interfaces';
-
-import { Separator } from '@/portfolio/layout/components';
-import { TechCard } from '.';
+import { Separator, TechCard } from '.';
 
 interface Props {
   techStack: Technologies[];
