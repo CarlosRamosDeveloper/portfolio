@@ -1,6 +1,8 @@
 export type ProjectStatus =
-  | 'work_in_progress'
+  | 'abandoned'
+  | 'deployed'
+  | 'design'
+  | 'maintenance'
   | 'finished'
   | 'stopped'
-  | 'design'
-  | 'deployed';
+  | 'work_in_progress';
