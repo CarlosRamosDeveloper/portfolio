@@ -1,12 +1,13 @@
 import type { Education } from '@/interfaces';
-import {
-  ExperienceDate,
-  ExperienceDescriptionList,
-} from '../../experience/components';
+import {} from '../../experience/components';
 
 import { EducationalProjectList, EducationLabelType } from '.';
 import { InstitutionLabel } from './InstitutionLabel';
-import { TechStackList } from '../../components';
+import {
+  ExperienceDate,
+  ExperienceDescriptionList,
+  TechStackList,
+} from '../../components';
 
 interface Props {
   education: Education;

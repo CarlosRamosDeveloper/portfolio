@@ -3,8 +3,7 @@ import { useState } from 'react';
 import type { EducationProject } from '@/interfaces';
 import { Separator } from '@/portfolio/layout/components';
 import { EducationalRepositoryItem, EducationProjectTitle } from '.';
-import { ExperienceDescriptionList } from '../../experience/components';
-import { TechStackList } from '../../components';
+import { ExperienceDescriptionList, TechStackList } from '../../components';
 
 interface Props {
   project: EducationProject;

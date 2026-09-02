@@ -2,10 +2,9 @@ import type { JobExperience } from '@/interfaces';
 import {
   ExperienceDate,
   ExperienceDescriptionList,
-  ExperienceSubtitle,
-} from '.';
-import { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
-import { TechStackList } from '../../components';
+  TechStackList,
+} from '../../components';
+import { ExperienceSubtitle, ExperienceWorkingPositionText } from '.';
 
 interface Props {
   experience: JobExperience;
