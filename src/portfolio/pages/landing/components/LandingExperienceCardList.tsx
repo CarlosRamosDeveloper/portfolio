@@ -22,8 +22,7 @@ const sortedData = [...data].sort((a, b) => {
 
 export const LandingExperienceCardList = () => {
   return (
-    <div>
-      <div>LandingExperienceCardList</div>
+    <div className="mt-3">
       {sortedData.map((item) => (
         <LandingExperienceCard
           item={item}

@@ -1,10 +1,9 @@
-import { LandingExperienceCardList } from './LandingExperienceCardList';
+import { LandingExperienceCardList } from '.';
 
 export const LandingExperience = () => {
   return (
-    <div>
-      <div>[Card reducida con la experiencia laboral]</div>
-      <div>[Card reducida con la formación]</div>
+    <div className="flex flex-col items-center">
+      <h3 className="text-xl mt-5 text-center">Experiencia adquirida</h3>
       <LandingExperienceCardList />
     </div>
   );

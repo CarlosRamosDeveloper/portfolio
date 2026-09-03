@@ -1,6 +1,5 @@
 import type { Education, JobExperience } from '@/interfaces';
-import { LandingJobCard } from './LandingJobCard';
-import { LandingEducationCard } from './LandingEducationCard';
+import { LandingEducationCard, LandingJobCard } from '.';
 
 export type LandingExperience =
   | {
@@ -18,6 +17,11 @@ interface Props {
 
 export const LandingExperienceCard = ({ item }: Props) => {
   const { data, type } = item;
-  if (type === 'education') return <LandingEducationCard data={data} />;
-  if (type === 'job') return <LandingJobCard data={data} />;
+
+  return (
+    <div className="m-2">
+      {type === 'education' && <LandingEducationCard data={data} />}
+      {type === 'job' && <LandingJobCard data={data} />}
+    </div>
+  );
 };
