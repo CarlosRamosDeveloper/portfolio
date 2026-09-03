@@ -6,6 +6,7 @@ import {
   FeaturedTitle,
 } from '.';
 import { TechStackList } from '../../components';
+import { FeaturedImage } from './FeaturedImage';
 
 interface Props {
   project: Project;
@@ -17,6 +18,7 @@ export const FeaturedProjectCard = ({ project }: Props) => {
       <FeaturedTitle projectName={project.name} />
       <FeaturedProjectStatusSection status={project.status} />
       <FeaturedProjectLabel text={project.shortDescription} />
+      <FeaturedImage image={project.screenshots?.[0] || null} />
       <TechStackList techStack={project.techStack} />
       <FeaturedNavigation url={project.repository} type="repository" />
       <FeaturedNavigation url={project.url} type="page" />

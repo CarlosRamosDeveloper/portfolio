@@ -7,7 +7,7 @@ export type Project = {
   url?: string | null;
   shortDescription: string;
   description: string[];
-  screenshots?: string[];
+  screenshots: string[] | null;
   techStack: Technologies[];
   isFeatured: boolean;
   video?: string | null;
