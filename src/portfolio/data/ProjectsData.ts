@@ -32,4 +32,17 @@ export const ProjectsData: Project[] = [
     url: null,
     video: null,
   },
+  {
+    id: 2,
+    name: 'Escape From Purgatory',
+    shortDescription: 'Videojuego Metroidvania en 2D',
+    description: [],
+    isFeatured: true,
+    status: 'stopped',
+    techStack: ['C#', 'Unity'],
+    repository: '',
+    screenshots: [],
+    url: null,
+    video: null,
+  },
 ];
