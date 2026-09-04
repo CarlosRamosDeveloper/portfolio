@@ -1,28 +1,7 @@
 import type { Education } from '@/interfaces';
+import { ProjectsData } from './ProjectsData';
 
 export const EducationData: Education[] = [
-  //   {
-  //     id: 0,
-  //     title: '',
-  //     type: 'FP2',
-  //     institution: '',
-  //     startYear: 20,
-  //     endYear: 20,
-  //     techStack: [],
-  //     description: [],
-  //     projects: []
-  //   },
-  // {
-  //   id: 0,
-  //   title: '',
-  //   type: 'vocational_training',
-  //   institution: '',
-  //   startYear: 20,
-  //   endYear: 20,
-  //   techStack: [],
-  //   description: [],
-  //   projects: [],
-  // },
   {
     id: 1,
     title: 'Desarrollo de Aplicaciones Web',
@@ -50,19 +29,7 @@ export const EducationData: Education[] = [
       'Fuerte hincapié en patrones de diseño y desarrollo SOLID',
       'Desarrollo de multiples páginas web durante la duración del curso',
     ],
-    projects: [
-      {
-        name: 'Proyecto-Final',
-        description: [
-          'Juego RPG de navegador',
-          'Un proyecto para clase que se fue de las manos y creció sin control',
-          'Solo con una pantalla, pero modificando la interfaz en función de las elecciones del usuario',
-          'El proyecto podia funcionar de forma standalone en navegador, almacenando los datos en el localStorage',
-          'De vez en cuando tengo ganas de hacerle un remake con react y con los conocimientos que tengo ahora',
-        ],
-        techStack: ['Bootstrap', 'Git', 'JavaScript', 'jQuery', 'PHP'],
-      },
-    ],
+    projects: [ProjectsData[0]],
   },
   {
     id: 2,
@@ -76,43 +43,7 @@ export const EducationData: Education[] = [
       'Formación basada en el desarrollo de proyectos mediante retos prácticos',
       'Asumí el puesto de Project Leader y gestioné dos equipos diferentes para realizar dos retos',
     ],
-    projects: [
-      {
-        name: 'Escape From Purgatory',
-        description: [
-          'Juego 2D de género Metroidvania',
-          'Desarrollado por un equipo de 3 personas',
-          'Participación activa en el desarrollo del proyecto además de las labores de gestión.',
-          'Gestión del proyecto y coordinación del equipo mediante Jira',
-          'Control de versiones usando Bitbucket siguiendo la metodología Gitflow',
-          'Sistema de progresión basado en Power-Ups que desbloquean nuevas habilidades.',
-          'Sistema de Backtracking basado en las habilidades adquiridas durante la progresión.',
-          'Diseño y estructuración del escenario, adaptándolo al sistema de progresión del jugador.',
-          'Diseño y equilibrio de las mecánicas del personaje jugable, enemigos y jefes.',
-        ],
-        techStack: ['C#', 'Unity'],
-      },
-      {
-        name: 'Chests, Please',
-        description: [
-          'Juego 3D inspirado en Papers, Please ambientado en las aduanas de una ciudad medieval',
-          'Desarrollado por un equipo de 4 personas',
-          'Participación activa en el desarrollo del proyecto además de las labores de gestión.',
-          'Gestión del proyecto y coordinación del equipo mediante Jira',
-          'Control de versiones usando Bitbucket siguiendo la metodología Gitflow',
-          'Implementación de 9 finales diferentes en función de las decisiones del jugador',
-          'Generación procedural de npcs',
-          'Sistema de inspección de mercancías',
-          'Sistema de sobornos que permite al jugador aceptar pagos a cambio de permitir el acceso a determinados NPCs',
-          'Sistema de consecuencias basado en las decisiones y acciones del jugador',
-          'Sistema de economía dinámica en el que la cantidad de NPCs y mercaderes presentes en la ciudad afecta directamente a su economía.',
-          'Sistema de clima que modifica el consumo de combustible de la ciudad en función de las condiciones meteorológicas.',
-          'Sistema de crímenes en el que determinados NPCs pueden hacer desaparecer a otros personajes, incluidos familiares del jugador e incluso este.',
-          'Sistema de familia que permite realizar un seguimiento de los familiares del jugador. Si todos desaparecen o mueren, la partida termina.',
-        ],
-        techStack: ['C#', 'Unity'],
-      },
-    ],
+    projects: [ProjectsData[1], ProjectsData[2]],
   },
   {
     id: 3,
@@ -139,19 +70,6 @@ export const EducationData: Education[] = [
       'Uso de bases de datos relacionales y no relacionales',
       'Despliegue de APIs backend en AWS para su consumo desde aplicaciones móviles.',
     ],
-    projects: [
-      {
-        name: 'PasswordManagerApp',
-        techStack: ['Android', 'Jetpack Compose', 'Kotlin'],
-        repository:
-          'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
-        description: [
-          'Aplicación para la generación y gestión de contraseñas',
-          'En estado de desarrollo',
-          'Permite la generación de contraseñas siguiendo diferentes criterios',
-          'Algoritmo de puntuación de contraseñas en función de caracteres diferentes, patrones repetidos, longitud de contraseña, etc',
-        ],
-      },
-    ],
+    projects: [ProjectsData[3]],
   },
 ];
