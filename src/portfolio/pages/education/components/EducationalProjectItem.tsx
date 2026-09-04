@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import type { EducationProject } from '@/interfaces';
-import { EducationalRepositoryItem, EducationProjectTitle } from '.';
 import { DescriptionList, Separator, TechStackList } from '../../components';
+import { EducationalRepositoryItem, EducationProjectTitle } from '.';
+import type { Project } from '@/interfaces';
 
 interface Props {
-  project: EducationProject;
+  project: Project;
 }
 
 export const EducationalProjectItem = ({ project }: Props) => {

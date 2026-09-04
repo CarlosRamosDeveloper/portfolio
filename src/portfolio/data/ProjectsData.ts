@@ -1,3 +1,4 @@
+import { REPOSITORIES } from '@/constants';
 import type { Project } from '@/interfaces/Project';
 
 export const ProjectsData: Project[] = [
@@ -114,7 +115,7 @@ export const ProjectsData: Project[] = [
       'SQLite',
       'Room',
     ],
-    repository: 'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
+    repository: REPOSITORIES.passwordAppManager,
     screenshots: [
       '/projects/pma-1.jpg',
       '/projects/pma-2.jpg',

@@ -1,6 +1,7 @@
-import { useTheme } from '../../hooks/useTheme';
+import { SETTINGS_TEXT } from '@/constants/layout';
+import { useTheme } from '@/portfolio/hooks/useTheme';
 
-export const PortfolioLanguageSettings = () => {
+export const PortfolioThemeSelector = () => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -9,19 +10,19 @@ export const PortfolioLanguageSettings = () => {
         className={`px-3 ${theme === 'light' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('light')}
       >
-        Claro
+        {SETTINGS_TEXT.lightTheme}
       </button>
       <button
         className={`px-3 ${theme === 'dark' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('dark')}
       >
-        Oscuro
+        {SETTINGS_TEXT.darkTheme}
       </button>
       <button
         className={`px-3 ${theme === 'colorblind' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('colorblind')}
       >
-        Daltónico
+        {SETTINGS_TEXT.colorblind}
       </button>
     </div>
   );

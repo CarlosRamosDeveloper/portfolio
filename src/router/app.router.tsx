@@ -9,10 +9,11 @@ import {
   LandingPage,
 } from '@/portfolio/pages';
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
+import { ROUTES } from '@/constants/routes';
 
 export const appRouter = createBrowserRouter([
   {
-    path: '/',
+    path: ROUTES.home,
     element: <PorfolioLayout />,
     children: [
       {
@@ -20,23 +21,23 @@ export const appRouter = createBrowserRouter([
         element: <LandingPage />,
       },
       {
-        path: '/about',
+        path: ROUTES.about,
         element: <AboutPage />,
       },
       {
-        path: '/featured',
+        path: ROUTES.featured,
         element: <FeaturedPage />,
       },
       {
-        path: '/experience',
+        path: ROUTES.experience,
         element: <ExperiencePage />,
       },
       {
-        path: '/education',
+        path: ROUTES.education,
         element: <EducationPage />,
       },
       {
-        path: '/contact',
+        path: ROUTES.contact,
         element: <ContactPage />,
       },
     ],
