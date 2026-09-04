@@ -7,7 +7,6 @@ interface Props {
 }
 
 export const LandingExperienceHeader = ({ title, subtitle, type }: Props) => {
-  console.log();
   return (
     <div
       className={cn(
