@@ -1,6 +1,7 @@
 import type { Education, JobExperience } from '@/interfaces';
 import { LandingExperienceHeader } from './LandingExperienceHeader';
 import { LandingExperienceCardBody } from './LandingExperienceCardBody';
+import { LANDING_TEXT } from '@/constants/pages';
 
 export type LandingExperience =
   | {
@@ -27,11 +28,11 @@ export const LandingExperienceCard = ({ item }: Props) => {
         }
         subtitle={
           type === 'education'
-            ? 'Educación'
+            ? `${LANDING_TEXT.education}`
             : type === 'job'
               ? data.isInternship === true
-                ? 'Prácticas'
-                : 'Trabajo'
+                ? `${LANDING_TEXT.internship}`
+                : `${LANDING_TEXT.work}`
               : ''
         }
         type={type}
@@ -39,7 +40,7 @@ export const LandingExperienceCard = ({ item }: Props) => {
       <LandingExperienceCardBody
         description={
           type === 'education'
-            ? `Cantidad de proyectos: ${data.projects?.length}`
+            ? `${LANDING_TEXT.projectQuantity}: ${data.projects?.length}`
             : type === 'job'
               ? data.workingPosition
               : ''
