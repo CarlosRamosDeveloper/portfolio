@@ -1,3 +1,5 @@
+import { handleNavigateOnNewWindow } from '@/portfolio/shared';
+
 type ItemType = 'page' | 'repository' | 'demo';
 
 interface Props {
@@ -12,14 +14,14 @@ const COMPONENT_TEXT: Record<ItemType, string> = {
 };
 
 export const FeaturedNavigation = ({ url, type }: Props) => {
-  const handleNavigate = () => {
-    console.log(url);
-  };
   if (!url) return null;
   if (!type) return null;
 
   return (
-    <div onClick={handleNavigate} className="cursor-pointer p-3">
+    <div
+      onClick={() => handleNavigateOnNewWindow(url)}
+      className="cursor-pointer p-3"
+    >
       {COMPONENT_TEXT[type]}
     </div>
   );
