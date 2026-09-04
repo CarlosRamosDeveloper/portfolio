@@ -2,13 +2,14 @@ import { ProjectsData } from '@/portfolio/data/ProjectsData';
 import { LandingFeaturedCard } from './landing-featured-card';
 import type { Project } from '@/interfaces';
 import { Link } from 'react-router';
+import { ROUTES } from '@/constants/routes';
 
 const data: Project[] = ProjectsData.filter((project) => project.isFeatured);
 
 export const LandingFeaturedProjectsList = () => {
   return (
     <div className="w-full max-w-3xl flex flex-col text-center mx-auto">
-      <Link to="/featured">
+      <Link to={ROUTES.featured}>
         <h3 className="text-xl my-2">[Proyectos Destacados]</h3>
       </Link>
       {data.map((project) => (

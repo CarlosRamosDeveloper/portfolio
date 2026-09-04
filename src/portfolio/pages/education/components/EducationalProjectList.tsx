@@ -1,9 +1,9 @@
-import type { EducationProject } from '@/interfaces';
 import { EducationalProjectItem } from './EducationalProjectItem';
 import { Separator } from '../../components';
+import type { Project } from '@/interfaces';
 
 interface Props {
-  projects: EducationProject[];
+  projects: Project[];
 }
 
 export const EducationalProjectList = ({ projects = [] }: Props) => {

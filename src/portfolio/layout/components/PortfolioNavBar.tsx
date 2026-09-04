@@ -1,22 +1,23 @@
+import { ROUTES } from '@/constants/routes';
 import { NavigateButton } from '.';
 
 export const PortfolioNavBar = () => {
   return (
     <div className="flex justify-center mb-3 gap-6">
       <div>
-        <NavigateButton path="experience" label="Experiencia Laboral" />
+        <NavigateButton path={ROUTES.experience} label="Experiencia Laboral" />
       </div>
       <div>
-        <NavigateButton path="education" label="Formación" />
+        <NavigateButton path={ROUTES.education} label="Formación" />
       </div>
       <div>
-        <NavigateButton path="featured" label="Proyectos Destacados" />
+        <NavigateButton path={ROUTES.featured} label="Proyectos Destacados" />
       </div>
       <div>
-        <NavigateButton path="about" label="Acerca de" />
+        <NavigateButton path={ROUTES.about} label="Acerca de" />
       </div>
       <div>
-        <NavigateButton path="contact" label="Contacto" />
+        <NavigateButton path={ROUTES.contact} label="Contacto" />
       </div>
     </div>
   );

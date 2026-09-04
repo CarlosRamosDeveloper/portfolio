@@ -1,3 +1,4 @@
+import { ROUTES } from '@/constants/routes';
 import { Link } from 'react-router';
 
 export const LandingAbout = () => {
@@ -7,7 +8,7 @@ export const LandingAbout = () => {
         Soy un apasionado del desarrollo de software con poca experiencia
         laboral pero gran recorrido a nivel autodidacta y con multiples cursos
         reglados
-        <Link to="/about" className="mt-3 font-semibold">
+        <Link to={ROUTES.about} className="mt-3 font-semibold">
           [Aquí puedes ver más acerca de mi]
         </Link>
       </div>
