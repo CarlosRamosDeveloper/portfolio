@@ -1,6 +1,7 @@
 import type { Project } from '@/interfaces';
-import { STATUS_LABEL } from '@/portfolio/pages/featured/components/FeaturedProjectStatusSection';
+
 import { LandingFeaturedHeaderCard } from '.';
+import { STATUS_LABEL } from '@/constants';
 
 interface Props {
   project: Project;

@@ -1,4 +1,4 @@
-import { EDUCATION_TYPE_LABELS } from '@/constants/pages';
+import { EDUCATION_TYPE_LABELS } from '@/constants';
 import type { EducationType } from '@/interfaces';
 
 interface Props {
