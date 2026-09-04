@@ -41,7 +41,7 @@ export const ProjectsData: Project[] = [
     status: 'stopped',
     techStack: ['C#', 'Unity'],
     repository: '',
-    screenshots: [],
+    screenshots: ['/projects/efp2.jpg', '/projects/efp3.jpg'],
     url: null,
     video: null,
   },
