@@ -1,6 +1,9 @@
 import { EducationData, ExperienceData } from '@/portfolio/data';
-import { LandingExperienceCard } from '.';
-import type { LandingExperience } from './LandingExperienceCard';
+
+import {
+  LandingExperienceCard,
+  type LandingExperience,
+} from './landing-experience-card/LandingExperienceCard';
 
 const data: LandingExperience[] = [
   ...EducationData.map((education) => ({
