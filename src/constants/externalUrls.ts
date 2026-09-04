@@ -7,5 +7,8 @@ export const EXTERNAL_URL = {
 };
 
 export const REPOSITORIES = {
-  passwordAppManager: '',
+  passwordAppManager:
+    'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
 };
+
+export const VIDEO_URLS = {};
