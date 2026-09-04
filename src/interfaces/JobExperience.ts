@@ -9,4 +9,5 @@ export interface JobExperience {
   endYear: number | null;
   techStack: Technologies[];
   description: string[];
+  isInternship?: boolean;
 }
