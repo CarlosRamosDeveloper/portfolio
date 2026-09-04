@@ -1,4 +1,5 @@
-import { PortfolioIcon, PortfolioNavBar, PortfolioSettings } from '.';
+import { PortfolioIcon, PortfolioNavBar } from '.';
+import { PortfolioSettings } from './settings';
 
 export const PortfolioHeader = () => {
   return (

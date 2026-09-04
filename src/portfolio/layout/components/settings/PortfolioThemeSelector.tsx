@@ -1,7 +1,7 @@
 import { SETTINGS_TEXT } from '@/constants';
-import { useTheme } from '../../hooks/useTheme';
+import { useTheme } from '@/portfolio/hooks/useTheme';
 
-export const PortfolioLanguageSettings = () => {
+export const PortfolioThemeSelector = () => {
   const { theme, setTheme } = useTheme();
 
   return (

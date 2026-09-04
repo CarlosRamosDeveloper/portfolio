@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import { Settings } from 'lucide-react';
 
-import { PortfolioLanguageSettings } from '.';
 import { SETTINGS_TEXT } from '@/constants';
+import { PortfolioThemeSelector } from '.';
 
 export const PortfolioSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +49,7 @@ export const PortfolioSettings = () => {
           </div>
           <div className="mt-4">
             <p className="text-sm font-medium">{SETTINGS_TEXT.selectedTheme}</p>
-            <PortfolioLanguageSettings />
+            <PortfolioThemeSelector />
           </div>
           <div className="mt-4">
             <p className="text-sm font-medium">
