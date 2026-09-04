@@ -2,12 +2,7 @@ import { IoIosMailOpen } from 'react-icons/io';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import { ContactComponent } from '.';
-
-const emailParts = {
-  user: 'carlosramosdev',
-  domain: 'protonmail',
-  tld: 'com',
-};
+import { EXTERNAL_URL } from '@/constants';
 
 interface Props {
   isFooter?: boolean;
@@ -15,7 +10,7 @@ interface Props {
 
 export const ContactComponentsList = ({ isFooter = false }: Props) => {
   const handleEmailComposition = () => {
-    const email = `${emailParts.user}@${emailParts.domain}.${emailParts.tld}`;
+    const email = `${EXTERNAL_URL.emailUser}@${EXTERNAL_URL.emailDomain}.${EXTERNAL_URL.emailTld}`;
     window.location.href = `mailto:${email}`;
   };
 
@@ -34,17 +29,13 @@ export const ContactComponentsList = ({ isFooter = false }: Props) => {
       <ContactComponent
         icon={FaLinkedin}
         label="LinkedIn"
-        onClick={() =>
-          handleNavigate('https://www.linkedin.com/in/carlosramosdeveloper/')
-        }
+        onClick={() => handleNavigate(EXTERNAL_URL.linkedIn)}
         isFooter={isFooter}
       />
       <ContactComponent
         icon={FaGithubSquare}
         label="Github"
-        onClick={() =>
-          handleNavigate('https://github.com/CarlosRamosDeveloper')
-        }
+        onClick={() => handleNavigate(EXTERNAL_URL.github)}
         isFooter={isFooter}
       />
     </div>
