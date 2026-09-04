@@ -3,6 +3,7 @@ import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import { ContactComponent } from '.';
 import { EXTERNAL_URL } from '@/constants';
+import { handleNavigateOnNewWindow } from '../shared';
 
 interface Props {
   isFooter?: boolean;
@@ -12,10 +13,6 @@ export const ContactComponentsList = ({ isFooter = false }: Props) => {
   const handleEmailComposition = () => {
     const email = `${EXTERNAL_URL.emailUser}@${EXTERNAL_URL.emailDomain}.${EXTERNAL_URL.emailTld}`;
     window.location.href = `mailto:${email}`;
-  };
-
-  const handleNavigate = (url: string) => {
-    window.open(url);
   };
 
   return (
@@ -29,13 +26,13 @@ export const ContactComponentsList = ({ isFooter = false }: Props) => {
       <ContactComponent
         icon={FaLinkedin}
         label="LinkedIn"
-        onClick={() => handleNavigate(EXTERNAL_URL.linkedIn)}
+        onClick={() => handleNavigateOnNewWindow(EXTERNAL_URL.linkedIn)}
         isFooter={isFooter}
       />
       <ContactComponent
         icon={FaGithubSquare}
         label="Github"
-        onClick={() => handleNavigate(EXTERNAL_URL.github)}
+        onClick={() => handleNavigateOnNewWindow(EXTERNAL_URL.github)}
         isFooter={isFooter}
       />
     </div>
