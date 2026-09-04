@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 
 import { Settings } from 'lucide-react';
 
-import { SETTINGS_TEXT } from '@/constants';
 import { PortfolioThemeSelector } from '.';
+import { SETTINGS_TEXT } from '@/constants/layout';
 
 export const PortfolioSettings = () => {
   const [isOpen, setIsOpen] = useState(false);

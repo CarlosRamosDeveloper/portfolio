@@ -1,6 +1,6 @@
 import { ROUTES } from '@/constants/routes';
 import { NavigateButton } from '.';
-import { NAVBAR_TEXT } from '@/constants';
+import { NAVBAR_TEXT } from '@/constants/layout';
 
 export const PortfolioNavBar = () => {
   return (
