@@ -1,16 +1,12 @@
+import { ABOUT_TEXT } from '@/constants/pages';
 import { AboutBubble } from '.';
 
-interface Props {
-  data: string[];
-}
-
-export const GreetSection = ({ data }: Props) => {
-  if (data.length === 0) return;
+export const GreetSection = () => {
   return (
     <div className="flex flex-col items-center">
-      <h3 className="text-2xl">Hola, bienvenido/a a mi Portfolio.</h3>
+      <h3 className="text-2xl mb-2">{ABOUT_TEXT.greet}</h3>
       <div>
-        {data.map((text, index) => (
+        {ABOUT_TEXT.greetData.map((text, index) => (
           <AboutBubble key={index} text={text} />
         ))}
       </div>
