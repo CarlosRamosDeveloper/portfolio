@@ -1,8 +1,8 @@
 import {
   LandingAbout,
   LandingExperience,
+  LandingFeaturedProjectsList,
   LandingHero,
-  LandingProjects,
 } from './components';
 
 export const LandingPage = () => {
@@ -11,7 +11,7 @@ export const LandingPage = () => {
       <div>
         <LandingHero />
         <LandingAbout />
-        <LandingProjects />
+        <LandingFeaturedProjectsList />
         <LandingExperience />
       </div>
     </>

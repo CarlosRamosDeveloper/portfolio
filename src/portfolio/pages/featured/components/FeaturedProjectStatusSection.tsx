@@ -1,6 +1,6 @@
 import type { ProjectStatus } from '@/interfaces';
 
-const STATUS_LABEL: Record<ProjectStatus, string> = {
+export const STATUS_LABEL: Record<ProjectStatus, string> = {
   abandoned: 'Abandonado',
   deployed: 'Desplegado',
   design: 'Fase de diseño',
