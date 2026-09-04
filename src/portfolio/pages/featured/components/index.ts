@@ -1,3 +1,4 @@
+export { FeaturedImage } from './FeaturedImage';
 export { FeaturedNavigation } from './FeaturedNavigation';
 export { FeaturedProjectCard } from './FeaturedProjectCard';
 export { FeaturedProjectLabel } from './FeaturedProjectLabel';

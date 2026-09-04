@@ -4,7 +4,7 @@ interface Props {
   onClose: () => void;
 }
 
-export const FeaturedImageOverlay = ({ image, isOpen, onClose }: Props) => {
+export const ImageOverlay = ({ image, isOpen, onClose }: Props) => {
   if (!isOpen) return null;
   return (
     <div

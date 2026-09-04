@@ -1,14 +1,15 @@
 import type { Project } from '@/interfaces';
 import {
+  FeaturedImage,
   FeaturedNavigation,
   FeaturedProjectLabel,
   FeaturedProjectStatusSection,
   FeaturedTitle,
 } from '.';
 import { TechStackList } from '../../components';
-import { FeaturedImage } from './FeaturedImage';
+
 import { useImageViewer } from '@/hooks';
-import { FeaturedImageOverlay } from './FeaturedImageOverlay';
+import { ImageOverlay } from '@/components/custom/ImageOverlay';
 
 interface Props {
   project: Project;
@@ -26,11 +27,7 @@ export const FeaturedProjectCard = ({ project }: Props) => {
         image={project.screenshots?.[0] || null}
         onClick={() => openImage(project.screenshots?.[0] ?? '')}
       />
-      <FeaturedImageOverlay
-        image={image!}
-        onClose={closeImage}
-        isOpen={isOpen}
-      />
+      <ImageOverlay image={image!} onClose={closeImage} isOpen={isOpen} />
       <TechStackList techStack={project.techStack} />
       <FeaturedNavigation url={project.repository} type="repository" />
       <FeaturedNavigation url={project.url} type="page" />
