@@ -4,7 +4,9 @@ import type { Project } from '@/interfaces';
 import { Link } from 'react-router';
 import { ROUTES } from '@/constants/routes';
 
-const data: Project[] = ProjectsData.filter((project) => project.isFeatured);
+const data: Project[] = ProjectsData.filter(
+  (project) => project.isFeatured,
+).reverse();
 
 export const LandingFeaturedProjectsList = () => {
   return (
