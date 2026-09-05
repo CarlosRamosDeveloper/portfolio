@@ -1,6 +1,7 @@
 export type TechArea =
   | 'backend'
-  | 'database'
+  | 'database-non-relational'
+  | 'database-relational'
   | 'devops'
   | 'frontend'
   | 'game-development'

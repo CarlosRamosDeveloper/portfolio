@@ -6,3 +6,6 @@ export type { ProjectStatus } from './ProjectStatus';
 export type { TechArea } from './TechArea';
 export type { TechCategory } from './TechCategory';
 export type { Technologies } from './Technologies';
+export type { TechId } from './TechId';
+
+export type { Technology } from './Technology';
