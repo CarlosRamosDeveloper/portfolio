@@ -1,5 +1,5 @@
 import type { IconType } from 'react-icons/lib';
-import { TechIcon } from './TechIcon';
+import { TechIcon } from '.';
 
 interface Props {
   techName: string;
