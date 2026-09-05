@@ -1,4 +1,4 @@
-import type { Technologies } from './Technologies';
+import type { Technology } from '.';
 
 export interface JobExperience {
   id: number;
@@ -7,7 +7,7 @@ export interface JobExperience {
   subtitle?: string;
   startYear: number;
   endYear: number | null;
-  techStack: Technologies[];
+  techStack: Technology[];
   description: string[];
   isInternship?: boolean;
 }
