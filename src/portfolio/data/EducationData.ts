@@ -12,7 +12,7 @@ export const EducationData: Education[] = [
     techStack: [
       'Angular',
       'AWS',
-      'Css',
+      'CSS',
       'Git',
       'HTML',
       'Java',
@@ -21,7 +21,7 @@ export const EducationData: Education[] = [
       'MySQL',
       'PHP',
       'TypeScript',
-      'Wordpress',
+      'WordPress',
       'XML',
     ],
     description: [

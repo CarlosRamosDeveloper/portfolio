@@ -28,7 +28,7 @@ export const ExperienceData: JobExperience[] = [
     subtitle: 'Formación Profesional Dual en empresa durante 6 meses',
     startYear: 2021,
     endYear: 2022,
-    techStack: ['Java', 'Flutter', 'MySQL', 'Jira', 'Gitlab', 'GitFlow'],
+    techStack: ['Java', 'Flutter', 'MySQL', 'Jira', 'GitLab', 'GitFlow'],
     description: [
       'Formación con Java y Flutter',
       'Migración de aplicación escrita en Xamarin a Flutter',
@@ -50,7 +50,7 @@ export const ExperienceData: JobExperience[] = [
       'PostgreSQL',
       'React',
       'Subversion',
-      'Gitlab',
+      'GitLab',
     ],
     description: [
       'Trabajo en cliente en entorno multidisciplinar',

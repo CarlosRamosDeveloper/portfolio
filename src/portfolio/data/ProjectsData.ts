@@ -30,7 +30,7 @@ export const ProjectsData: Project[] = [
     status: 'abandoned',
     techStack: [
       'Bootstrap',
-      'Css',
+      'CSS',
       'Git',
       'HTML',
       'JavaScript',
