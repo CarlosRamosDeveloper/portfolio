@@ -1,4 +1,4 @@
-import type { EducationType, Project, Technologies } from '.';
+import type { EducationType, Project, Technology } from '.';
 
 export interface Education {
   id: number;
@@ -7,7 +7,7 @@ export interface Education {
   institution: string;
   startYear: number;
   endYear: number | null;
-  techStack: Technologies[];
+  techStack: Technology[];
   projects?: Project[];
   description?: string[];
 }

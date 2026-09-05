@@ -1,6 +1,6 @@
 import type { TechId, Technology } from '@/interfaces';
 
-export const TECHNOLOGIES: Record<TechId, Technology | undefined> = {
+export const TECHNOLOGIES: Record<TechId, Technology> = {
   android: {
     name: 'Android',
     category: 'platform',
