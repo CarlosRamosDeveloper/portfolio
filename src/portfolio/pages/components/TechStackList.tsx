@@ -1,8 +1,8 @@
-import type { Technologies } from '@/interfaces';
+import type { Technology } from '@/interfaces';
 import { Separator, TechCard } from '.';
 
 interface Props {
-  techStack: Technologies[];
+  techStack: Technology[];
 }
 
 export const TechStackList = ({ techStack }: Props) => {
@@ -13,7 +13,7 @@ export const TechStackList = ({ techStack }: Props) => {
       <div className="p-1 bg-card-details">
         <div className="flex flex-wrap gap-2 m-0.5 p-1 justify-between">
           {techStack.map((tech) => (
-            <TechCard key={tech} techName={tech} />
+            <TechCard key={tech.name} techName={tech.name} />
           ))}
         </div>
       </div>
