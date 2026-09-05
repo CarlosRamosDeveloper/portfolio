@@ -8,15 +8,13 @@ interface Props {
 }
 
 export const TechCard = ({ techName, color, icon }: Props) => {
-  console.log('TechCard: ', color);
   return (
-    <>
-      <div
-        className="border bg-muted px-3 py-1 text-sm border-card-secondary-foreground"
-        key={techName}
-      >
-        {icon ? <TechIcon icon={icon} color={color} /> : techName}
-      </div>
-    </>
+    <div
+      className="flex flex-col items-center justify-center border border-card-secondary-foreground bg-muted px-3 py-2 text-sm"
+      key={techName}
+    >
+      {icon && <TechIcon icon={icon} color={color} />}
+      <span className="mt-2">{techName}</span>
+    </div>
   );
 };

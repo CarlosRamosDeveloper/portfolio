@@ -7,6 +7,5 @@ interface Props {
 }
 
 export const TechIcon = ({ icon: Icon, color }: Props) => {
-  console.log(color);
-  return <Icon className={cn('size-10')} style={{ color }} />;
+  return <Icon className={cn('size-10 m-2')} style={{ color }} />;
 };
