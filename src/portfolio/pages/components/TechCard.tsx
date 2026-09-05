@@ -1,15 +1,21 @@
+import type { IconType } from 'react-icons/lib';
+import { TechIcon } from './TechIcon';
+
 interface Props {
   techName: string;
+  icon?: IconType;
+  color: string;
 }
 
-export const TechCard = ({ techName }: Props) => {
+export const TechCard = ({ techName, color, icon }: Props) => {
+  console.log('TechCard: ', color);
   return (
     <>
       <div
-        className="rounded-full border bg-muted px-3 py-1 text-sm border-card-secondary-foreground"
+        className="border bg-muted px-3 py-1 text-sm border-card-secondary-foreground"
         key={techName}
       >
-        {techName}
+        {icon ? <TechIcon icon={icon} color={color} /> : techName}
       </div>
     </>
   );

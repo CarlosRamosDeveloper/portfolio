@@ -13,6 +13,7 @@ export const EducationData: Education[] = [
     techStack: [
       TECHNOLOGIES.angular,
       TECHNOLOGIES.aws,
+      TECHNOLOGIES.bootstrap,
       TECHNOLOGIES.css,
       TECHNOLOGIES.git,
       TECHNOLOGIES.html,
@@ -70,6 +71,7 @@ export const EducationData: Education[] = [
       TECHNOLOGIES.kotlin,
       TECHNOLOGIES.mongodb,
       TECHNOLOGIES.mysql,
+      TECHNOLOGIES.postgresql,
       TECHNOLOGIES.room,
       TECHNOLOGIES.sqlite,
     ],

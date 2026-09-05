@@ -13,7 +13,12 @@ export const TechStackList = ({ techStack }: Props) => {
       <div className="p-1 bg-card-details">
         <div className="flex flex-wrap gap-2 m-0.5 p-1 justify-between">
           {techStack.map((tech) => (
-            <TechCard key={tech.name} techName={tech.name} />
+            <TechCard
+              key={tech.name}
+              techName={tech.name}
+              color={tech.color || ''}
+              icon={tech.icon}
+            />
           ))}
         </div>
       </div>
