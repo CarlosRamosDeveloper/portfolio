@@ -1,4 +1,4 @@
-import type { ProjectStatus, Technologies } from '.';
+import type { ProjectStatus, Technology } from '.';
 
 export type Project = {
   id: number;
@@ -8,7 +8,7 @@ export type Project = {
   shortDescription: string;
   description: string[];
   screenshots: string[] | null;
-  techStack: Technologies[];
+  techStack: Technology[];
   isFeatured: boolean;
   video?: string | null;
   status: ProjectStatus;
