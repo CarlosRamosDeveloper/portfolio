@@ -1,9 +1,9 @@
-import { EXPERIENCE_TEXT } from '@/constants/pages';
-import { ExperienceCardsList } from './components';
-
 import { ExperienceData } from '@/portfolio/data';
-import type { Background } from '../components/BackgroundCard';
-import { BackgroundCardsList } from '../components/BackgroundCardsList';
+import { EXPERIENCE_TEXT } from '@/constants/pages';
+import {
+  BackgroundCardsList,
+  type Background,
+} from '../components/backgroundCard';
 
 const data: Background[] = [
   ...ExperienceData.sort()
@@ -20,7 +20,6 @@ export const ExperiencePage = () => {
       <h2 className="text-center text-2xl font-semibold">
         {EXPERIENCE_TEXT.title}
       </h2>
-      <ExperienceCardsList />
       <BackgroundCardsList background={data} />
     </div>
   );

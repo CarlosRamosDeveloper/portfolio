@@ -1,8 +1,9 @@
 import { EducationData } from '@/portfolio/data';
-import type { Background } from '../components/BackgroundCard';
-import { EducationCardList } from './components';
 import { EDUCATION_TEXT } from '@/constants/pages';
-import { BackgroundCardsList } from '../components';
+import {
+  BackgroundCardsList,
+  type Background,
+} from '../components/backgroundCard';
 
 const data: Background[] = [
   ...EducationData.sort()
@@ -19,7 +20,6 @@ export const EducationPage = () => {
       <h2 className="text-center text-2xl font-semibold">
         {EDUCATION_TEXT.title}
       </h2>
-      <EducationCardList />
       <BackgroundCardsList background={data} />
     </div>
   );

@@ -1,16 +1,15 @@
 import type { Education, JobExperience } from '@/interfaces';
-import { DateLabel } from './DateLabel';
+import { DateLabel, TechStackList } from '..';
 import {
   ExperienceSubtitle,
   ExperienceWorkingPositionText,
-} from '../experience/components';
+} from '../../experience/components';
 import {
   EducationalProjectList,
   EducationLabelType,
   InstitutionLabel,
-} from '../education/components';
-import { TechStackList } from './TechStackList';
-import { DescriptionList } from './DescriptionList';
+} from '../../education/components';
+import { DescriptionList } from '.';
 
 export type Background =
   | { type: 'job'; data: JobExperience }

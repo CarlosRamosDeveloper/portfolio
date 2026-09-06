@@ -1,7 +1,7 @@
-import { EducationalProjectItem } from './EducationalProjectItem';
 import { Separator } from '../../components';
 import type { Project } from '@/interfaces';
 import { EDUCATION_TEXT } from '@/constants/pages';
+import { EducationalProjectItem } from '../../components/backgroundCard';
 
 interface Props {
   projects: Project[];
