@@ -7,7 +7,6 @@ const projectsList: Project[] = ProjectsData.sort().reverse();
 export const ProjectsPage = () => {
   return (
     <div>
-      {projectsList.length}
       <ProjectSummaryList projects={projectsList} />
     </div>
   );

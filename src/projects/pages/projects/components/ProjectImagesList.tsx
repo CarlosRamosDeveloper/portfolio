@@ -19,21 +19,20 @@ export const ProjectImagesList = ({ images }: Props) => {
     );
 
   const handleToggle = () => {
-    console.log('Toggle! ', isOpen);
     setIsOpen((prev) => !prev);
   };
 
   return (
     <div onClick={handleToggle}>
-      {isOpen ? (
+      {!isOpen ? (
         <ProjectSummarySubtitle
           text={`${PROJECT_TEXT.seeImagesStart}${images.length}${PROJECT_TEXT.seeImagesEnd}`}
           addTopMargin={true}
         />
       ) : (
         <>
-          {images.map((image) => (
-            <FeaturedImage image={image || null} />
+          {images.map((image, index) => (
+            <FeaturedImage image={image || null} key={index} />
           ))}
         </>
       )}
