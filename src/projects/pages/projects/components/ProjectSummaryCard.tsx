@@ -28,7 +28,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
         <ProjectSummarySubtitle
           text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
         />
-        <ProjectNavigation />
+        <ProjectNavigation projectUrl={project.idSlug} />
       </div>
       <TechStackList techStack={shortStack} maxTechPerRow={maxTech} />
       <ProjectImagesList images={project.screenshots || []} />
