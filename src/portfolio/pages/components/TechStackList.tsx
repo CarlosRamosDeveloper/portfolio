@@ -40,18 +40,21 @@ export const TechStackList = ({
           ))}
         </div>
 
-        {techStack.length > maxTechRow && (
-          <button
-            type="button"
-            onClick={() => setIsExpanded((previous) => !previous)}
-          >
-            {isExpanded
-              ? TECHSTACK_LABEL.viewLessButton
-              : onlyRemainingOneTech
-                ? TECHSTACK_LABEL.oneTechRemaining
-                : `${TECHSTACK_LABEL.moreTechRemainingStart} ${remainingTech} ${TECHSTACK_LABEL.moreTechRemainingEnd}`}
-          </button>
-        )}
+        <div className="flex justify-center bg-card-details p-1">
+          {techStack.length > maxTechRow && (
+            <button
+              type="button"
+              onClick={() => setIsExpanded((previous) => !previous)}
+              className="bg-accent p-1 mb-1 text-sm border justify-center flex flex-1"
+            >
+              {isExpanded
+                ? TECHSTACK_LABEL.viewLessButton
+                : onlyRemainingOneTech
+                  ? TECHSTACK_LABEL.oneTechRemaining
+                  : `${TECHSTACK_LABEL.moreTechRemainingStart} ${remainingTech} ${TECHSTACK_LABEL.moreTechRemainingEnd}`}
+            </button>
+          )}
+        </div>
       </div>
     </>
   );
