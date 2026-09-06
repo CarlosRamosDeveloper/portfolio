@@ -16,7 +16,7 @@ export const ProjectSubtitleSection = ({
 
   return (
     <div>
-      <div className="flex flex-1 justify-between m-3">
+      <div className="flex flex-1 justify-between m-3 text-xl">
         <div>{status}</div>
         {repository && (
           <div

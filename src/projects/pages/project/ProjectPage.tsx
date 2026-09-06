@@ -18,7 +18,7 @@ export const ProjectPage = () => {
   if (!project) return <NonFoundProject />;
 
   return (
-    <div>
+    <div className="my-6 w-full max-w-4xl flex flex-col mx-auto">
       <ProjectTitle title={project.name} />
       <ProjectSubtitleSection
         status={STATUS_LABEL[project.status]}

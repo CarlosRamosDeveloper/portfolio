@@ -8,7 +8,7 @@ interface Props {
 export const ProjectDescriptionList = ({ descriptionList }: Props) => {
   if (descriptionList.length === 0) return null;
   return (
-    <div>
+    <div className="my-3">
       <h3 className="text text-2xl text-center mt-2 mb-0">
         {PROJECT_TEXT.projectDescription}
       </h3>

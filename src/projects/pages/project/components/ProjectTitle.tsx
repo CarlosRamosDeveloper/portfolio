@@ -3,5 +3,5 @@ interface Props {
 }
 
 export const ProjectTitle = ({ title }: Props) => {
-  return <div className="text-3xl text-center">{title}</div>;
+  return <div className="text-4xl text-center">{title}</div>;
 };
