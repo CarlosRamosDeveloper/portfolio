@@ -1,16 +1,16 @@
 import { EXPERIENCE_TEXT } from '@/constants/pages';
 import { ExperienceCardsList } from './components';
 
-import { EducationData } from '@/portfolio/data';
+import { ExperienceData } from '@/portfolio/data';
 import type { Background } from '../components/BackgroundCard';
 import { BackgroundCardsList } from '../components/BackgroundCardsList';
 
 const data: Background[] = [
-  ...EducationData.sort()
+  ...ExperienceData.sort()
     .reverse()
-    .map((education) => ({
-      type: 'education' as const,
-      data: education,
+    .map((experience) => ({
+      type: 'job' as const,
+      data: experience,
     })),
 ];
 
