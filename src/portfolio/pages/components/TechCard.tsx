@@ -10,11 +10,15 @@ interface Props {
 export const TechCard = ({ techName, color, icon }: Props) => {
   return (
     <div
-      className="flex flex-col items-center justify-center border border-card-secondary-foreground bg-muted px-3 py-2 text-sm"
+      className="flex min-h-25 flex-col items-center justify-center border border-card-secondary-foreground bg-muted px-3 py-2 text-sm"
       key={techName}
     >
-      {icon && <TechIcon icon={icon} color={color} />}
-      <span className="mt-2">{techName}</span>
+      <div className="flex h-14 items-center justify-center">
+        {icon && <TechIcon icon={icon} color={color} />}
+      </div>
+      <span className="flex h-10 items-center justify-center text-center">
+        {techName}
+      </span>
     </div>
   );
 };
