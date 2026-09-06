@@ -1,14 +1,11 @@
 import type { Education, JobExperience } from '@/interfaces';
 import { DateLabel, TechStackList } from '..';
-
+import { DescriptionList, InstitutionLabel } from '.';
 import {
-  DescriptionList,
-  EducationalProjectList,
-  EducationLabelType,
   ExperienceSubtitle,
   ExperienceWorkingPositionText,
-  InstitutionLabel,
-} from '.';
+} from './experience';
+import { EducationLabelType, EducationalProjectList } from './education';
 
 export type Background =
   | { type: 'job'; data: JobExperience }
@@ -51,7 +48,6 @@ export const BackgroundCard = ({ experience }: Props) => {
       </div>
       <TechStackList techStack={data.techStack} />
       <DescriptionList descriptions={data.description || []} />
-      {/* education: Proyectos */}
       {type === 'education' && (
         <EducationalProjectList projects={data.projects || []} />
       )}
