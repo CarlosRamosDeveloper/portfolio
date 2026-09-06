@@ -17,6 +17,7 @@ export const ProjectsData: Project[] = [
   // },
   {
     id: 1,
+    idSlug: 'rpg-browser',
     name: 'RPG-Navegador',
     shortDescription:
       'Juego de navegador desarrollado como proyecto final de DAW',
@@ -46,6 +47,7 @@ export const ProjectsData: Project[] = [
   },
   {
     id: 2,
+    idSlug: 'escape-from-purgatory',
     name: 'Escape From Purgatory',
     shortDescription: 'Videojuego Metroidvania en 2D',
     description: [
@@ -75,6 +77,7 @@ export const ProjectsData: Project[] = [
   },
   {
     id: 3,
+    idSlug: 'chests-please',
     name: 'Chests, Please',
     shortDescription:
       'Juego 3D inspirado en Papers, Please ambientado en las aduanas de una ciudad medieval',
@@ -110,6 +113,7 @@ export const ProjectsData: Project[] = [
   },
   {
     id: 4,
+    idSlug: 'password-app-manager',
     name: 'PasswordAppManager',
     shortDescription:
       'Aplicación android para generación y gestión de contraseñas',

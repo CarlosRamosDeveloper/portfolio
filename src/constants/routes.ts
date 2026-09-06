@@ -6,4 +6,6 @@ export const ROUTES = {
   experience: '/experience',
   featured: '/featured',
   projects: '/projects',
+  projectId: ':idSlug',
+  project: (idSlug: string) => `/projects/${idSlug}`,
 };

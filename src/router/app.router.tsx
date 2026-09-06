@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router';
+import { createBrowserRouter, Navigate } from 'react-router';
 
 import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
 import {
@@ -11,7 +11,7 @@ import {
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
 import { ProjectsLayout } from '@/projects/layout/ProjectsLayout';
-import { ProjectsPage } from '@/projects/pages';
+import { ProjectPage, ProjectsPage } from '@/projects/pages';
 
 export const appRouter = createBrowserRouter([
   {
@@ -47,6 +47,13 @@ export const appRouter = createBrowserRouter([
   {
     path: ROUTES.projects,
     element: <ProjectsLayout />,
-    children: [{ index: true, element: <ProjectsPage /> }],
+    children: [
+      { index: true, element: <ProjectsPage /> },
+      { path: ROUTES.projectId, element: <ProjectPage /> },
+    ],
+  },
+  {
+    path: '*',
+    element: <Navigate to="/" />,
   },
 ]);
