@@ -5,24 +5,23 @@ import { TECHSTACK_LABEL } from '@/constants';
 
 interface Props {
   techStack: Technology[];
+  maxTechRow?: number;
 }
 
-const techMaxValue = 5;
-
-export const TechStackList = ({ techStack }: Props) => {
+export const TechStackList = ({ techStack, maxTechRow = 5 }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (techStack.length === 0) return;
 
-  const visibleTech = isExpanded ? techStack : techStack.slice(0, techMaxValue);
-  const remainingTech = techStack.length - techMaxValue;
+  const visibleTech = isExpanded ? techStack : techStack.slice(0, maxTechRow);
+  const remainingTech = techStack.length - maxTechRow;
   const onlyRemainingOneTech = remainingTech === 1;
 
   return (
     <>
       <Separator />
       <div className="p-1 bg-card-details">
-        <div className="flex flex-wrap gap-2 m-0.5 p-1 justify-between">
+        <div className="m-0.5 grid grid-cols-5 gap-2 p-1">
           {visibleTech.map((tech) => (
             <TechCard
               key={tech.name}
@@ -33,7 +32,7 @@ export const TechStackList = ({ techStack }: Props) => {
           ))}
         </div>
 
-        {techStack.length > techMaxValue && (
+        {techStack.length > maxTechRow && (
           <button
             type="button"
             onClick={() => setIsExpanded((previous) => !previous)}
