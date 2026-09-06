@@ -5,10 +5,13 @@ import { TECHSTACK_LABEL } from '@/constants';
 
 interface Props {
   techStack: Technology[];
-  maxTechRow?: number;
+  maxTechPerRow?: number;
 }
 
-export const TechStackList = ({ techStack, maxTechRow = 5 }: Props) => {
+export const TechStackList = ({
+  techStack,
+  maxTechPerRow: maxTechRow = 5,
+}: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (techStack.length === 0) return;
@@ -21,7 +24,12 @@ export const TechStackList = ({ techStack, maxTechRow = 5 }: Props) => {
     <>
       <Separator />
       <div className="p-1 bg-card-details">
-        <div className="m-0.5 grid grid-cols-5 gap-2 p-1">
+        <div
+          className="m-0.5 grid gap-2 p-1"
+          style={{
+            gridTemplateColumns: `repeat(${maxTechRow}, minmax(0, 1fr))`,
+          }}
+        >
           {visibleTech.map((tech) => (
             <TechCard
               key={tech.name}
