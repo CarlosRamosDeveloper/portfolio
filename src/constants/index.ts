@@ -3,3 +3,4 @@ export { EXTERNAL_URL, REPOSITORIES, VIDEO_URLS } from './externalUrls';
 export { ROUTES } from './routes';
 export { STATUS_LABEL } from './status.label';
 export { TECHNOLOGIES } from './Technologies';
+export { TECHSTACK_LABEL } from './techstack.label';

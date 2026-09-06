@@ -27,7 +27,7 @@ export const EducationalProjectItem = ({ project }: Props) => {
       {isOpen && (
         <div>
           <EducationalRepositoryItem repositoryUrl={project.repository} />
-          <TechStackList techStack={project.techStack} />
+          <TechStackList techStack={project.techStack} maxTechPerRow={3} />
           <DescriptionList descriptions={project.description} />
         </div>
       )}
