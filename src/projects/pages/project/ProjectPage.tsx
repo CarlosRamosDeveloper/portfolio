@@ -8,7 +8,7 @@ import {
 } from './components';
 import { TechStackList } from '@/portfolio/pages/components';
 import { STATUS_LABEL } from '@/constants';
-import { MediaSection } from './components/media';
+import { ProjectGallery } from './components/gallery';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();
@@ -27,9 +27,8 @@ export const ProjectPage = () => {
       />
       <TechStackList techStack={project.techStack} />
       <ProjectDescriptionList descriptionList={project.description} />
-      <MediaSection
+      <ProjectGallery
         images={project.screenshots || []}
-        url={project.url || null}
         videos={project.video || null}
       />
     </div>
