@@ -2,6 +2,7 @@ import { ProjectsData } from '@/portfolio/data/ProjectsData';
 import { useParams } from 'react-router';
 import {
   NonFoundProject,
+  ProjectDescriptionList,
   ProjectSubtitleSection,
   ProjectTitle,
 } from './components';
@@ -25,7 +26,7 @@ export const ProjectPage = () => {
         repository={project.repository}
       />
       <TechStackList techStack={project.techStack} />
-      {project.description.length}
+      <ProjectDescriptionList descriptionList={project.description} />
       <MediaSection
         images={project.screenshots || []}
         url={project.url || null}
