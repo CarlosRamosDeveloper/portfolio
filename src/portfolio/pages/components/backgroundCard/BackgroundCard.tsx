@@ -2,14 +2,12 @@ import type { Education, JobExperience } from '@/interfaces';
 import { DateLabel, TechStackList } from '..';
 
 import {
-  EducationLabelType,
-  InstitutionLabel,
-} from '../../education/components';
-import {
   DescriptionList,
   EducationalProjectList,
+  EducationLabelType,
   ExperienceSubtitle,
   ExperienceWorkingPositionText,
+  InstitutionLabel,
 } from '.';
 
 export type Background =

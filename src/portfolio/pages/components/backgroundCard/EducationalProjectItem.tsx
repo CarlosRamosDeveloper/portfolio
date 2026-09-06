@@ -3,10 +3,10 @@ import { useState } from 'react';
 import type { Project } from '@/interfaces';
 import { Separator, TechStackList } from '..';
 import {
+  DescriptionList,
   EducationalRepositoryItem,
   EducationProjectTitle,
-} from '../../education/components';
-import { DescriptionList } from '.';
+} from '.';
 
 interface Props {
   project: Project;

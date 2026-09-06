@@ -1,9 +1,12 @@
-export { ExperienceSubtitle } from './ExperienceSubtitle';
-export { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
-
-export { EducationalProjectList } from './EducationalProjectList';
 export { BackgroundCard, type Background } from './BackgroundCard';
 export { BackgroundCardsList } from './BackgroundCardsList';
 export { DescriptionLabel } from './DescriptionLabel';
 export { DescriptionList } from './DescriptionList';
 export { EducationalProjectItem } from './EducationalProjectItem';
+export { EducationalProjectList } from './EducationalProjectList';
+export { EducationalRepositoryItem } from './EducationalRepositoryItem';
+export { EducationLabelType } from './EducationLabelType';
+export { EducationProjectTitle } from './EducationProjectTitle';
+export { ExperienceSubtitle } from './ExperienceSubtitle';
+export { ExperienceWorkingPositionText } from './ExperienceWorkingPositionText';
+export { InstitutionLabel } from './InstitutionLabel';
