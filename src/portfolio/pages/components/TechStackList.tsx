@@ -39,13 +39,12 @@ export const TechStackList = ({
             />
           ))}
         </div>
-
         <div className="flex justify-center bg-card-details p-1">
           {techStack.length > maxTechRow && (
             <button
+              className="bg-accent p-1 mb-1 text-sm border justify-center flex flex-1"
               type="button"
               onClick={() => setIsExpanded((previous) => !previous)}
-              className="bg-accent p-1 mb-1 text-sm border justify-center flex flex-1"
             >
               {isExpanded
                 ? TECHSTACK_LABEL.viewLessButton
