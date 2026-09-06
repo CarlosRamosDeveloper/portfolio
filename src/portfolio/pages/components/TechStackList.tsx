@@ -39,7 +39,7 @@ export const TechStackList = ({
             />
           ))}
         </div>
-
+        {/*  */}
         <div className="flex justify-center bg-card-details p-1">
           {techStack.length > maxTechRow && (
             <button
