@@ -1,10 +1,9 @@
 import type { Project } from '@/interfaces';
 import { TechStackList } from '@/portfolio/pages/components';
-import {
-  FeaturedImage,
-  FeaturedProjectStatusSection,
-} from '@/portfolio/pages/featured/components';
+import { FeaturedProjectStatusSection } from '@/portfolio/pages/featured/components';
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
+import { ProjectImagesList } from './ProjectImagesList';
+import { PROJECT_TEXT } from '@/constants/projects/pages';
 
 interface Props {
   project: Project;
@@ -25,15 +24,10 @@ export const ProjectSummaryCard = ({ project }: Props) => {
 
       <ProjectSummarySubtitle text={project.shortDescription} />
       <ProjectSummarySubtitle
-        text={`Total de tecnologías: ${project.techStack.length}`}
+        text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
       />
       <TechStackList techStack={shortStack} maxTechPerRow={maxTech} />
-      <span>Total de imagenes: 3 | Ver imagenes</span>
-      <div>
-        {project.screenshots?.map((image) => (
-          <FeaturedImage image={image || null} />
-        ))}
-      </div>
+      <ProjectImagesList images={project.screenshots || []} />
     </div>
   );
 };
