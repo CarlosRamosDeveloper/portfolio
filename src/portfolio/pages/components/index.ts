@@ -1,3 +1,5 @@
+export { BackgroundCard } from './BackgroundCard';
+export { BackgroundCardsList } from './BackgroundCardsList';
 export { DateLabel } from './DateLabel';
 export { DescriptionLabel } from './DescriptionLabel';
 export { DescriptionList } from './DescriptionList';

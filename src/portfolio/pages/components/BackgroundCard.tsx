@@ -1,4 +1,17 @@
-export const ExperienceCard = () => {
+import type { Education, JobExperience } from '@/interfaces';
+
+export type Background =
+  | { type: 'job'; data: JobExperience }
+  | {
+      type: 'education';
+      data: Education;
+    };
+
+interface Props {
+  experience: Background;
+}
+
+export const BackgroundCard = ({ experience }: Props) => {
   return (
     <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">

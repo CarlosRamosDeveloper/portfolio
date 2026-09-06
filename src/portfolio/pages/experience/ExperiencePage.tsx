@@ -1,6 +1,19 @@
 import { EXPERIENCE_TEXT } from '@/constants/pages';
 import { ExperienceCardsList } from './components';
 
+import { EducationData } from '@/portfolio/data';
+import type { Background } from '../components/BackgroundCard';
+import { BackgroundCardsList } from '../components/BackgroundCardsList';
+
+const data: Background[] = [
+  ...EducationData.sort()
+    .reverse()
+    .map((education) => ({
+      type: 'education' as const,
+      data: education,
+    })),
+];
+
 export const ExperiencePage = () => {
   return (
     <div className="w-full">
@@ -8,6 +21,7 @@ export const ExperiencePage = () => {
         {EXPERIENCE_TEXT.title}
       </h2>
       <ExperienceCardsList />
+      <BackgroundCardsList background={data} />
     </div>
   );
 };
