@@ -2,6 +2,7 @@ import type { ProjectStatus, Technology } from '.';
 
 export type Project = {
   id: number;
+  idSlug: string;
   name: string;
   repository?: string;
   url?: string | null;
