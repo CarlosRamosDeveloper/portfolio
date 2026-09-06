@@ -4,6 +4,7 @@ import {
   ExperienceSubtitle,
   ExperienceWorkingPositionText,
 } from '../experience/components';
+import { EducationLabelType, InstitutionLabel } from '../education/components';
 
 export type Background =
   | { type: 'job'; data: JobExperience }
@@ -36,11 +37,13 @@ export const BackgroundCard = ({ experience }: Props) => {
           <ExperienceSubtitle text={data.subtitle} />
         </>
       )}
-      {/* job: working possition */}
-      {/* job: experience subtitle */}
       <div className="flex flex-1 justify-between">
-        {/* education: Centro educativo */}
-        {/* education:Tipo de educación */}
+        {type === 'education' && (
+          <>
+            <InstitutionLabel institutionName={data.institution} />
+            <EducationLabelType type={data.type} />
+          </>
+        )}
       </div>
       {/* Tech stack */}
       {/* Descripción */}
