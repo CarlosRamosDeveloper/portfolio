@@ -4,6 +4,7 @@ import { FeaturedProjectStatusSection } from '@/portfolio/pages/featured/compone
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
 import { ProjectImagesList } from './ProjectImagesList';
 import { PROJECT_TEXT } from '@/constants/projects/pages';
+import { ProjectNavigation } from './ProjectNavigation';
 
 interface Props {
   project: Project;
@@ -23,9 +24,12 @@ export const ProjectSummaryCard = ({ project }: Props) => {
       </div>
 
       <ProjectSummarySubtitle text={project.shortDescription} />
-      <ProjectSummarySubtitle
-        text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
-      />
+      <div className="flex justify-between">
+        <ProjectSummarySubtitle
+          text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
+        />
+        <ProjectNavigation />
+      </div>
       <TechStackList techStack={shortStack} maxTechPerRow={maxTech} />
       <ProjectImagesList images={project.screenshots || []} />
     </div>

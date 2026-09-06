@@ -4,4 +4,5 @@ export const PROJECT_TEXT = {
   noImages: 'Este proyecto no tiene imágenes',
   seeImagesStart: 'Ver ',
   seeImagesEnd: ' imágenes',
+  navigateToProject: 'Ir al proyecto',
 };
