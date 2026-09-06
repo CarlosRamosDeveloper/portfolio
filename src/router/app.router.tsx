@@ -10,6 +10,8 @@ import {
 } from '@/portfolio/pages';
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
+import { ProjectsLayout } from '@/projects/layout/ProjectsLayout';
+import { ProjectsPage } from '@/projects/pages';
 
 export const appRouter = createBrowserRouter([
   {
@@ -41,5 +43,10 @@ export const appRouter = createBrowserRouter([
         element: <ContactPage />,
       },
     ],
+  },
+  {
+    path: ROUTES.projects,
+    element: <ProjectsLayout />,
+    children: [{ index: true, element: <ProjectsPage /> }],
   },
 ]);
