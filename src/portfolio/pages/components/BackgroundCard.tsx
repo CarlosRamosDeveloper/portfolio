@@ -4,7 +4,11 @@ import {
   ExperienceSubtitle,
   ExperienceWorkingPositionText,
 } from '../experience/components';
-import { EducationLabelType, InstitutionLabel } from '../education/components';
+import {
+  EducationalProjectList,
+  EducationLabelType,
+  InstitutionLabel,
+} from '../education/components';
 import { TechStackList } from './TechStackList';
 import { DescriptionList } from './DescriptionList';
 
@@ -50,6 +54,9 @@ export const BackgroundCard = ({ experience }: Props) => {
       <TechStackList techStack={data.techStack} />
       <DescriptionList descriptions={data.description || []} />
       {/* education: Proyectos */}
+      {type === 'education' && (
+        <EducationalProjectList projects={data.projects || []} />
+      )}
     </div>
   );
 };
