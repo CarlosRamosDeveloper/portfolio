@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
-import { DescriptionList, Separator, TechStackList } from '../../components';
-import { EducationalRepositoryItem, EducationProjectTitle } from '.';
 import type { Project } from '@/interfaces';
+import { Separator, TechStackList } from '../..';
+import { EducationalRepositoryItem, EducationProjectTitle } from '.';
+import { DescriptionList } from '..';
 
 interface Props {
   project: Project;

@@ -1,5 +1,5 @@
 import { EDUCATION_TEXT } from '@/constants/pages';
-import { Separator } from '../../components';
+import { Separator } from '../..';
 
 interface Props {
   repositoryUrl?: string;

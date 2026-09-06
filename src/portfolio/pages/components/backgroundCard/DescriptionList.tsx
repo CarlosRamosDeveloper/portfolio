@@ -1,4 +1,5 @@
-import { DescriptionLabel, Separator } from '.';
+import { DescriptionLabel } from '.';
+import { Separator } from '..';
 
 interface Props {
   descriptions: string[];

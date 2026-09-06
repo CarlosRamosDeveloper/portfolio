@@ -1,5 +1,18 @@
+import {
+  BackgroundCardsList,
+  type Background,
+} from '../components/backgroundCard';
+import { ExperienceData } from '@/portfolio/data';
 import { EXPERIENCE_TEXT } from '@/constants/pages';
-import { ExperienceCardsList } from './components';
+
+const data: Background[] = [
+  ...ExperienceData.sort()
+    .reverse()
+    .map((experience) => ({
+      type: 'job' as const,
+      data: experience,
+    })),
+];
 
 export const ExperiencePage = () => {
   return (
@@ -7,7 +20,7 @@ export const ExperiencePage = () => {
       <h2 className="text-center text-2xl font-semibold">
         {EXPERIENCE_TEXT.title}
       </h2>
-      <ExperienceCardsList />
+      <BackgroundCardsList background={data} />
     </div>
   );
 };
