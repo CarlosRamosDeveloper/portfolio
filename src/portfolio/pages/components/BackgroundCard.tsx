@@ -1,5 +1,9 @@
 import type { Education, JobExperience } from '@/interfaces';
 import { DateLabel } from './DateLabel';
+import {
+  ExperienceSubtitle,
+  ExperienceWorkingPositionText,
+} from '../experience/components';
 
 export type Background =
   | { type: 'job'; data: JobExperience }
@@ -23,9 +27,15 @@ export const BackgroundCard = ({ experience }: Props) => {
           {type === 'job' && data.company}
         </div>
         <DateLabel start={data.startYear} end={data.endYear} />
-        {/* education: Titulo // job: Empresa */}
-        {/* Date label */}
       </div>
+      {type === 'job' && (
+        <>
+          <ExperienceWorkingPositionText
+            workingPosition={data.workingPosition}
+          />
+          <ExperienceSubtitle text={data.subtitle} />
+        </>
+      )}
       {/* job: working possition */}
       {/* job: experience subtitle */}
       <div className="flex flex-1 justify-between">
