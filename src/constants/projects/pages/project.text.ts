@@ -5,4 +5,5 @@ export const PROJECT_TEXT = {
   seeImagesStart: 'Ver ',
   seeImagesEnd: ' imágenes',
   navigateToProject: 'Ir al proyecto',
+  navigateToRepository: 'Ir al repositorio',
 };

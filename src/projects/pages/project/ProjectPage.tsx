@@ -7,6 +7,7 @@ import {
 } from './components';
 import { TechStackList } from '@/portfolio/pages/components';
 import { STATUS_LABEL } from '@/constants';
+import { MediaSection } from './components/media';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();
@@ -21,15 +22,15 @@ export const ProjectPage = () => {
       <ProjectSubtitleSection
         status={STATUS_LABEL[project.status]}
         subtitle={project.shortDescription}
+        repository={project.repository}
       />
       <TechStackList techStack={project.techStack} />
-      <div>{project.description.length}</div>
-      <div>
-        <span>Multimedia</span>
-        <span>Galería</span>
-        {project.url}
-        {project.video}
-      </div>
+      {project.description.length}
+      <MediaSection
+        images={project.screenshots || []}
+        url={project.url || null}
+        videos={project.video || null}
+      />
     </div>
   );
 };
