@@ -8,7 +8,7 @@ export const FeaturedImage = ({ image, onClick }: Props) => {
   return (
     <img
       src={image}
-      alt="Imagen del proyecto"
+      alt={image}
       className="mx-auto max-h-50 object-contain"
       onClick={onClick}
     />
