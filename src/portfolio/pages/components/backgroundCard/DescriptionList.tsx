@@ -15,7 +15,7 @@ export const DescriptionList = ({ descriptions }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const hasLongDescription = descriptions.length > longDescriptionLines;
-  const visibleDescription = isExpanded
+  const visibleDescription = !isExpanded
     ? descriptions.slice(0, longDescriptionLines)
     : descriptions;
 
@@ -33,8 +33,8 @@ export const DescriptionList = ({ descriptions }: Props) => {
         {hasLongDescription && (
           <button onClick={handleToggleVisibility}>
             {isExpanded
-              ? PORTFOLIO_SHARED_TEXT.buttonViewMore
-              : PORTFOLIO_SHARED_TEXT.buttonViewLess}
+              ? PORTFOLIO_SHARED_TEXT.buttonViewLess
+              : PORTFOLIO_SHARED_TEXT.buttonViewMore}
           </button>
         )}
       </div>
