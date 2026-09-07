@@ -2,13 +2,13 @@ import { GalleryButton, GalleryThumbnail } from '.';
 
 interface Props {
   images: string[];
-  index: number;
+  currentIndex: number;
   onChange: (index: number) => void;
 }
 
-export const GallerySlider = ({ images, index, onChange }: Props) => {
+export const GallerySlider = ({ images, currentIndex, onChange }: Props) => {
   const handlePrevItem = () => {
-    onChange(index === 0 ? images.length - 1 : index - 1);
+    onChange(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
   };
 
   const handleCurrentItem = (index: number) => {
@@ -16,7 +16,7 @@ export const GallerySlider = ({ images, index, onChange }: Props) => {
   };
 
   const handleNextItem = () => {
-    onChange(index === images.length - 1 ? 0 : index + 1);
+    onChange(currentIndex === images.length - 1 ? 0 : currentIndex + 1);
   };
 
   return (
@@ -26,6 +26,7 @@ export const GallerySlider = ({ images, index, onChange }: Props) => {
         {images.map((image, index) => (
           <GalleryThumbnail
             image={image}
+            isSelected={currentIndex === index}
             onClick={() => handleCurrentItem(index)}
             key={index}
           />
