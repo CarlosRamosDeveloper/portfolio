@@ -1,12 +1,19 @@
+import { cn } from '@/lib/utils';
+
 interface Props {
   label: string;
   onClick: () => void;
+  location: 'left' | 'right';
 }
 
-export const GalleryButton = ({ label, onClick }: Props) => {
+export const GalleryButton = ({ label, onClick, location }: Props) => {
   return (
     <button
-      className="p-4 m-3 cursor-pointer bg-red-500"
+      className={cn(
+        'p-4 m-3 cursor-pointer bg-accent',
+        location === 'left' && 'rounded-l-xl',
+        location === 'right' && 'rounded-e-xl',
+      )}
       type="button"
       onClick={onClick}
     >
