@@ -16,9 +16,6 @@ export const PortfolioNavBar = () => {
         <NavigateButton path={ROUTES.education} label={NAVBAR_TEXT.education} />
       </div>
       <div>
-        <NavigateButton path={ROUTES.featured} label={NAVBAR_TEXT.featured} />
-      </div>
-      <div>
         <NavigateButton path={ROUTES.about} label={NAVBAR_TEXT.about} />
       </div>
       <div>
