@@ -7,7 +7,6 @@ interface Props {
 }
 
 export const ProjectNavigation = ({ projectUrl }: Props) => {
-  console.log(projectUrl);
   return (
     // Cambiar el color del enlace
     // Aplicar el enlace a la página del proyecto

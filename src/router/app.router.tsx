@@ -27,10 +27,6 @@ export const appRouter = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: ROUTES.featured,
-        element: <FeaturedPage />,
-      },
-      {
         path: ROUTES.experience,
         element: <ExperiencePage />,
       },
@@ -48,7 +44,11 @@ export const appRouter = createBrowserRouter([
     path: ROUTES.projects,
     element: <ProjectsLayout />,
     children: [
-      { index: true, element: <ProjectsPage /> },
+      { path: ROUTES.projects, element: <ProjectsPage /> },
+      {
+        path: ROUTES.featured,
+        element: <FeaturedPage />,
+      },
       { path: ROUTES.projectId, element: <ProjectPage /> },
     ],
   },

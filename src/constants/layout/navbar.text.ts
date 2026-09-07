@@ -4,4 +4,5 @@ export const NAVBAR_TEXT = {
   education: 'Formación',
   experience: 'Experiencia Laboral',
   featured: 'Proyectos Destacados',
+  projects: 'Todos los Proyectos',
 };

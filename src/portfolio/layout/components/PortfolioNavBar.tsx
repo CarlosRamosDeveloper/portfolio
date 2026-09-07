@@ -1,6 +1,7 @@
 import { ROUTES } from '@/constants/routes';
-import { NavigateButton } from '.';
+
 import { NAVBAR_TEXT } from '@/constants/layout';
+import { NavigateButton } from '@/components';
 
 export const PortfolioNavBar = () => {
   return (
@@ -13,9 +14,6 @@ export const PortfolioNavBar = () => {
       </div>
       <div>
         <NavigateButton path={ROUTES.education} label={NAVBAR_TEXT.education} />
-      </div>
-      <div>
-        <NavigateButton path={ROUTES.featured} label={NAVBAR_TEXT.featured} />
       </div>
       <div>
         <NavigateButton path={ROUTES.about} label={NAVBAR_TEXT.about} />

@@ -4,8 +4,8 @@ export const ROUTES = {
   contact: '/contact',
   education: '/education',
   experience: '/experience',
-  featured: '/featured',
   projects: '/projects',
+  featured: `/projects/featured`,
   projectId: ':idSlug',
   project: (idSlug: string) => `/projects/${idSlug}`,
 };

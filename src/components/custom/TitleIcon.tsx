@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { ROUTES } from '@/constants/routes';
 import { LAYOUT_TEXT } from '@/constants/layout';
 
-export const PortfolioIcon = () => {
+export const TitleIcon = () => {
   return (
     <>
       <div>

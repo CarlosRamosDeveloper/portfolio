@@ -12,6 +12,7 @@ export const NavigateButton = ({ label, path }: Props) => {
     <>
       <NavLink
         to={path}
+        end
         className={({ isActive }) =>
           cn(
             'text-xl font-medium transition-colors hover:text-primary',
