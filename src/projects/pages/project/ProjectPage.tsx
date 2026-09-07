@@ -25,12 +25,12 @@ export const ProjectPage = () => {
         subtitle={project.shortDescription}
         repository={project.repository}
       />
-      <TechStackList techStack={project.techStack} />
-      <ProjectDescriptionList descriptionList={project.description} />
       <ProjectGallery
         images={project.screenshots || []}
         videos={project.video || null}
       />
+      <TechStackList techStack={project.techStack} />
+      <ProjectDescriptionList descriptionList={project.description} />
     </div>
   );
 };
