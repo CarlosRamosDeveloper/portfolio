@@ -1,7 +1,5 @@
-import {
-  PortfolioFooter,
-  PortfolioHeader,
-} from '@/portfolio/layout/components';
+import { CustomFooter } from '@/components';
+import { PortfolioHeader } from '@/portfolio/layout/components';
 import { Outlet } from 'react-router';
 
 export const ProjectsLayout = () => {
@@ -11,7 +9,7 @@ export const ProjectsLayout = () => {
       <main className="flex-1 flex justify-center">
         <Outlet />
       </main>
-      <PortfolioFooter />
+      <CustomFooter />
     </div>
   );
 };
