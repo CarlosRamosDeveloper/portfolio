@@ -42,9 +42,17 @@ export const ProjectGallery = ({ images }: Props) => {
         <button type="button" onClick={handlePrevItem}>
           {'<-'}
         </button>
-        <button>
-          <img></img>
-        </button>
+        <div className="flex flex-1 gap-2 overflow-x-auto">
+          {images.map((image, index) => (
+            <button
+              type="button"
+              className="shrink-0"
+              onClick={() => setCurrentIndex(index)}
+            >
+              <img className="h-20 w-32 object-cover" src={image}></img>
+            </button>
+          ))}
+        </div>
         <button type="button" onClick={handleNextItem}>
           {'->'}
         </button>
