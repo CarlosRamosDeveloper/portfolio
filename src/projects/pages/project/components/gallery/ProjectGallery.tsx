@@ -20,7 +20,7 @@ export const ProjectGallery = ({ images }: Props) => {
 
       <GallerySlider
         images={images}
-        index={currentIndex}
+        currentIndex={currentIndex}
         onChange={setCurrentIndex}
       />
     </div>
