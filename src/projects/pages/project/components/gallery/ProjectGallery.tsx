@@ -1,4 +1,6 @@
-import { ProjectImageList } from './ProjectImageList';
+import { useState } from 'react';
+
+import { GalleryImage, GallerySlider } from '.';
 
 interface Props {
   videos: string[] | null;
@@ -6,9 +8,21 @@ interface Props {
 }
 
 export const ProjectGallery = ({ images }: Props) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  if (images === null || images.length === 0) return null;
+
+  const currentImage = images[currentIndex];
+
   return (
-    <div>
-      <ProjectImageList images={images} />
+    <div className="w-full bg-card-details">
+      <GalleryImage image={currentImage} />
+
+      <GallerySlider
+        images={images}
+        index={currentIndex}
+        onChange={setCurrentIndex}
+      />
     </div>
   );
 };
