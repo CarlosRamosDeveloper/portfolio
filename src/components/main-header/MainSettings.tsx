@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 
 import { Settings } from 'lucide-react';
 
-import { PortfolioThemeSelector } from '.';
 import { SETTINGS_TEXT } from '@/constants/layout';
+import { MainThemeSelector } from './MainThemeSelector';
 
-export const PortfolioSettings = () => {
+export const MainSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
   const settingsRef = useRef<HTMLDivElement>(null);
 
@@ -49,7 +49,7 @@ export const PortfolioSettings = () => {
           </div>
           <div className="mt-4">
             <p className="text-sm font-medium">{SETTINGS_TEXT.selectedTheme}</p>
-            <PortfolioThemeSelector />
+            <MainThemeSelector />
           </div>
           <div className="mt-4">
             <p className="text-sm font-medium">
