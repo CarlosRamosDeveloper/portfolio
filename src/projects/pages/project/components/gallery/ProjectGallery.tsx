@@ -15,7 +15,7 @@ export const ProjectGallery = ({ images }: Props) => {
   const currentImage = images[currentIndex];
 
   return (
-    <div className="w-full m-5">
+    <div className="w-full my-4">
       <GalleryImage image={currentImage} />
 
       <GallerySlider

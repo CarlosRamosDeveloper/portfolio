@@ -20,9 +20,9 @@ export const GallerySlider = ({ images, index, onChange }: Props) => {
   };
 
   return (
-    <div className="mt-4 flex items-center gap-2">
+    <div className="flex items-center bg-black/80 mt-5">
       <GalleryButton label="<-" onClick={handlePrevItem} />
-      <div className="flex flex-1 gap-2 overflow-x-auto">
+      <div className="flex flex-1 overflow-x-auto mx-5">
         {images.map((image, index) => (
           <GalleryThumbnail
             image={image}

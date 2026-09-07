@@ -5,7 +5,11 @@ interface Props {
 
 export const GalleryButton = ({ label, onClick }: Props) => {
   return (
-    <button type="button" onClick={onClick}>
+    <button
+      className="p-4 m-3 cursor-pointer bg-red-500"
+      type="button"
+      onClick={onClick}
+    >
       {label}
     </button>
   );

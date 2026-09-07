@@ -4,7 +4,7 @@ interface Props {
 
 export const GalleryImage = ({ image }: Props) => {
   return (
-    <div className="flex h-100 items-center justify-center">
+    <div className="flex h-100 items-center justify-center bg-black/80 py-5">
       <img
         className="max-h-full max-w-full object-contain"
         src={image}
