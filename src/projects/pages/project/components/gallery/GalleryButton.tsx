@@ -10,9 +10,9 @@ export const GalleryButton = ({ label, onClick, location }: Props) => {
   return (
     <button
       className={cn(
-        'p-4 m-3 cursor-pointer bg-accent',
-        location === 'left' && 'rounded-l-xl',
-        location === 'right' && 'rounded-e-xl',
+        'py-7 px-5 cursor-pointer bg-accent',
+        location === 'left' && 'rounded-l-xl ml-3',
+        location === 'right' && 'rounded-e-xl mr-3',
       )}
       type="button"
       onClick={onClick}
