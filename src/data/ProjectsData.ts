@@ -1,4 +1,4 @@
-import { REPOSITORIES, TECHNOLOGIES } from '@/constants';
+import { REPOSITORIES, ROUTES, TECHNOLOGIES } from '@/constants';
 import type { Project } from '@/interfaces/Project';
 
 export const ProjectsData: Project[] = [
