@@ -2,7 +2,7 @@ import { EDUCATION_TEXT } from '@/constants/pages';
 import { Separator } from '../..';
 
 interface Props {
-  repositoryUrl?: string;
+  repositoryUrl: string | null;
 }
 
 export const EducationalRepositoryItem = ({ repositoryUrl }: Props) => {

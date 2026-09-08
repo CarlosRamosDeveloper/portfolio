@@ -4,6 +4,7 @@ import type { Project } from '@/interfaces';
 import { Separator, TechStackList } from '../..';
 import { EducationalRepositoryItem, EducationProjectTitle } from '.';
 import { DescriptionList } from '..';
+import { ROUTES } from '@/constants';
 
 interface Props {
   project: Project;
@@ -23,7 +24,10 @@ export const EducationalProjectItem = ({ project }: Props) => {
         className="flex flex-1 items-center justify-between"
         onClick={handleVisibilityToggle}
       >
-        <EducationProjectTitle title={project.name} />
+        <EducationProjectTitle
+          title={project.name}
+          url={`${ROUTES.projects}/${project.idSlug}`}
+        />
       </div>
       {isOpen && (
         <div>
@@ -32,9 +36,6 @@ export const EducationalProjectItem = ({ project }: Props) => {
           <DescriptionList descriptions={project.description} />
         </div>
       )}
-
-      {/* TODO: Implementar el sistema de navegación a la página del proyecto cuando se cree la página de proyectos */}
-      {/* {project.navigation && <h1>{project.navigation}</h1>} */}
     </>
   );
 };
