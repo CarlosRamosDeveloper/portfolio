@@ -1,10 +1,11 @@
 import { PageTitle } from '@/components';
 import { TECHNOLOGIES } from '@/constants';
 import { SEARCH_TEXT } from '@/constants/projects/pages';
-import { SearchedProjectsList, TechFilterItem } from './components';
+import { SearchedProjectsList } from './components';
 import { useState } from 'react';
 import type { TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
+import { TechFilters } from './components/TechFilters';
 
 const techList = Object.entries(TECHNOLOGIES) as [TechId, Technology][];
 
@@ -29,18 +30,12 @@ export const SearchPage = () => {
 
   return (
     <div className="flex flex-col">
-      <div>
-        <PageTitle title={SEARCH_TEXT.title} />
-        {techList.map(([id, technology]) => (
-          <TechFilterItem
-            key={id}
-            technology={technology}
-            isSelected={selectedTechIds.includes(id)}
-            onChange={() => handleTechnologyClick(id)}
-          />
-        ))}
-      </div>
-
+      <PageTitle title={SEARCH_TEXT.title} />
+      <TechFilters
+        techList={techList}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
       <SearchedProjectsList filteredProjects={filteredProjects} />
     </div>
   );
