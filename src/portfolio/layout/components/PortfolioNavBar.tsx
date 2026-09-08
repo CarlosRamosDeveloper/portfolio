@@ -21,6 +21,12 @@ export const PortfolioNavBar = () => {
       <div>
         <NavigateButton path={ROUTES.contact} label={NAVBAR_TEXT.contact} />
       </div>
+      <div>
+        <NavigateButton
+          path={ROUTES.softSkills}
+          label={NAVBAR_TEXT.softSkills}
+        />
+      </div>
     </div>
   );
 };

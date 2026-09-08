@@ -7,6 +7,7 @@ import {
   ExperiencePage,
   FeaturedPage,
   LandingPage,
+  SoftSkillsPage,
 } from '@/portfolio/pages';
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
@@ -37,6 +38,10 @@ export const appRouter = createBrowserRouter([
       {
         path: ROUTES.contact,
         element: <ContactPage />,
+      },
+      {
+        path: ROUTES.softSkills,
+        element: <SoftSkillsPage />,
       },
     ],
   },
