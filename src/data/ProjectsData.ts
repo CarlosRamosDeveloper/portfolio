@@ -160,6 +160,7 @@ export const ProjectsData: Project[] = [
       'La aplicación está planteada como una SPA modular y extensible, con una estructura preparada para incorporar nuevos proyectos, tecnologías y contenido progresivamente. Entre sus funcionalidades se incluye la navegación mediante React Router, filtrado de proyectos por tecnologías y un sistema de temas visuales.',
       'Durante el desarrollo estoy poniendo especial atención en la reutilización de componentes, la separación de responsabilidades, el tipado estricto y la mantenibilidad del código.',
       'El propio portfolio sirve así como una muestra de mi evolución como desarrollador y de las decisiones técnicas que voy incorporando a medida que el proyecto crece.',
+      'Todo el proceso de desarrollo se ha hecho usando GitHub Projects',
     ],
     isFeatured: true,
     status: 'work_in_progress',
