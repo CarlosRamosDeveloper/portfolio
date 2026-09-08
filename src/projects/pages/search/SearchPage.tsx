@@ -3,7 +3,7 @@ import { TECHNOLOGIES } from '@/constants';
 import { SEARCH_TEXT } from '@/constants/projects/pages';
 import { SearchedProjectsList } from './components';
 import { useState } from 'react';
-import type { TechId, Technology } from '@/interfaces';
+import type { TechCategory, TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
 
@@ -17,6 +17,17 @@ export const SearchPage = () => {
       project.techStack.some((technology) => technology.id === selectedTechId),
     ),
   );
+
+  const filterTechnologiesByCategory = (
+    techList: [TechId, Technology][],
+    category: TechCategory,
+  ): [TechId, Technology][] => {
+    return techList.filter(
+      ([, technology]) => technology.category === category,
+    );
+  };
+
+  console.log(filterTechnologiesByCategory(techList, 'language'));
 
   const handleTechnologyClick = (id: TechId) => {
     setSelectedTechIds((previous) => {
@@ -36,7 +47,44 @@ export const SearchPage = () => {
     <div className="flex flex-col">
       <PageTitle title={SEARCH_TEXT.title} />
       <TechFilters
-        techList={techList}
+        category={'language'}
+        techList={filterTechnologiesByCategory(techList, 'language')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'game-engine'}
+        techList={filterTechnologiesByCategory(techList, 'game-engine')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'framework'}
+        techList={filterTechnologiesByCategory(techList, 'framework')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'library'}
+        techList={filterTechnologiesByCategory(techList, 'library')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'database'}
+        techList={filterTechnologiesByCategory(techList, 'database')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'ui-toolkit'}
+        techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
+        selectedIds={selectedTechIds}
+        onChange={handleTechnologyClick}
+      />
+      <TechFilters
+        category={'platform'}
+        techList={filterTechnologiesByCategory(techList, 'platform')}
         selectedIds={selectedTechIds}
         onChange={handleTechnologyClick}
       />
