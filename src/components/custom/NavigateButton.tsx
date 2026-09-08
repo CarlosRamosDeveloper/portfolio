@@ -9,7 +9,7 @@ interface Props {
 
 export const NavigateButton = ({ label, path }: Props) => {
   return (
-    <>
+    <div>
       <NavLink
         to={path}
         end
@@ -22,6 +22,6 @@ export const NavigateButton = ({ label, path }: Props) => {
       >
         {label}
       </NavLink>
-    </>
+    </div>
   );
 };
