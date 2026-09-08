@@ -43,4 +43,10 @@ export const SoftSkillsData: SoftSkill[] = [
     description:
       'Toma la iniciativa y llevo ideas a la práctica de forma autónoma, buscando nuevas formas de aplicar conocimientos adquiridos y planteando mejoras más allá de los requisitos iniciales',
   },
+  {
+    id: 8,
+    name: 'Concentración y enfoque',
+    description:
+      'Tengo facilidad para mantener la concentración y profundizar durante periodos prolongados en problemas o proyectos que me resulten interesantes, manteniendo el foco incluso cuando la tarea requiere investigación, probar diferentes alternativas y realizar varias iteraciones',
+  },
 ];
