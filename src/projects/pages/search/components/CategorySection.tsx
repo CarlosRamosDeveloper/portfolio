@@ -1,3 +1,4 @@
+import { TECH_CATEGORY_TYPE_LABEL } from '@/constants/tech.category.type.label';
 import type { TechCategory } from '@/interfaces';
 import type { ReactNode } from 'react';
 
@@ -9,7 +10,7 @@ interface Props {
 export const CategorySection = ({ children, title }: Props) => {
   return (
     <>
-      {title}
+      {TECH_CATEGORY_TYPE_LABEL[title]}
       {children}
     </>
   );
