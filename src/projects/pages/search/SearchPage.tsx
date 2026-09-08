@@ -6,6 +6,7 @@ import { useState } from 'react';
 import type { TechCategory, TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
+import { CategorySection } from './components/CategorySection';
 
 const techList = Object.entries(TECHNOLOGIES) as [TechId, Technology][];
 
@@ -46,48 +47,48 @@ export const SearchPage = () => {
   return (
     <div className="flex flex-col">
       <PageTitle title={SEARCH_TEXT.title} />
-      <TechFilters
-        category={'language'}
-        techList={filterTechnologiesByCategory(techList, 'language')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'game-engine'}
-        techList={filterTechnologiesByCategory(techList, 'game-engine')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'framework'}
-        techList={filterTechnologiesByCategory(techList, 'framework')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'library'}
-        techList={filterTechnologiesByCategory(techList, 'library')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'database'}
-        techList={filterTechnologiesByCategory(techList, 'database')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'ui-toolkit'}
-        techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
-      <TechFilters
-        category={'platform'}
-        techList={filterTechnologiesByCategory(techList, 'platform')}
-        selectedIds={selectedTechIds}
-        onChange={handleTechnologyClick}
-      />
+      <CategorySection title="language">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'language')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
+      <CategorySection title="framework">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'framework')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
+      <CategorySection title="library">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'library')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
+      <CategorySection title="database">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'database')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
+      <CategorySection title="ui-toolkit">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
+      <CategorySection title="platform">
+        <TechFilters
+          techList={filterTechnologiesByCategory(techList, 'platform')}
+          selectedIds={selectedTechIds}
+          onChange={handleTechnologyClick}
+        />
+      </CategorySection>
       <button onClick={handleClearFilters}>Limpiar tech</button>
       <SearchedProjectsList filteredProjects={filteredProjects} />
     </div>
