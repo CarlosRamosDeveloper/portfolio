@@ -1,12 +1,12 @@
 import { PageTitle } from '@/components';
 import { TECHNOLOGIES } from '@/constants';
 import { SEARCH_TEXT } from '@/constants/projects/pages';
-import { SearchedProjectsList } from './components';
 import { useState } from 'react';
 import type { TechCategory, TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
 import { CategorySection } from './components/CategorySection';
+import { SearchedProjectsList } from './components';
 
 const techList = Object.entries(TECHNOLOGIES) as [TechId, Technology][];
 
