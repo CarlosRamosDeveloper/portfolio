@@ -11,5 +11,9 @@ export const DescriptionButton = ({
   falseText,
   onClick,
 }: Props) => {
-  return <button onClick={onClick}>{isOpen ? trueText : falseText}</button>;
+  return (
+    <button className="bg-accent p-1 mx-auto flex text-xs" onClick={onClick}>
+      {isOpen ? trueText : falseText}
+    </button>
+  );
 };
