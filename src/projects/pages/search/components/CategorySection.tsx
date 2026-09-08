@@ -9,9 +9,9 @@ interface Props {
 
 export const CategorySection = ({ children, title }: Props) => {
   return (
-    <>
-      {TECH_CATEGORY_TYPE_LABEL[title]}
+    <div className="mb-2 mt-3">
+      <h3 className="text-center text-xl">{TECH_CATEGORY_TYPE_LABEL[title]}</h3>
       {children}
-    </>
+    </div>
   );
 };

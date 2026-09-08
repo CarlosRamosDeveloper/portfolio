@@ -9,7 +9,7 @@ interface Props {
 
 export const TechFilters = ({ techList, selectedIds, onChange }: Props) => {
   return (
-    <div>
+    <div className="flex flex-1 justify-center">
       {techList.map(([id, technology]) => (
         <TechFilterItem
           key={id}
