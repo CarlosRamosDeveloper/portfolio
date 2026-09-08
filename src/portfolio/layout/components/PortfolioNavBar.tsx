@@ -5,7 +5,7 @@ import { NavigateButton } from '@/components';
 
 export const PortfolioNavBar = () => {
   return (
-    <div className="flex justify-center mb-3 gap-6">
+    <div className="flex justify-center mb-3 gap-3">
       <NavigateButton path={ROUTES.softSkills} label={NAVBAR_TEXT.softSkills} />
       <NavigateButton path={ROUTES.experience} label={NAVBAR_TEXT.experience} />
       <NavigateButton path={ROUTES.education} label={NAVBAR_TEXT.education} />
