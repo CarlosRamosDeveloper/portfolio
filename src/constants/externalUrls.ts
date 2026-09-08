@@ -9,6 +9,7 @@ export const EXTERNAL_URL = {
 export const REPOSITORIES = {
   passwordAppManager:
     'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
+  portfolioV1: 'https://github.com/CarlosRamosDeveloper/portfolio',
 };
 
 export const VIDEO_URLS = {};

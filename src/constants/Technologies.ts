@@ -39,6 +39,7 @@ import type { TechId, Technology } from '@/interfaces';
 
 export const TECHNOLOGIES: Record<TechId, Technology> = {
   android: {
+    id: 'android',
     name: 'Android',
     icon: FaAndroid,
     color: '',
@@ -46,6 +47,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['mobile'],
   },
   angular: {
+    id: 'angular',
     name: 'Angular',
     icon: FaAngular,
     color: '',
@@ -53,6 +55,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   aws: {
+    id: 'aws',
     name: 'AWS',
     icon: FaAws,
     color: '',
@@ -60,6 +63,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend', 'devops'],
   },
   bitbucket: {
+    id: 'bitbucket',
     name: 'Bitbucket',
     icon: FaBitbucket,
     color: '',
@@ -67,6 +71,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general', 'devops'],
   },
   bootstrap: {
+    id: 'bootstrap',
     name: 'Bootstrap',
     icon: FaBootstrap,
     color: '',
@@ -74,6 +79,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   'c-sharp': {
+    id: 'c-sharp',
     name: 'C#',
     icon: TbBrandCSharp,
     color: '',
@@ -81,6 +87,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend', 'game-development'],
   },
   css: {
+    id: 'css',
     name: 'CSS',
     icon: FaCss,
     color: '',
@@ -88,6 +95,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   docker: {
+    id: 'docker',
     name: 'Docker',
     icon: FaDocker,
     color: '',
@@ -95,6 +103,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['devops', 'general'],
   },
   'dot-net': {
+    id: 'dot-net',
     name: '.NET',
     icon: AiOutlineDotNet,
     color: '',
@@ -102,6 +111,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   flutter: {
+    id: 'flutter',
     name: 'Flutter',
     icon: FaFlutter,
     color: '',
@@ -109,6 +119,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['mobile', 'frontend'],
   },
   git: {
+    id: 'git',
     name: 'Git',
     icon: FaGitAlt,
     color: '',
@@ -116,11 +127,13 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['devops', 'general'],
   },
   'git-flow': {
+    id: 'git-flow',
     name: 'Git Flow',
     category: 'version-control',
     areas: ['general'],
   },
   gitlab: {
+    id: 'gitlab',
     name: 'GitLab',
     icon: FaSquareGitlab,
     color: '',
@@ -128,6 +141,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['devops', 'general'],
   },
   html: {
+    id: 'html',
     name: 'HTML',
     icon: FaHtml5,
     color: '',
@@ -135,6 +149,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   java: {
+    id: 'java',
     name: 'Java',
     icon: FaJava,
     color: '',
@@ -142,6 +157,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   javascript: {
+    id: 'javascript',
     name: 'JavaScript',
     icon: IoLogoJavascript,
     color: '',
@@ -149,6 +165,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend', 'frontend', 'mobile'],
   },
   'jetpack-compose': {
+    id: 'jetpack-compose',
     name: 'Jetpack Compose',
     icon: SiJetpackcompose,
     color: '',
@@ -156,6 +173,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['mobile'],
   },
   jira: {
+    id: 'jira',
     name: 'Jira',
     icon: SiJira,
     color: '',
@@ -163,6 +181,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   jquery: {
+    id: 'jquery',
     name: 'jQuery',
     icon: DiJqueryLogo,
     color: '',
@@ -170,6 +189,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   kotlin: {
+    id: 'kotlin',
     name: 'Kotlin',
     icon: SiKotlin,
     color: '',
@@ -177,6 +197,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend', 'mobile'],
   },
   mongodb: {
+    id: 'mongodb',
     name: 'MongoDB',
     icon: SiMongodb,
     color: '',
@@ -184,6 +205,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['database-non-relational', 'backend'],
   },
   mysql: {
+    id: 'mysql',
     name: 'MySQL',
     icon: DiMysql,
     color: '',
@@ -191,6 +213,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['database-relational', 'backend'],
   },
   nestjs: {
+    id: 'nestjs',
     name: 'Nest.js',
     icon: SiNestjs,
     color: '',
@@ -198,6 +221,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   nodejs: {
+    id: 'nodejs',
     name: 'Node.js',
     icon: FaNodeJs,
     color: '',
@@ -205,6 +229,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   odoo: {
+    id: 'odoo',
     name: 'Odoo',
     icon: SiOdoo,
     color: '',
@@ -212,6 +237,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   opencode: {
+    id: 'opencode',
     name: 'OpenCode',
     icon: SiOpencode,
     color: '',
@@ -219,6 +245,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   php: {
+    id: 'php',
     name: 'PHP',
     icon: FaPhp,
     color: '',
@@ -226,6 +253,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   postgresql: {
+    id: 'postgresql',
     name: 'PostgreSQL',
     icon: DiPostgresql,
     color: '',
@@ -233,6 +261,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['database-relational', 'backend'],
   },
   'react-native': {
+    id: 'react-native',
     name: 'React Native',
     icon: TbBrandReactNative,
     color: '',
@@ -240,6 +269,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['mobile'],
   },
   react: {
+    id: 'react',
     name: 'React',
     icon: FaReact,
     color: '',
@@ -247,12 +277,14 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   room: {
+    id: 'room',
     name: 'Room',
     color: '',
     category: 'database',
     areas: ['database-relational', 'mobile'],
   },
   'spring-boot': {
+    id: 'spring-boot',
     name: 'Spring Boot',
     icon: SiSpringboot,
     color: '',
@@ -260,6 +292,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   sqlite: {
+    id: 'sqlite',
     name: 'SQLite',
     icon: SiSqlite,
     color: '',
@@ -267,6 +300,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['database-relational', 'backend', 'mobile'],
   },
   subversion: {
+    id: 'subversion',
     name: 'Subversion',
     icon: SiSubversion,
     color: '',
@@ -274,6 +308,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   symfony: {
+    id: 'symfony',
     name: 'Symfony',
     icon: FaSymfony,
     color: '',
@@ -281,6 +316,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend'],
   },
   typescript: {
+    id: 'typescript',
     name: 'TypeScript',
     icon: SiTypescript,
     color: '',
@@ -288,6 +324,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['backend', 'frontend', 'mobile'],
   },
   unity: {
+    id: 'unity',
     name: 'Unity',
     icon: FaUnity,
     color: '',
@@ -295,6 +332,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['game-development'],
   },
   vue: {
+    id: 'vue',
     name: 'Vue',
     icon: FaVuejs,
     color: '',
@@ -302,6 +340,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['frontend'],
   },
   wordpress: {
+    id: 'wordpress',
     name: 'WordPress',
     icon: FaWordpress,
     color: '',
@@ -309,6 +348,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   xml: {
+    id: 'xml',
     name: 'XML',
     icon: LuCodeXml,
     color: '',
@@ -316,6 +356,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     areas: ['general'],
   },
   zustand: {
+    id: 'zustand',
     name: 'Zustand',
     color: '',
     category: 'state-management',

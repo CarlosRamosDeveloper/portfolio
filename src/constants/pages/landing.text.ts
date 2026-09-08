@@ -1,5 +1,5 @@
 export const LANDING_TEXT = {
-  title: 'Bienvenido o bienvenida, soy Carlos Ramos,',
+  title: 'Bienvenido o bienvenida, soy Carlos Ramos.',
   subtitle: 'Desarrollador de Software fullstack.',
   projects: 'Proyectos',
   contact: 'Contactar',
@@ -12,4 +12,5 @@ export const LANDING_TEXT = {
   work: 'Trabajo',
   internship: 'Prácticas',
   projectQuantity: 'Cantidad de Proyectos',
+  softSkills: 'Mis habilidades blandas',
 };

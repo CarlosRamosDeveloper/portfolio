@@ -4,6 +4,7 @@ import type { Project } from '@/interfaces/Project';
 export const ProjectsData: Project[] = [
   // {
   //   id: 0,
+  //   idSlug: '',
   //   name: '',
   //   shortDescription: '',
   //   description: [],
@@ -140,6 +141,30 @@ export const ProjectsData: Project[] = [
       '/projects/pma-2.jpg',
       '/projects/pma-3.jpg',
     ],
+    url: null,
+    video: null,
+  },
+  {
+    id: 5,
+    idSlug: 'portfolio-v1',
+    name: 'Portfolio',
+    shortDescription: 'Portfolio personal',
+    description: [
+      'Portfolio personal desarrollado con React y TypeScript, concebido no solo como una presentación de mi experiencia y proyectos, sino también como un proyecto vivo en el que experimentar y consolidar conocimientos de desarrollo frontend.',
+      'La aplicación está planteada como una SPA modular y extensible, con una estructura preparada para incorporar nuevos proyectos, tecnologías y contenido progresivamente. Entre sus funcionalidades se incluye la navegación mediante React Router, filtrado de proyectos por tecnologías y un sistema de temas visuales.',
+      'Durante el desarrollo estoy poniendo especial atención en la reutilización de componentes, la separación de responsabilidades, el tipado estricto y la mantenibilidad del código.',
+      'El propio portfolio sirve así como una muestra de mi evolución como desarrollador y de las decisiones técnicas que voy incorporando a medida que el proyecto crece.',
+    ],
+    isFeatured: true,
+    status: 'work_in_progress',
+    techStack: [
+      TECHNOLOGIES.react,
+      TECHNOLOGIES.typescript,
+      TECHNOLOGIES.git,
+      TECHNOLOGIES['git-flow'],
+    ],
+    repository: REPOSITORIES.portfolioV1,
+    screenshots: [],
     url: null,
     video: null,
   },

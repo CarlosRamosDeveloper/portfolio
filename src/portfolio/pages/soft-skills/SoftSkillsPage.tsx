@@ -1,0 +1,15 @@
+import { SoftSkillsData } from '@/data/SoftSkillsData';
+import { SoftSkillsCardList } from './components';
+import { SOFT_SKILLS_TEXT } from '@/constants/pages/soft-skills.text';
+import { PageTitle } from '@/components';
+
+const softSkills = [...SoftSkillsData];
+
+export const SoftSkillsPage = () => {
+  return (
+    <div className="w-full">
+      <PageTitle title={SOFT_SKILLS_TEXT.title} />
+      <SoftSkillsCardList skills={softSkills} />
+    </div>
+  );
+};

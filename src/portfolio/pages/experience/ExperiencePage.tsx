@@ -4,6 +4,7 @@ import {
 } from '../components/backgroundCard';
 import { ExperienceData } from '@/data';
 import { EXPERIENCE_TEXT } from '@/constants/pages';
+import { PageTitle } from '@/components';
 
 const data: Background[] = [
   ...ExperienceData.sort()
@@ -17,9 +18,7 @@ const data: Background[] = [
 export const ExperiencePage = () => {
   return (
     <div className="w-full">
-      <h2 className="text-center text-2xl font-semibold">
-        {EXPERIENCE_TEXT.title}
-      </h2>
+      <PageTitle title={EXPERIENCE_TEXT.title} />
       <BackgroundCardsList background={data} />
     </div>
   );

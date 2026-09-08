@@ -1,3 +1,4 @@
+export { SoftSkillsPage } from './soft-skills/SoftSkillsPage';
 export { AboutPage } from './about/AboutPage';
 export { ContactPage } from './contact/ContactPage';
 export { ExperiencePage } from './experience/ExperiencePage';

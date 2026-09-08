@@ -7,11 +7,12 @@ import {
   ExperiencePage,
   FeaturedPage,
   LandingPage,
+  SoftSkillsPage,
 } from '@/portfolio/pages';
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
 import { ProjectsLayout } from '@/projects/layout/ProjectsLayout';
-import { ProjectPage, ProjectsPage } from '@/projects/pages';
+import { ProjectPage, ProjectsPage, SearchPage } from '@/projects/pages';
 
 export const appRouter = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ export const appRouter = createBrowserRouter([
         path: ROUTES.contact,
         element: <ContactPage />,
       },
+      {
+        path: ROUTES.softSkills,
+        element: <SoftSkillsPage />,
+      },
     ],
   },
   {
@@ -50,6 +55,10 @@ export const appRouter = createBrowserRouter([
         element: <FeaturedPage />,
       },
       { path: ROUTES.projectId, element: <ProjectPage /> },
+      {
+        path: ROUTES.search,
+        element: <SearchPage />,
+      },
     ],
   },
   {

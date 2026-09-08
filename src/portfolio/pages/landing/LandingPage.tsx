@@ -3,6 +3,7 @@ import {
   LandingExperience,
   LandingFeaturedProjectsList,
   LandingHero,
+  LandingSoftskillsList,
 } from './components';
 
 export const LandingPage = () => {
@@ -11,6 +12,7 @@ export const LandingPage = () => {
       <div>
         <LandingHero />
         <LandingAbout />
+        <LandingSoftskillsList />
         <LandingFeaturedProjectsList />
         <LandingExperience />
       </div>
