@@ -4,6 +4,7 @@ export type { FeaturedNavigationItemType } from './FeaturedNavigationItemType';
 export type { JobExperience } from './JobExperience';
 export type { Project } from './Project';
 export type { ProjectStatus } from './ProjectStatus';
+export type { SoftSkill } from './SoftSkill';
 export type { TechArea } from './TechArea';
 export type { TechCategory } from './TechCategory';
 export type { TechId } from './TechId';
