@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { DescriptionLabel } from '.';
+
+import { DescriptionButton, DescriptionLabel } from '.';
 import { Separator } from '..';
 import { PORTFOLIO_SHARED_TEXT } from '@/constants/pages';
 
@@ -31,11 +32,12 @@ export const DescriptionList = ({ descriptions }: Props) => {
           <DescriptionLabel description={description} key={index} />
         ))}
         {hasLongDescription && (
-          <button onClick={handleToggleVisibility}>
-            {isExpanded
-              ? PORTFOLIO_SHARED_TEXT.buttonViewLess
-              : PORTFOLIO_SHARED_TEXT.buttonViewMore}
-          </button>
+          <DescriptionButton
+            isOpen={isExpanded}
+            onClick={handleToggleVisibility}
+            trueText={PORTFOLIO_SHARED_TEXT.buttonViewLess}
+            falseText={PORTFOLIO_SHARED_TEXT.buttonViewMore}
+          />
         )}
       </div>
     </>
