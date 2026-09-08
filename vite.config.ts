@@ -16,5 +16,5 @@ export default defineConfig({
       '@': path.resolve(import.meta.dirname, './src'),
     },
   },
-  base: 'https://CarlosRamosDeveloper.github.io/portfolio',
+  base: '/portfolio/',
 });
