@@ -6,7 +6,7 @@ import type { TechCategory, TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
 import { CategorySection } from './components/CategorySection';
-import { SearchedProjectsList } from './components';
+import { CleanFiltersButton, SearchedProjectsList } from './components';
 
 const techList = Object.entries(TECHNOLOGIES) as [TechId, Technology][];
 
@@ -47,6 +47,7 @@ export const SearchPage = () => {
   return (
     <div className="flex flex-col">
       <PageTitle title={SEARCH_TEXT.title} />
+      <CleanFiltersButton onClick={handleClearFilters} />
       <CategorySection title="language">
         <TechFilters
           techList={filterTechnologiesByCategory(techList, 'language')}
@@ -89,7 +90,6 @@ export const SearchPage = () => {
           onChange={handleTechnologyClick}
         />
       </CategorySection>
-      <button onClick={handleClearFilters}>Limpiar tech</button>
       <SearchedProjectsList filteredProjects={filteredProjects} />
     </div>
   );

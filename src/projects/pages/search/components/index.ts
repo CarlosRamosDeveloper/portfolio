@@ -1,4 +1,5 @@
 export { CategorySection } from './CategorySection';
+export { CleanFiltersButton } from './CleanFiltersButton';
 export { NoCoincidences } from './NoCoincidences';
 export { SearchedProject } from './SearchedProject';
 export { SearchedProjectsList } from './SearchedProjectsList';

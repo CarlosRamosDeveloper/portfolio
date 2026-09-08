@@ -9,7 +9,7 @@ interface Props {
 export const SearchedProjectsList = ({ filteredProjects }: Props) => {
   if (filteredProjects.length === 0) return <NoCoincidences />;
   return (
-    <div>
+    <div className="mt-5">
       {filteredProjects.map((project) => (
         <SearchedProject project={project} />
       ))}
