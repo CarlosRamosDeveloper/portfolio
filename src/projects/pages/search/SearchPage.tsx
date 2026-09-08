@@ -28,6 +28,10 @@ export const SearchPage = () => {
     });
   };
 
+  const handleClearFilters = () => {
+    setSelectedTechIds([]);
+  };
+
   return (
     <div className="flex flex-col">
       <PageTitle title={SEARCH_TEXT.title} />
@@ -36,6 +40,7 @@ export const SearchPage = () => {
         selectedIds={selectedTechIds}
         onChange={handleTechnologyClick}
       />
+      <button onClick={handleClearFilters}>Limpiar tech</button>
       <SearchedProjectsList filteredProjects={filteredProjects} />
     </div>
   );
