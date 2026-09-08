@@ -7,11 +7,7 @@
     "dev": "vite",
     "build": "pnpm run test:only && tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "test:only": "vitest run",
-    "coverage": "vitest run --coverage"
+    "preview": "vite preview"    
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
