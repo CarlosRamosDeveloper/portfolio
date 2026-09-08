@@ -12,4 +12,5 @@ export const LANDING_TEXT = {
   work: 'Trabajo',
   internship: 'Prácticas',
   projectQuantity: 'Cantidad de Proyectos',
+  softSkills: 'Mis habilidades blandas',
 };
