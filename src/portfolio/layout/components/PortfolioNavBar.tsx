@@ -8,6 +8,12 @@ export const PortfolioNavBar = () => {
     <div className="flex justify-center mb-3 gap-6">
       <div>
         <NavigateButton
+          path={ROUTES.softSkills}
+          label={NAVBAR_TEXT.softSkills}
+        />
+      </div>
+      <div>
+        <NavigateButton
           path={ROUTES.experience}
           label={NAVBAR_TEXT.experience}
         />
@@ -20,12 +26,6 @@ export const PortfolioNavBar = () => {
       </div>
       <div>
         <NavigateButton path={ROUTES.contact} label={NAVBAR_TEXT.contact} />
-      </div>
-      <div>
-        <NavigateButton
-          path={ROUTES.softSkills}
-          label={NAVBAR_TEXT.softSkills}
-        />
       </div>
     </div>
   );
