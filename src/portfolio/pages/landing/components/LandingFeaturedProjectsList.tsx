@@ -14,7 +14,7 @@ const data: Project[] = ProjectsData.filter(
 export const LandingFeaturedProjectsList = () => {
   return (
     <div className="w-full max-w-3xl flex flex-col text-center mx-auto mt-4">
-      <Link to={ROUTES.featured}>
+      <Link to={ROUTES.featured} className="mb-3">
         <LandingLabel text={`[${LANDING_TEXT.featured}]`} type="navigation" />
       </Link>
       {data.map((project) => (
