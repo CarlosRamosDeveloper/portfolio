@@ -1,5 +1,6 @@
 import type { Project } from '@/interfaces';
-import { ProjectsData } from '@/portfolio/data/ProjectsData';
+
+import { ProjectsData } from '@/data/ProjectsData';
 import { ProjectSummaryList } from './components';
 
 const projectsList: Project[] = ProjectsData.sort().reverse();

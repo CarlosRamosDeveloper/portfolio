@@ -1,5 +1,4 @@
-import { EducationData, ExperienceData } from '@/portfolio/data';
-
+import { EducationData, ExperienceData } from '@/data';
 import {
   LandingExperienceCard,
   type LandingExperience,
