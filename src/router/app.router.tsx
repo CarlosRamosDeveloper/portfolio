@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from 'react-router';
+import { createBrowserRouter, Navigate, Routes } from 'react-router';
 
 import { PorfolioLayout } from '@/portfolio/layout/PorfolioLayout';
 import {
@@ -12,7 +12,7 @@ import {
 import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
 import { ProjectsLayout } from '@/projects/layout/ProjectsLayout';
-import { ProjectPage, ProjectsPage } from '@/projects/pages';
+import { ProjectPage, ProjectsPage, SearchPage } from '@/projects/pages';
 
 export const appRouter = createBrowserRouter([
   {
@@ -55,6 +55,10 @@ export const appRouter = createBrowserRouter([
         element: <FeaturedPage />,
       },
       { path: ROUTES.projectId, element: <ProjectPage /> },
+      {
+        path: ROUTES.search,
+        element: <SearchPage />,
+      },
     ],
   },
   {

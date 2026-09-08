@@ -6,4 +6,5 @@ export const NAVBAR_TEXT = {
   featured: 'Proyectos Destacados',
   softSkills: 'Habilidades blandas',
   projects: 'Todos los Proyectos',
+  search: 'Buscar',
 };

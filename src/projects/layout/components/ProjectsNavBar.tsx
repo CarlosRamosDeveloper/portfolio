@@ -7,7 +7,7 @@ export const ProjectsNavBar = () => {
     <div className="flex justify-center mb-3 gap-4">
       <NavigateButton label={NAVBAR_TEXT.projects} path={ROUTES.projects} />
       <NavigateButton label={NAVBAR_TEXT.featured} path={ROUTES.featured} />
-      <div>[Buscador]</div>
+      <NavigateButton label={NAVBAR_TEXT.search} path={ROUTES.search} />
     </div>
   );
 };
