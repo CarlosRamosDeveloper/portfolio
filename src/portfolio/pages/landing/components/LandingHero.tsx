@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 export const LandingHero = () => {
   return (
-    <div className="my-6 w-full max-w-3xl flex flex-col text-center mx-auto text-xl">
+    <div className="my-3 w-full max-w-3xl flex flex-col text-center mx-auto text-xl">
       <span>{LANDING_TEXT.title}</span>
       <span>{LANDING_TEXT.subtitle}</span>
       <div className="flex justify-around mt-3">
