@@ -1,5 +1,5 @@
-import { ProjectsData } from '@/portfolio/data/ProjectsData';
 import { useParams } from 'react-router';
+
 import {
   NonFoundProject,
   ProjectDescriptionList,
@@ -9,6 +9,7 @@ import {
 import { TechStackList } from '@/portfolio/pages/components';
 import { STATUS_LABEL } from '@/constants';
 import { ProjectGallery } from './components/gallery';
+import { ProjectsData } from '@/data/ProjectsData';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();

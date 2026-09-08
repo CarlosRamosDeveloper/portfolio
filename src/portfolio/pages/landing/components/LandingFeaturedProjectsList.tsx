@@ -1,10 +1,10 @@
 import { Link } from 'react-router';
 
-import { ProjectsData } from '@/portfolio/data/ProjectsData';
 import { LandingFeaturedCard } from './landing-featured-card';
 import type { Project } from '@/interfaces';
 import { ROUTES } from '@/constants/routes';
 import { LANDING_TEXT } from '@/constants/pages';
+import { ProjectsData } from '@/data/ProjectsData';
 
 const data: Project[] = ProjectsData.filter(
   (project) => project.isFeatured,

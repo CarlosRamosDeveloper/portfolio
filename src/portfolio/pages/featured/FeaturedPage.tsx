@@ -1,4 +1,4 @@
-import { ProjectsData } from '@/portfolio/data/ProjectsData';
+import { ProjectsData } from '@/data/ProjectsData';
 import { FeaturedProjectsList } from './components';
 import { FEATURED_TEXT } from '@/constants/pages';
 

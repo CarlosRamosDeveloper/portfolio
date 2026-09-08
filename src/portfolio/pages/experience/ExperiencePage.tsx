@@ -2,7 +2,7 @@ import {
   BackgroundCardsList,
   type Background,
 } from '../components/backgroundCard';
-import { ExperienceData } from '@/portfolio/data';
+import { ExperienceData } from '@/data';
 import { EXPERIENCE_TEXT } from '@/constants/pages';
 
 const data: Background[] = [
