@@ -1,5 +1,5 @@
 import { SETTINGS_TEXT } from '@/constants/layout';
-import { useTheme } from '@/portfolio/hooks/useTheme';
+import { useTheme } from '@/hooks';
 
 export const MainThemeSelector = () => {
   const { theme, setTheme } = useTheme();
