@@ -4,6 +4,7 @@ import {
 } from '../components/backgroundCard';
 import { EducationData } from '@/data';
 import { EDUCATION_TEXT } from '@/constants/pages';
+import { PageTitle } from '@/components';
 
 const data: Background[] = [
   ...EducationData.sort()
@@ -17,9 +18,7 @@ const data: Background[] = [
 export const EducationPage = () => {
   return (
     <div className="w-full">
-      <h2 className="text-center text-2xl font-semibold">
-        {EDUCATION_TEXT.title}
-      </h2>
+      <PageTitle title={EDUCATION_TEXT.title} />
       <BackgroundCardsList background={data} />
     </div>
   );
