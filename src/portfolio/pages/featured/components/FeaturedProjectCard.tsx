@@ -10,6 +10,7 @@ import { TechStackList } from '../../components';
 
 import { useImageViewer } from '@/hooks';
 import { ImageOverlay } from '@/components/custom/ImageOverlay';
+import { ROUTES } from '@/constants';
 
 interface Props {
   project: Project;
@@ -22,6 +23,10 @@ export const FeaturedProjectCard = ({ project }: Props) => {
     <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <FeaturedTitle projectName={project.name} />
       <FeaturedProjectStatusSection status={project.status} />
+      <FeaturedNavigation
+        url={`${ROUTES.projects}/${project.idSlug}`}
+        type="page"
+      />
       <FeaturedProjectLabel text={project.shortDescription} />
       <FeaturedImage
         image={project.screenshots?.[0] || null}
@@ -30,8 +35,6 @@ export const FeaturedProjectCard = ({ project }: Props) => {
       <ImageOverlay image={image!} onClose={closeImage} isOpen={isOpen} />
       <TechStackList techStack={project.techStack} />
       <FeaturedNavigation url={project.repository} type="repository" />
-      <FeaturedNavigation url={project.url} type="page" />
-      <FeaturedNavigation url={project.video} type="demo" />
     </div>
   );
 };
