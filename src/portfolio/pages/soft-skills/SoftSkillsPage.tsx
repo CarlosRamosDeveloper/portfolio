@@ -7,7 +7,7 @@ const softSkills = [...SoftSkillsData];
 
 export const SoftSkillsPage = () => {
   return (
-    <div>
+    <div className="w-full">
       <PageTitle title={SOFT_SKILLS_TEXT.title} />
       <SoftSkillsCardList skills={softSkills} />
     </div>
