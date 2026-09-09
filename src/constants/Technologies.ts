@@ -94,6 +94,13 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     category: 'markup',
     areas: ['frontend'],
   },
+  dart: {
+    id: 'dart',
+    name: 'Dart',
+    color: '',
+    category: 'language',
+    areas: ['mobile', 'frontend'],
+  },
   docker: {
     id: 'docker',
     name: 'Docker',
@@ -195,6 +202,13 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     color: '',
     category: 'language',
     areas: ['backend', 'mobile'],
+  },
+  'material-3': {
+    id: 'material-3',
+    name: 'Material 3',
+    color: '',
+    category: 'ui-toolkit',
+    areas: ['frontend', 'mobile'],
   },
   mongodb: {
     id: 'mongodb',
