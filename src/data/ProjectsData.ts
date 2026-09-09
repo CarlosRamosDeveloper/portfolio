@@ -200,4 +200,22 @@ export const ProjectsData: Project[] = [
     url: null,
     video: null,
   },
+  {
+    id: 0,
+    idSlug: 'trivial-java',
+    name: 'Trivial en terminal',
+    shortDescription: 'Un trivial sencillo por terminal',
+    description: [
+      'Nació como un proyecto para enseñarle java a un amigo',
+      'La lista de preguntas y respuestas se reordenan en cada nuevo intento',
+      'Como era algo sencillito, no tiene ni base de datos ni docker asociado',
+    ],
+    isFeatured: false,
+    status: 'finished',
+    techStack: [TECHNOLOGIES.java],
+    repository: REPOSITORIES.trivialJava,
+    screenshots: [],
+    url: null,
+    video: null,
+  },
 ];
