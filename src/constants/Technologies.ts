@@ -70,6 +70,14 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     category: 'tool',
     areas: ['general', 'devops'],
   },
+  bloc: {
+    id: 'bloc',
+    name: 'BLoC',
+    icon: FaBitbucket,
+    color: '',
+    category: 'state-management',
+    areas: ['mobile'],
+  },
   bootstrap: {
     id: 'bootstrap',
     name: 'Bootstrap',

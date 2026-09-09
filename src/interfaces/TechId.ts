@@ -3,6 +3,7 @@ export type TechId =
   | 'angular'
   | 'aws'
   | 'bitbucket'
+  | 'bloc'
   | 'bootstrap'
   | 'c-sharp'
   | 'css'
