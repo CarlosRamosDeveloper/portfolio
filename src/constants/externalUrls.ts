@@ -10,6 +10,7 @@ export const REPOSITORIES = {
   passwordAppManager:
     'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
   portfolioV1: 'https://github.com/CarlosRamosDeveloper/portfolio',
+  trivialJava: 'https://github.com/CarlosRamosDeveloper/Trivial2',
 };
 
 export const VIDEO_URLS = {};
