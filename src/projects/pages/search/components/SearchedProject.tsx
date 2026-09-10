@@ -9,7 +9,7 @@ interface Props {
 
 export const SearchedProject = ({ project }: Props) => {
   return (
-    <div className="flex flex-1 justify-between p-2 bg-card mt-2">
+    <div className="flex flex-col items-center lg:flex-row justify-between lg:justify-between p-2 bg-card mt-2">
       <div>{project.name}</div>
       <div>
         <Link to={`${ROUTES.projects}/${project.idSlug}`}>

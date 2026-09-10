@@ -3,6 +3,7 @@ import { Separator, TechCard } from '.';
 import { useState } from 'react';
 import { TECHSTACK_LABEL } from '@/constants';
 import { cn } from '@/lib/utils';
+import { splitIntoRows } from '@/portfolio/shared';
 
 interface Props {
   techStack: Technology[];
@@ -24,11 +25,7 @@ export const TechStackList = ({
   const visibleTech = isExpanded ? techStack : techStack.slice(0, maxTechRow);
   const remainingTech = techStack.length - maxTechRow;
   const onlyRemainingOneTech = remainingTech === 1;
-  const techRows = [];
-
-  for (let i = 0; i < visibleTech.length; i += maxTechRow) {
-    techRows.push(visibleTech.slice(i, i + maxTechRow));
-  }
+  const techRow = splitIntoRows(visibleTech, maxTechRow);
 
   return (
     <>
@@ -37,7 +34,7 @@ export const TechStackList = ({
       <div className="p-1 bg-card-details">
         <div className="p-1 bg-card-details">
           <div className="m-0.5 grid gap-2 p-1">
-            {techRows.map((row, rowIndex) => (
+            {techRow.map((row, rowIndex) => (
               <div
                 key={rowIndex}
                 className={cn(

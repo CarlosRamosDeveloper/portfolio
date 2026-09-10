@@ -28,8 +28,6 @@ export const SearchPage = () => {
     );
   };
 
-  console.log(filterTechnologiesByCategory(techList, 'language'));
-
   const handleTechnologyClick = (id: TechId) => {
     setSelectedTechIds((previous) => {
       if (previous.includes(id)) {
