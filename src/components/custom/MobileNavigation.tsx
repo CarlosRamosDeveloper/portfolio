@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { GiHamburgerMenu } from 'react-icons/gi';
 
@@ -9,6 +9,7 @@ const navigationLinks = navigationLinksData;
 
 export const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigationRef = useRef<HTMLDivElement>(null);
 
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
@@ -18,8 +19,25 @@ export const MobileNavigation = () => {
     setIsOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navigationRef.current &&
+        !navigationRef.current.contains(event.target as Node)
+      ) {
+        handleClose();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="relative lg:hidden">
+    <div ref={navigationRef} className="relative lg:hidden">
       <button className="cursor-pointer" type="button" onClick={handleToggle}>
         <GiHamburgerMenu />
       </button>
