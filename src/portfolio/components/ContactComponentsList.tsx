@@ -16,7 +16,7 @@ export const ContactComponentsList = ({ isFooter = false }: Props) => {
   };
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl items-center justify-center">
+    <div className="flex items-center justify-center">
       <ContactComponent
         icon={IoIosMailOpen}
         label="Email"
