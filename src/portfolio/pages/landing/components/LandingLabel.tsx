@@ -11,7 +11,7 @@ export const LandingLabel = ({ text, type }: Props) => {
       className={cn(
         type === 'title' && 'text-2xl font-semibold lg:text-3xl',
         type === 'subtitle' && 'text-xl lg:text-2xl',
-        type === 'navigation' && 'text-2xl font-bold',
+        type === 'navigation' && 'text-xl lg:text-2xl font-bold',
         type === 'description' && 'text-base lg:text-xl',
       )}
     >
