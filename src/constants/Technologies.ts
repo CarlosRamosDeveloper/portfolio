@@ -21,6 +21,7 @@ import { AiOutlineDotNet } from 'react-icons/ai';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { DiJqueryLogo, DiMysql, DiPostgresql } from 'react-icons/di';
 import {
+  SiDart,
   SiJetpackcompose,
   SiJira,
   SiKotlin,
@@ -73,7 +74,6 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   bloc: {
     id: 'bloc',
     name: 'BLoC',
-    icon: FaBitbucket,
     color: '',
     category: 'state-management',
     areas: ['mobile'],
@@ -105,6 +105,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   dart: {
     id: 'dart',
     name: 'Dart',
+    icon: SiDart,
     color: '',
     category: 'language',
     areas: ['mobile', 'frontend'],
