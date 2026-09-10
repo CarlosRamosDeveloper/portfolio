@@ -4,11 +4,13 @@ import { MobileNavigationItem } from '..';
 interface Props {
   isOpen: boolean;
   navigationItems: HamburgerNavigationItem[];
+  onClose: () => void;
 }
 
 export const MobileNavigationLinkList = ({
   isOpen,
   navigationItems,
+  onClose,
 }: Props) => {
   return (
     <div>
@@ -18,11 +20,12 @@ export const MobileNavigationLinkList = ({
             <div key={index}>
               <MobileNavigationItem label={section.title} type="title" />
 
-              {section.items.map((item, index) => (
+              {section.items.map((item) => (
                 <MobileNavigationItem
+                  onClick={onClose}
                   label={item.label}
                   type="link"
-                  key={`${index} - b`}
+                  key={item.path}
                   path={item.path}
                 />
               ))}

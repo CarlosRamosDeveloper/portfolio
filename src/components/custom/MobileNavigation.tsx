@@ -14,6 +14,10 @@ export const MobileNavigation = () => {
     setIsOpen((prev) => !prev);
   };
 
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="relative lg:hidden">
       <button className="cursor-pointer" type="button" onClick={handleToggle}>
@@ -22,6 +26,7 @@ export const MobileNavigation = () => {
       <MobileNavigationLinkList
         isOpen={isOpen}
         navigationItems={navigationLinks}
+        onClose={handleClose}
       />
     </div>
   );
