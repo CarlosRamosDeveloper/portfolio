@@ -1,9 +1,6 @@
 import { ROUTES } from '@/constants';
 import { NavLink } from 'react-router';
-
-interface Props {
-  section: 'portfolio' | 'projects';
-}
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const navigationSections = [
   {
@@ -50,20 +47,24 @@ const navigationSections = [
   },
 ];
 
-export const MobileNavigation = ({ section }: Props) => {
+export const MobileNavigation = () => {
   return (
-    <div className="bg-accent p-5 lg:hidden">
-      {navigationSections.map((section) => (
-        <div key={section.title}>
-          <h2>{section.title}</h2>
-
-          {section.items.map((item) => (
-            <NavLink key={item.path} to={item.path}>
-              {item.label}
-            </NavLink>
+    <div className="lg:hidden">
+      <GiHamburgerMenu />
+      <div className="hidden">
+        <div className="bg-accent p-5 lg:hidden">
+          {navigationSections.map((section) => (
+            <div key={section.title}>
+              <h2>{section.title}</h2>
+              {section.items.map((item) => (
+                <NavLink key={item.path} to={item.path}>
+                  {item.label}
+                </NavLink>
+              ))}
+            </div>
           ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
