@@ -3,5 +3,7 @@ interface Props {
 }
 
 export const PageTitle = ({ title }: Props) => {
-  return <h2 className="text-center text-2xl font-semibold py-5">{title}</h2>;
+  return (
+    <h2 className="text-center text-2xl font-semibold py-2 lg:py-5">{title}</h2>
+  );
 };

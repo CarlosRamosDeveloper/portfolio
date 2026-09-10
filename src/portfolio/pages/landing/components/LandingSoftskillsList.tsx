@@ -18,7 +18,7 @@ export const LandingSoftskillsList = () => {
           />
         </Link>
       </div>
-      <div className="mx-auto grid grid-cols-4 gap-3 bg-card p-2 mt-2">
+      <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 bg-card p-2 mt-2">
         {skillsList.map((skill) => (
           <LandingSoftskillItem key={skill.id} skill={skill} />
         ))}
