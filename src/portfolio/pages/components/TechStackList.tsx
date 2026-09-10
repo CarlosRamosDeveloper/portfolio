@@ -2,6 +2,7 @@ import type { Technology } from '@/interfaces';
 import { Separator, TechCard } from '.';
 import { useState } from 'react';
 import { TECHSTACK_LABEL } from '@/constants';
+import { cn } from '@/lib/utils';
 
 interface Props {
   techStack: Technology[];
@@ -23,27 +24,40 @@ export const TechStackList = ({
   const visibleTech = isExpanded ? techStack : techStack.slice(0, maxTechRow);
   const remainingTech = techStack.length - maxTechRow;
   const onlyRemainingOneTech = remainingTech === 1;
+  const techRows = [];
+
+  for (let i = 0; i < visibleTech.length; i += maxTechRow) {
+    techRows.push(visibleTech.slice(i, i + maxTechRow));
+  }
 
   return (
     <>
       {topSeparator && <Separator />}
 
       <div className="p-1 bg-card-details">
-        <div
-          className="m-0.5 grid justify-around gap-2 p-1"
-          style={{
-            gridTemplateColumns: `repeat(${Math.min(visibleTech.length, maxTechRow)}, auto)`,
-          }}
-        >
-          {visibleTech.map((tech) => (
-            <TechCard
-              key={tech.name}
-              techName={tech.name}
-              color={tech.color || ''}
-              icon={tech.icon}
-            />
-          ))}
+        <div className="p-1 bg-card-details">
+          <div className="m-0.5 grid gap-2 p-1">
+            {techRows.map((row, rowIndex) => (
+              <div
+                key={rowIndex}
+                className={cn(
+                  'flex gap-2',
+                  row.length === 1 ? 'justify-center' : 'justify-evenly',
+                )}
+              >
+                {row.map((tech) => (
+                  <TechCard
+                    key={tech.id}
+                    techName={tech.name}
+                    color={tech.color || ''}
+                    icon={tech.icon}
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
+
         <div className="flex justify-center bg-card-details p-1">
           {techStack.length > maxTechRow && (
             <button
