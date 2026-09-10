@@ -26,7 +26,7 @@ export const MobileNavigationLinkList = ({
                 <MobileNavigationItem
                   label={item.label}
                   type="link"
-                  key={index}
+                  key={`${index} - b`}
                   path={item.path}
                 />
               ))}
