@@ -6,10 +6,14 @@ import { TECHSTACK_LABEL } from '@/constants';
 interface Props {
   techStack: Technology[];
   maxTechPerRow?: number;
+  topSeparator?: boolean;
+  botSeparator?: boolean;
 }
 
 export const TechStackList = ({
   techStack,
+  topSeparator = false,
+  botSeparator = false,
   maxTechPerRow: maxTechRow = 5,
 }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -22,7 +26,8 @@ export const TechStackList = ({
 
   return (
     <>
-      <Separator />
+      {topSeparator && <Separator />}
+
       <div className="p-1 bg-card-details">
         <div
           className="m-0.5 grid justify-around gap-2 p-1"
@@ -55,6 +60,7 @@ export const TechStackList = ({
           )}
         </div>
       </div>
+      {botSeparator && <Separator />}
     </>
   );
 };
