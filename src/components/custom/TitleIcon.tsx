@@ -8,7 +8,7 @@ export const TitleIcon = () => {
     <>
       <div>
         <Link to={ROUTES.home}>
-          <h1 className="text-3xl m-5">{LAYOUT_TEXT.name}</h1>
+          <h1 className="text-2xl lg:text-3xl m-5">{LAYOUT_TEXT.name}</h1>
         </Link>
       </div>
     </>
