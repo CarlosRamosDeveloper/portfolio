@@ -30,7 +30,12 @@ export const ProjectSummaryCard = ({ project }: Props) => {
         />
         <ProjectNavigation projectUrl={project.idSlug} />
       </div>
-      <TechStackList techStack={shortStack} maxTechPerRow={maxTech} />
+      <TechStackList
+        techStack={shortStack}
+        maxTechPerRow={maxTech}
+        botSeparator
+        topSeparator
+      />
       <ProjectImagesList images={project.screenshots || []} />
     </div>
   );

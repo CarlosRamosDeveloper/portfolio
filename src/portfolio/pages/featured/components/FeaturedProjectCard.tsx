@@ -33,7 +33,7 @@ export const FeaturedProjectCard = ({ project }: Props) => {
         onClick={() => openImage(project.screenshots?.[0] ?? '')}
       />
       <ImageOverlay image={image!} onClose={closeImage} isOpen={isOpen} />
-      <TechStackList techStack={project.techStack} />
+      <TechStackList techStack={project.techStack} botSeparator topSeparator />
       <FeaturedNavigation url={project.repository} type="repository" />
     </div>
   );
