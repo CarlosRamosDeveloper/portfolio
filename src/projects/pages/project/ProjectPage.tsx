@@ -21,7 +21,7 @@ export const ProjectPage = () => {
 
   return (
     <FramePage>
-      <div className="my-6 w-full max-w-4xl flex flex-col mx-auto">
+      <div className="my-6 flex flex-col">
         <ProjectTitle title={project.name} />
         <ProjectSubtitleSection
           status={STATUS_LABEL[project.status]}
