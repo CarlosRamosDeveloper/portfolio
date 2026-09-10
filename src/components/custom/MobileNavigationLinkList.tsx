@@ -15,12 +15,8 @@ export const MobileNavigationLinkList = ({
       {isOpen && (
         <div className="absolute right-0 top-full z-50 bg-card pb-4 pt-2 px-3">
           {navigationItems.map((section, index) => (
-            <>
-              <MobileNavigationItem
-                label={section.title}
-                type="title"
-                key={index}
-              />
+            <div key={index}>
+              <MobileNavigationItem label={section.title} type="title" />
 
               {section.items.map((item, index) => (
                 <MobileNavigationItem
@@ -30,7 +26,7 @@ export const MobileNavigationLinkList = ({
                   path={item.path}
                 />
               ))}
-            </>
+            </div>
           ))}
         </div>
       )}
