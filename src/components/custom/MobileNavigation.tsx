@@ -1,8 +1,11 @@
-import { ROUTES } from '@/constants';
-import { NavLink } from 'react-router';
+import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-const navigationSections = [
+import { ROUTES } from '@/constants';
+import type { HamburgerNavigationItem } from '@/interfaces';
+import { MobileNavigationLinkList } from './MobileNavigationLinkList';
+
+const navigationLinks: HamburgerNavigationItem[] = [
   {
     title: 'Portfolio',
     items: [
@@ -48,23 +51,21 @@ const navigationSections = [
 ];
 
 export const MobileNavigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
-    <div className="lg:hidden">
-      <GiHamburgerMenu />
-      <div className="hidden">
-        <div className="bg-accent p-5 lg:hidden">
-          {navigationSections.map((section) => (
-            <div key={section.title}>
-              <h2>{section.title}</h2>
-              {section.items.map((item) => (
-                <NavLink key={item.path} to={item.path}>
-                  {item.label}
-                </NavLink>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
+    <div className="relative lg:hidden">
+      <button className="cursor-pointer" type="button" onClick={handleToggle}>
+        <GiHamburgerMenu />
+      </button>
+      <MobileNavigationLinkList
+        isOpen={isOpen}
+        navigationItems={navigationLinks}
+      />
     </div>
   );
 };

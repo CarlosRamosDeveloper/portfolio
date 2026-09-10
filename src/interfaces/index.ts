@@ -1,6 +1,7 @@
 export type { Education } from './Education';
 export type { EducationType } from './EducationalType';
 export type { FeaturedNavigationItemType } from './FeaturedNavigationItemType';
+export type { HamburgerNavigationItem } from './HamburgerNavigationItem';
 export type { JobExperience } from './JobExperience';
 export type { Project } from './Project';
 export type { ProjectStatus } from './ProjectStatus';
