@@ -11,7 +11,7 @@ export const TechFilterItem = ({ technology, isSelected, onChange }: Props) => {
   return (
     <button
       className={cn(
-        'p-3 bg-accent m-1 border-2',
+        'h-25 w-30 lg:w-35 border-2 bg-accent p-1 text-sm lg:text-base',
         isSelected ? ' border-white' : 'border-transparent',
       )}
       type="button"
