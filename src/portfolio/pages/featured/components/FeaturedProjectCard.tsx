@@ -20,7 +20,7 @@ export const FeaturedProjectCard = ({ project }: Props) => {
   const { image, isOpen, closeImage, openImage } = useImageViewer();
 
   return (
-    <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
+    <div className="my-6 w-full border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <FeaturedTitle projectName={project.name} />
       <FeaturedProjectStatusSection status={project.status} />
       <FeaturedNavigation
