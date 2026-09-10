@@ -25,9 +25,9 @@ export const TechStackList = ({
       <Separator />
       <div className="p-1 bg-card-details">
         <div
-          className="m-0.5 grid gap-2 p-1"
+          className="m-0.5 grid justify-around gap-2 p-1"
           style={{
-            gridTemplateColumns: `repeat(${maxTechRow}, minmax(0, 1fr))`,
+            gridTemplateColumns: `repeat(${Math.min(visibleTech.length, maxTechRow)}, auto)`,
           }}
         >
           {visibleTech.map((tech) => (
