@@ -16,7 +16,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
   const shortStack = project.techStack.slice(0, maxTech);
 
   return (
-    <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
+    <div className="my-6 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">
         <span className="font-semibold text-xl">{project.name}</span>
 

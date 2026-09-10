@@ -22,7 +22,7 @@ export const BackgroundCard = ({ experience }: Props) => {
   const { data, type } = experience;
 
   return (
-    <div className="my-3 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
+    <div className="my-3 w-full border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">
         <div className="font-semibold text-xl">
           {type === 'education' && data.title}

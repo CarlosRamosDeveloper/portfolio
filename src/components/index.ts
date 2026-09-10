@@ -1,5 +1,6 @@
 export { Button, buttonVariants } from './ui/button';
 export { CustomFooter } from './custom/CustomFooter';
+export { FramePage } from './custom/FramePage';
 export { ImageOverlay } from './custom/ImageOverlay';
 export { NavigateButton } from './custom/NavigateButton';
 export { PageTitle } from './custom/PageTitle';

@@ -10,6 +10,7 @@ import { TechStackList } from '@/portfolio/pages/components';
 import { STATUS_LABEL } from '@/constants';
 import { ProjectGallery } from './components/gallery';
 import { ProjectsData } from '@/data/ProjectsData';
+import { FramePage } from '@/components';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();
@@ -19,19 +20,21 @@ export const ProjectPage = () => {
   if (!project) return <NonFoundProject />;
 
   return (
-    <div className="my-6 w-full max-w-4xl flex flex-col mx-auto">
-      <ProjectTitle title={project.name} />
-      <ProjectSubtitleSection
-        status={STATUS_LABEL[project.status]}
-        subtitle={project.shortDescription}
-        repository={project.repository}
-      />
-      <ProjectGallery
-        images={project.screenshots || []}
-        videos={project.video || null}
-      />
-      <TechStackList techStack={project.techStack} />
-      <ProjectDescriptionList descriptionList={project.description} />
-    </div>
+    <FramePage>
+      <div className="my-6 flex flex-col">
+        <ProjectTitle title={project.name} />
+        <ProjectSubtitleSection
+          status={STATUS_LABEL[project.status]}
+          subtitle={project.shortDescription}
+          repository={project.repository}
+        />
+        <ProjectGallery
+          images={project.screenshots || []}
+          videos={project.video || null}
+        />
+        <TechStackList techStack={project.techStack} />
+        <ProjectDescriptionList descriptionList={project.description} />
+      </div>
+    </FramePage>
   );
 };
