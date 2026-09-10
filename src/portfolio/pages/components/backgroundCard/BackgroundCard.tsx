@@ -6,6 +6,7 @@ import {
   ExperienceWorkingPositionText,
 } from './experience';
 import { EducationLabelType, EducationalProjectList } from './education';
+import { useMediaQuery } from '@/hooks';
 
 export type Background =
   | { type: 'job'; data: JobExperience }
@@ -19,6 +20,10 @@ interface Props {
 }
 
 export const BackgroundCard = ({ experience }: Props) => {
+  const isMobile = useMediaQuery('(max-width: 639px)');
+  const isTablet = useMediaQuery('(min-width: 640px) and (max-width: 1023px)');
+
+  const maxTechPerRow = isMobile || isTablet ? 3 : 5;
   const { data, type } = experience;
 
   return (
@@ -46,7 +51,11 @@ export const BackgroundCard = ({ experience }: Props) => {
           </>
         )}
       </div>
-      <TechStackList techStack={data.techStack} topSeparator />
+      <TechStackList
+        techStack={data.techStack}
+        topSeparator
+        maxTechPerRow={maxTechPerRow}
+      />
       <DescriptionList descriptions={data.description || []} />
       {type === 'education' && (
         <EducationalProjectList projects={data.projects || []} />
