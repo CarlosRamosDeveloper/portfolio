@@ -46,7 +46,7 @@ export const BackgroundCard = ({ experience }: Props) => {
           </>
         )}
       </div>
-      <TechStackList techStack={data.techStack} />
+      <TechStackList techStack={data.techStack} topSeparator />
       <DescriptionList descriptions={data.description || []} />
       {type === 'education' && (
         <EducationalProjectList projects={data.projects || []} />
