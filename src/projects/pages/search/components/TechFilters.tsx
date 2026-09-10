@@ -2,7 +2,6 @@ import type { TechId, Technology } from '@/interfaces';
 import { TechFilterItem } from '.';
 import { useMediaQuery } from '@/hooks';
 import { splitIntoRows } from '@/portfolio/shared';
-import { cn } from '@/lib/utils';
 
 interface Props {
   techList: [TechId, Technology][];
