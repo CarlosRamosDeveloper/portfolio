@@ -1,9 +1,7 @@
-import { cn } from '@/lib/utils';
-
 interface Props {
   text: string;
 }
 
 export const AboutBubble = ({ text }: Props) => {
-  return <div className={cn('p-2 border border-border text-base')}>{text}</div>;
+  return <div className="p-4 lg:p-2 border border-border text-xl">{text}</div>;
 };
