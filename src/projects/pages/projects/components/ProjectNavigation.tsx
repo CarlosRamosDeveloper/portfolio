@@ -8,9 +8,7 @@ interface Props {
 
 export const ProjectNavigation = ({ projectUrl }: Props) => {
   return (
-    // Cambiar el color del enlace
-    // Aplicar el enlace a la página del proyecto
-    <div className="">
+    <div className="text-blue-600 font-semibold">
       <Link to={projectUrl}>
         <ProjectSummarySubtitle text={PROJECT_TEXT.navigateToProject} />
       </Link>
