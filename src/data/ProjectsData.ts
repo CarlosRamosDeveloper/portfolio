@@ -50,7 +50,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 0,
+    id: 2,
     idSlug: 'mhr-comparator',
     name: 'Monster Hunter Rise Comparator',
     shortDescription: 'Un comparador para el videojuego MHR',
@@ -75,7 +75,25 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 2,
+    id: 3,
+    idSlug: 'trivial-java',
+    name: 'Trivial en terminal',
+    shortDescription: 'Un trivial sencillo por terminal',
+    description: [
+      'Nació como un proyecto para enseñarle java a un amigo',
+      'La lista de preguntas y respuestas se reordenan en cada nuevo intento',
+      'Como era algo sencillito, no tiene ni base de datos ni docker asociado',
+    ],
+    isFeatured: false,
+    status: 'finished',
+    techStack: [TECHNOLOGIES.java],
+    repository: REPOSITORIES.trivialJava,
+    screenshots: [],
+    url: null,
+    video: null,
+  },
+  {
+    id: 4,
     idSlug: 'escape-from-purgatory',
     name: 'Escape From Purgatory',
     shortDescription: 'Videojuego Metroidvania en 2D',
@@ -108,7 +126,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 3,
+    id: 5,
     idSlug: 'chests-please',
     name: 'Chests, Please',
     shortDescription:
@@ -144,7 +162,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 4,
+    id: 6,
     idSlug: 'password-app-manager',
     name: 'PasswordAppManager',
     shortDescription:
@@ -176,7 +194,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 5,
+    id: 7,
     idSlug: 'portfolio-v1',
     name: 'Portfolio',
     shortDescription: 'Portfolio personal',
@@ -196,24 +214,6 @@ export const ProjectsData: Project[] = [
       TECHNOLOGIES['git-flow'],
     ],
     repository: REPOSITORIES.portfolioV1,
-    screenshots: [],
-    url: null,
-    video: null,
-  },
-  {
-    id: 0,
-    idSlug: 'trivial-java',
-    name: 'Trivial en terminal',
-    shortDescription: 'Un trivial sencillo por terminal',
-    description: [
-      'Nació como un proyecto para enseñarle java a un amigo',
-      'La lista de preguntas y respuestas se reordenan en cada nuevo intento',
-      'Como era algo sencillito, no tiene ni base de datos ni docker asociado',
-    ],
-    isFeatured: false,
-    status: 'finished',
-    techStack: [TECHNOLOGIES.java],
-    repository: REPOSITORIES.trivialJava,
     screenshots: [],
     url: null,
     video: null,
