@@ -6,11 +6,11 @@ import {
   FeaturedProjectStatusSection,
   FeaturedTitle,
 } from '.';
-import { TechStackList } from '../../components';
 
 import { useImageViewer } from '@/hooks';
 import { ImageOverlay } from '@/components/custom/ImageOverlay';
 import { ROUTES } from '@/constants';
+import { TechStackList } from '@/portfolio/pages/components';
 
 interface Props {
   project: Project;

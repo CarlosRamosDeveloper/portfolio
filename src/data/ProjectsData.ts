@@ -210,8 +210,10 @@ export const ProjectsData: Project[] = [
     techStack: [
       TECHNOLOGIES.react,
       TECHNOLOGIES.typescript,
-      TECHNOLOGIES.git,
+      TECHNOLOGIES['github-actions'],
+      TECHNOLOGIES['github-projects'],
       TECHNOLOGIES['git-flow'],
+      TECHNOLOGIES.git,
     ],
     repository: REPOSITORIES.portfolioV1,
     screenshots: [],
