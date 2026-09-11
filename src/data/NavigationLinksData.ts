@@ -7,9 +7,10 @@ export const navigationLinksData: HamburgerNavigationItem[] = [
     title: NAVIGATION_LINKS_LABEL.portfolioTitle,
     items: [
       {
-        label: NAVIGATION_LINKS_LABEL.portfolioAbout,
-        path: ROUTES.about,
+        label: NAVIGATION_LINKS_LABEL.portfolioSoftSkills,
+        path: ROUTES.softSkills,
       },
+
       {
         label: NAVIGATION_LINKS_LABEL.portfolioExperience,
         path: ROUTES.experience,
@@ -19,12 +20,12 @@ export const navigationLinksData: HamburgerNavigationItem[] = [
         path: ROUTES.education,
       },
       {
-        label: NAVIGATION_LINKS_LABEL.portfolioContact,
-        path: ROUTES.contact,
+        label: NAVIGATION_LINKS_LABEL.portfolioAbout,
+        path: ROUTES.about,
       },
       {
-        label: NAVIGATION_LINKS_LABEL.portfolioSoftSkills,
-        path: ROUTES.softSkills,
+        label: NAVIGATION_LINKS_LABEL.portfolioContact,
+        path: ROUTES.contact,
       },
     ],
   },
