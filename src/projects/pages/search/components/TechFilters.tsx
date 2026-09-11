@@ -1,6 +1,6 @@
 import type { TechId, Technology } from '@/interfaces';
 import { TechFilterItem } from '.';
-import { useMediaQuery } from '@/hooks';
+import { useMaxTechPerRow } from '@/hooks';
 import { splitIntoRows } from '@/portfolio/shared';
 
 interface Props {
@@ -10,9 +10,7 @@ interface Props {
 }
 
 export const TechFilters = ({ techList, selectedIds, onChange }: Props) => {
-  const isDesktop = useMediaQuery('(min-width: 1024px)');
-
-  const maxTechPerRow = isDesktop ? 5 : 3;
+  const maxTechPerRow = useMaxTechPerRow();
   const techRows = splitIntoRows(techList, maxTechPerRow);
 
   return (

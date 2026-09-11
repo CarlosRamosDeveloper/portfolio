@@ -6,6 +6,7 @@ import { ProjectImagesList } from './ProjectImagesList';
 import { PROJECT_TEXT } from '@/constants/projects/pages';
 import { ProjectNavigation } from './ProjectNavigation';
 import { FeaturedProjectStatusSection } from '../../featured/components';
+import { useMaxTechPerRow } from '@/hooks';
 
 interface Props {
   project: Project;
@@ -15,6 +16,7 @@ const maxTech = 3;
 
 export const ProjectSummaryCard = ({ project }: Props) => {
   const shortStack = project.techStack.slice(0, maxTech);
+  const maxTechPerRow = useMaxTechPerRow();
 
   return (
     <div className="my-6 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
@@ -33,7 +35,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
       </div>
       <TechStackList
         techStack={shortStack}
-        maxTechPerRow={maxTech}
+        maxTechPerRow={maxTechPerRow}
         botSeparator
         topSeparator
       />
