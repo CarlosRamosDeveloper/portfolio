@@ -8,7 +8,9 @@ import { TechFilters } from './components/TechFilters';
 import { CategorySection } from './components/CategorySection';
 import { CleanFiltersButton, SearchedProjectsList } from './components';
 
-const techList = Object.entries(TECHNOLOGIES) as [TechId, Technology][];
+const techList = (
+  Object.entries(TECHNOLOGIES) as [TechId, Technology][]
+).filter(([, tech]) => tech.isRelevant);
 
 export const SearchPage = () => {
   const [selectedTechIds, setSelectedTechIds] = useState<TechId[]>([]);
@@ -71,13 +73,6 @@ export const SearchPage = () => {
         <CategorySection title="database">
           <TechFilters
             techList={filterTechnologiesByCategory(techList, 'database')}
-            selectedIds={selectedTechIds}
-            onChange={handleTechnologyClick}
-          />
-        </CategorySection>
-        <CategorySection title="ui-toolkit">
-          <TechFilters
-            techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
             selectedIds={selectedTechIds}
             onChange={handleTechnologyClick}
           />
