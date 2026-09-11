@@ -11,6 +11,7 @@ export const REPOSITORIES = {
     'https://github.com/CarlosRamosDeveloper/PasswordManagerApp',
   portfolioV1: 'https://github.com/CarlosRamosDeveloper/portfolio',
   trivialJava: 'https://github.com/CarlosRamosDeveloper/Trivial2',
+  decisions: 'https://github.com/CarlosRamosDeveloper/Proyecto_Decisiones',
 };
 
 export const VIDEO_URLS = {};

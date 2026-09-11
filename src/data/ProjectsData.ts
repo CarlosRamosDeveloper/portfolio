@@ -195,6 +195,36 @@ export const ProjectsData: Project[] = [
   },
   {
     id: 7,
+    idSlug: 'decisions-rpg',
+    name: 'Proyecto Decisiones',
+    shortDescription:
+      'API REST para un RPG basado en decisiones, con persistencia en MySQL y gestión mediante Spring Boot.',
+    description: [
+      'Backend desarrollado en Kotlin y Spring Boot para un RPG basado en decisiones.',
+      'La aplicación permite gestionar usuarios, personajes, localizaciones, NPCs, decisiones y las opciones elegidas durante la partida.',
+      'La API REST fue diseñada para ser consumida por la aplicación móvil desarrollada por otro miembro del equipo, mientras que el backend también incluye una interfaz web de administración mediante Thymeleaf.',
+      'El proyecto utiliza una arquitectura por capas con controladores, casos de uso, servicios, repositorios y entidades de dominio, además de DTOs y mappers para separar los modelos de persistencia de los datos expuestos por la API.',
+      'La aplicación y la base de datos pueden ejecutarse mediante Docker Compose, incluyendo la inicialización de la base de datos MySQL.',
+    ],
+    isFeatured: false,
+    status: 'finished',
+    techStack: [
+      TECHNOLOGIES.kotlin,
+      TECHNOLOGIES['spring-boot'],
+      TECHNOLOGIES.mysql,
+      TECHNOLOGIES.docker,
+    ],
+    repository: REPOSITORIES.decisions,
+    screenshots: [
+      `${import.meta.env.BASE_URL}projects/rpgd-1.png`,
+      `${import.meta.env.BASE_URL}projects/rpgd-2.png`,
+      `${import.meta.env.BASE_URL}projects/rpgd-3.png`,
+    ],
+    url: null,
+    video: null,
+  },
+  {
+    id: 8,
     idSlug: 'portfolio-v1',
     name: 'Portfolio',
     shortDescription: 'Portfolio personal',
