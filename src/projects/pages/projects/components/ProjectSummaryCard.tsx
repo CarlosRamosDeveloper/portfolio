@@ -6,7 +6,7 @@ import { ProjectImagesList } from './ProjectImagesList';
 import { PROJECT_TEXT } from '@/constants/projects/pages';
 import { ProjectNavigation } from './ProjectNavigation';
 import { FeaturedProjectStatusSection } from '../../featured/components';
-import { useMediaQuery } from '@/hooks';
+import { useMaxTechPerRow } from '@/hooks';
 
 interface Props {
   project: Project;
@@ -15,11 +15,8 @@ interface Props {
 const maxTech = 3;
 
 export const ProjectSummaryCard = ({ project }: Props) => {
-  const isMobile = useMediaQuery('(max-width: 639px)');
-  const isTablet = useMediaQuery('(min-width: 640px) and (max-width: 1023px)');
-
   const shortStack = project.techStack.slice(0, maxTech);
-  const maxTechPerRow = isMobile ? 2 : isTablet ? 3 : 5;
+  const maxTechPerRow = useMaxTechPerRow();
 
   return (
     <div className="my-6 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">

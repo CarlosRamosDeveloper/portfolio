@@ -21,6 +21,7 @@ interface Props {
 
 export const BackgroundCard = ({ experience }: Props) => {
   const maxTechPerRow = useMaxTechPerRow();
+
   const { data, type } = experience;
 
   return (

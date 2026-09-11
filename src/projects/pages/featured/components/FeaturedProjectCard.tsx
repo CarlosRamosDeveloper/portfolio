@@ -6,8 +6,7 @@ import {
   FeaturedProjectStatusSection,
   FeaturedTitle,
 } from '.';
-
-import { useImageViewer, useMediaQuery } from '@/hooks';
+import { useImageViewer, useMaxTechPerRow } from '@/hooks';
 import { ImageOverlay } from '@/components/custom/ImageOverlay';
 import { ROUTES } from '@/constants';
 import { TechStackList } from '@/portfolio/pages/components';
@@ -18,9 +17,7 @@ interface Props {
 
 export const FeaturedProjectCard = ({ project }: Props) => {
   const { image, isOpen, closeImage, openImage } = useImageViewer();
-  const isMobile = useMediaQuery('(max-width: 639px)');
-  const isTablet = useMediaQuery('(min-width: 640px) and (max-width: 1023px)');
-  const maxTechPerRow = isMobile ? 2 : isTablet ? 3 : 5;
+  const maxTechPerRow = useMaxTechPerRow();
 
   return (
     <div className="my-6 w-full border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
