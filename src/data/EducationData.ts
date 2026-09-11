@@ -52,7 +52,7 @@ export const EducationData: Education[] = [
       'Formación basada en el desarrollo de proyectos mediante retos prácticos',
       'Asumí el puesto de Project Leader y gestioné dos equipos diferentes para realizar dos retos',
     ],
-    projects: [ProjectsData[1], ProjectsData[2]],
+    projects: [ProjectsData[3], ProjectsData[4]],
   },
   {
     id: 3,
@@ -80,6 +80,6 @@ export const EducationData: Education[] = [
       'Uso de bases de datos relacionales y no relacionales',
       'Despliegue de APIs backend en AWS para su consumo desde aplicaciones móviles.',
     ],
-    projects: [ProjectsData[3]],
+    projects: [ProjectsData[5], ProjectsData[6]],
   },
 ];
