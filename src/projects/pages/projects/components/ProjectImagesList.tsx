@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
-import { FeaturedImage } from '@/portfolio/pages/featured/components';
+
 import { PROJECT_TEXT } from '@/constants/projects/pages';
+import { FeaturedImage } from '../../featured/components';
 
 interface Props {
   images: string[];

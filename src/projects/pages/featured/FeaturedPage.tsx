@@ -1,7 +1,7 @@
-import { ProjectsData } from '@/data/ProjectsData';
+import { FramePage, PageTitle } from '@/components';
+import { ProjectsData } from '@/data';
 import { FeaturedProjectsList } from './components';
 import { FEATURED_TEXT } from '@/constants/pages';
-import { FramePage, PageTitle } from '@/components';
 
 const data = ProjectsData.filter((project) => project.isFeatured).reverse();
 

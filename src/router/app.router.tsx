@@ -5,7 +5,6 @@ import {
   AboutPage,
   ContactPage,
   ExperiencePage,
-  FeaturedPage,
   LandingPage,
   SoftSkillsPage,
 } from '@/portfolio/pages';
@@ -13,6 +12,7 @@ import { EducationPage } from '@/portfolio/pages/education/EducationPage';
 import { ROUTES } from '@/constants/routes';
 import { ProjectsLayout } from '@/projects/layout/ProjectsLayout';
 import { ProjectPage, ProjectsPage, SearchPage } from '@/projects/pages';
+import { FeaturedPage } from '@/projects/pages/featured/FeaturedPage';
 
 export const appRouter = createBrowserRouter([
   {

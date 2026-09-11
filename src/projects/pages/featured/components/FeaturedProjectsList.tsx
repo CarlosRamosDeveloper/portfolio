@@ -1,5 +1,5 @@
 import type { Project } from '@/interfaces';
-import { FeaturedProjectCard } from './FeaturedProjectCard';
+import { FeaturedProjectCard } from '.';
 
 interface Props {
   projects: Project[];
