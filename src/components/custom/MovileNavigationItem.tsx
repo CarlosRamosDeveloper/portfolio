@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router';
 
-interface Props {
-  type: 'title' | 'link';
-  label: string;
-  path?: string;
-  onClick?: () => void;
-}
+type Props =
+  | { type: 'title'; label: string; onClick?: never; path?: never }
+  | {
+      type: 'link';
+      label: string;
+      path: string;
+      onClick?: () => void;
+    };
 
 export const MobileNavigationItem = ({ type, label, path, onClick }: Props) => {
   if (type === 'title') {
@@ -13,8 +15,8 @@ export const MobileNavigationItem = ({ type, label, path, onClick }: Props) => {
   }
 
   return (
-    <div className="flex w-50 pl-5 py-1 bg-accent">
-      <NavLink to={path!} onClick={onClick}>
+    <div className="flex w-50 bg-accent m-1">
+      <NavLink to={path} onClick={onClick} className="w-full py-1 pl-5">
         {label}
       </NavLink>
     </div>
