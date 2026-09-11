@@ -1,3 +1,4 @@
+import { FramePage } from '@/components';
 import {
   LandingAbout,
   LandingExperience,
@@ -8,14 +9,12 @@ import {
 
 export const LandingPage = () => {
   return (
-    <>
-      <div>
-        <LandingHero />
-        <LandingAbout />
-        <LandingSoftskillsList />
-        <LandingFeaturedProjectsList />
-        <LandingExperience />
-      </div>
-    </>
+    <FramePage>
+      <LandingHero />
+      <LandingAbout />
+      <LandingSoftskillsList />
+      <LandingFeaturedProjectsList />
+      <LandingExperience />
+    </FramePage>
   );
 };

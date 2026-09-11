@@ -1,10 +1,11 @@
 import type { Project } from '@/interfaces';
 import { TechStackList } from '@/portfolio/pages/components';
-import { FeaturedProjectStatusSection } from '@/portfolio/pages/featured/components';
+
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
 import { ProjectImagesList } from './ProjectImagesList';
 import { PROJECT_TEXT } from '@/constants/projects/pages';
 import { ProjectNavigation } from './ProjectNavigation';
+import { FeaturedProjectStatusSection } from '../../featured/components';
 
 interface Props {
   project: Project;
@@ -16,7 +17,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
   const shortStack = project.techStack.slice(0, maxTech);
 
   return (
-    <div className="my-6 w-full max-w-3xl border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
+    <div className="my-6 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
       <div className="flex p-3 justify-between">
         <span className="font-semibold text-xl">{project.name}</span>
 
@@ -30,7 +31,12 @@ export const ProjectSummaryCard = ({ project }: Props) => {
         />
         <ProjectNavigation projectUrl={project.idSlug} />
       </div>
-      <TechStackList techStack={shortStack} maxTechPerRow={maxTech} />
+      <TechStackList
+        techStack={shortStack}
+        maxTechPerRow={maxTech}
+        botSeparator
+        topSeparator
+      />
       <ProjectImagesList images={project.screenshots || []} />
     </div>
   );

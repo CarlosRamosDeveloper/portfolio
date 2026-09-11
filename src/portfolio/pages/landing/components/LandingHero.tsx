@@ -6,10 +6,10 @@ import { LandingLabel } from './LandingLabel';
 
 export const LandingHero = () => {
   return (
-    <div className="my-3 w-full max-w-3xl flex flex-col text-center mx-auto text-xl">
+    <div className="my-3 flex flex-col text-center">
       <LandingLabel text={LANDING_TEXT.title} type="title" />
       <LandingLabel text={LANDING_TEXT.subtitle} type="subtitle" />
-      <div className="flex justify-around mt-3">
+      <div className="flex justify-around mt-1 lg:mt-3">
         <Link to={ROUTES.projects}>
           <LandingLabel text={`[${LANDING_TEXT.projects}]`} type="navigation" />
         </Link>

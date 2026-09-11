@@ -51,6 +51,49 @@ export const ProjectsData: Project[] = [
   },
   {
     id: 2,
+    idSlug: 'mhr-comparator',
+    name: 'Monster Hunter Rise Comparator',
+    shortDescription: 'Un comparador para el videojuego MHR',
+    description: [
+      'Permite el cálculo de daño teniendo en cuenta las diferentes opciones de habilidades',
+      'Tiene en cuenta el porcentaje de golpe crítico y golpe débil',
+      'Tiene en cuenta las habilidades que incrementan el daño y el golpe crítico',
+      'Cuenta con selector de temas, inspirado en 4 criaturas de la saga',
+    ],
+    isFeatured: false,
+    status: 'abandoned',
+    techStack: [
+      TECHNOLOGIES.flutter,
+      TECHNOLOGIES.bloc,
+      TECHNOLOGIES.dart,
+      TECHNOLOGIES['material-3'],
+      TECHNOLOGIES.git,
+    ],
+    repository: '',
+    screenshots: [],
+    url: null,
+    video: null,
+  },
+  {
+    id: 3,
+    idSlug: 'trivial-java',
+    name: 'Trivial en terminal',
+    shortDescription: 'Un trivial sencillo por terminal',
+    description: [
+      'Nació como un proyecto para enseñarle java a un amigo',
+      'La lista de preguntas y respuestas se reordenan en cada nuevo intento',
+      'Como era algo sencillito, no tiene ni base de datos ni docker asociado',
+    ],
+    isFeatured: false,
+    status: 'finished',
+    techStack: [TECHNOLOGIES.java],
+    repository: REPOSITORIES.trivialJava,
+    screenshots: [],
+    url: null,
+    video: null,
+  },
+  {
+    id: 4,
     idSlug: 'escape-from-purgatory',
     name: 'Escape From Purgatory',
     shortDescription: 'Videojuego Metroidvania en 2D',
@@ -83,7 +126,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 3,
+    id: 5,
     idSlug: 'chests-please',
     name: 'Chests, Please',
     shortDescription:
@@ -119,7 +162,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 4,
+    id: 6,
     idSlug: 'password-app-manager',
     name: 'PasswordAppManager',
     shortDescription:
@@ -151,7 +194,7 @@ export const ProjectsData: Project[] = [
     video: null,
   },
   {
-    id: 5,
+    id: 7,
     idSlug: 'portfolio-v1',
     name: 'Portfolio',
     shortDescription: 'Portfolio personal',
@@ -167,8 +210,10 @@ export const ProjectsData: Project[] = [
     techStack: [
       TECHNOLOGIES.react,
       TECHNOLOGIES.typescript,
-      TECHNOLOGIES.git,
+      TECHNOLOGIES['github-actions'],
+      TECHNOLOGIES['github-projects'],
       TECHNOLOGIES['git-flow'],
+      TECHNOLOGIES.git,
     ],
     repository: REPOSITORIES.portfolioV1,
     screenshots: [],

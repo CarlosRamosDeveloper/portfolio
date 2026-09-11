@@ -21,6 +21,8 @@ import { AiOutlineDotNet } from 'react-icons/ai';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { DiJqueryLogo, DiMysql, DiPostgresql } from 'react-icons/di';
 import {
+  SiDart,
+  SiGithubactions,
   SiJetpackcompose,
   SiJira,
   SiKotlin,
@@ -70,6 +72,13 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     category: 'tool',
     areas: ['general', 'devops'],
   },
+  bloc: {
+    id: 'bloc',
+    name: 'BLoC',
+    color: '',
+    category: 'state-management',
+    areas: ['mobile'],
+  },
   bootstrap: {
     id: 'bootstrap',
     name: 'Bootstrap',
@@ -93,6 +102,14 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     color: '',
     category: 'markup',
     areas: ['frontend'],
+  },
+  dart: {
+    id: 'dart',
+    name: 'Dart',
+    icon: SiDart,
+    color: '',
+    category: 'language',
+    areas: ['mobile', 'frontend'],
   },
   docker: {
     id: 'docker',
@@ -130,6 +147,19 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     id: 'git-flow',
     name: 'Git Flow',
     category: 'version-control',
+    areas: ['general'],
+  },
+  'github-actions': {
+    id: 'github-actions',
+    name: 'GitHub Actions',
+    icon: SiGithubactions,
+    category: 'tool',
+    areas: ['devops'],
+  },
+  'github-projects': {
+    id: 'github-projects',
+    name: 'GitHub Projects',
+    category: 'tool',
     areas: ['general'],
   },
   gitlab: {
@@ -195,6 +225,13 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     color: '',
     category: 'language',
     areas: ['backend', 'mobile'],
+  },
+  'material-3': {
+    id: 'material-3',
+    name: 'Material 3',
+    color: '',
+    category: 'ui-toolkit',
+    areas: ['frontend', 'mobile'],
   },
   mongodb: {
     id: 'mongodb',

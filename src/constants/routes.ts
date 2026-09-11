@@ -9,5 +9,5 @@ export const ROUTES = {
   featured: `/projects/featured`,
   projectId: ':idSlug',
   project: (idSlug: string) => `/projects/${idSlug}`,
-  search: 'search',
+  search: '/projects/search',
 };

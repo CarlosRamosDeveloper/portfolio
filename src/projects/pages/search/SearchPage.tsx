@@ -1,4 +1,4 @@
-import { PageTitle } from '@/components';
+import { FramePage, PageTitle } from '@/components';
 import { TECHNOLOGIES } from '@/constants';
 import { SEARCH_TEXT } from '@/constants/projects/pages';
 import { useState } from 'react';
@@ -28,8 +28,6 @@ export const SearchPage = () => {
     );
   };
 
-  console.log(filterTechnologiesByCategory(techList, 'language'));
-
   const handleTechnologyClick = (id: TechId) => {
     setSelectedTechIds((previous) => {
       if (previous.includes(id)) {
@@ -45,52 +43,54 @@ export const SearchPage = () => {
   };
 
   return (
-    <div className="flex flex-col">
-      <PageTitle title={SEARCH_TEXT.title} />
-      <CleanFiltersButton onClick={handleClearFilters} />
-      <CategorySection title="language">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'language')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <CategorySection title="framework">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'framework')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <CategorySection title="library">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'library')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <CategorySection title="database">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'database')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <CategorySection title="ui-toolkit">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <CategorySection title="platform">
-        <TechFilters
-          techList={filterTechnologiesByCategory(techList, 'platform')}
-          selectedIds={selectedTechIds}
-          onChange={handleTechnologyClick}
-        />
-      </CategorySection>
-      <SearchedProjectsList filteredProjects={filteredProjects} />
-    </div>
+    <FramePage>
+      <div className="flex flex-col">
+        <PageTitle title={SEARCH_TEXT.title} />
+        <CleanFiltersButton onClick={handleClearFilters} />
+        <CategorySection title="language">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'language')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <CategorySection title="framework">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'framework')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <CategorySection title="library">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'library')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <CategorySection title="database">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'database')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <CategorySection title="ui-toolkit">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'ui-toolkit')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <CategorySection title="platform">
+          <TechFilters
+            techList={filterTechnologiesByCategory(techList, 'platform')}
+            selectedIds={selectedTechIds}
+            onChange={handleTechnologyClick}
+          />
+        </CategorySection>
+        <SearchedProjectsList filteredProjects={filteredProjects} />
+      </div>
+    </FramePage>
   );
 };

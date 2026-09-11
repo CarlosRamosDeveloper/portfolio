@@ -1,35 +1,23 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import { Settings } from 'lucide-react';
 
 import { SETTINGS_TEXT } from '@/constants/layout';
 import { MainThemeSelector } from './MainThemeSelector';
+import { useClickOutside } from '@/hooks';
 
 export const MainSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const settingsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!isOpen) return;
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        settingsRef.current &&
-        !settingsRef.current.contains(event.target as Node)
-      ) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen]);
 
   const handleVisibilityToggle = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const handleClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
+  const settingsRef = useClickOutside<HTMLDivElement>(isOpen, handleClose);
 
   return (
     <div className="relative" ref={settingsRef}>
