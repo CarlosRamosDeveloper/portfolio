@@ -43,6 +43,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   android: {
     id: 'android',
     name: 'Android',
+    isRelevant: true,
     icon: FaAndroid,
     color: '',
     category: 'platform',
@@ -90,6 +91,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   'c-sharp': {
     id: 'c-sharp',
     name: 'C#',
+    isRelevant: true,
     icon: TbBrandCSharp,
     color: '',
     category: 'language',
@@ -106,6 +108,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   dart: {
     id: 'dart',
     name: 'Dart',
+    isRelevant: true,
     icon: SiDart,
     color: '',
     category: 'language',
@@ -114,6 +117,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   docker: {
     id: 'docker',
     name: 'Docker',
+    isRelevant: true,
     icon: FaDocker,
     color: '',
     category: 'tool',
@@ -130,6 +134,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   flutter: {
     id: 'flutter',
     name: 'Flutter',
+    isRelevant: true,
     icon: FaFlutter,
     color: '',
     category: 'framework',
@@ -138,6 +143,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   git: {
     id: 'git',
     name: 'Git',
+    isRelevant: true,
     icon: FaGitAlt,
     color: '',
     category: 'version-control',
@@ -152,6 +158,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   'github-actions': {
     id: 'github-actions',
     name: 'GitHub Actions',
+    isRelevant: true,
     icon: SiGithubactions,
     category: 'tool',
     areas: ['devops'],
@@ -159,6 +166,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   'github-projects': {
     id: 'github-projects',
     name: 'GitHub Projects',
+    isRelevant: true,
     category: 'tool',
     areas: ['general'],
   },
@@ -181,6 +189,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   java: {
     id: 'java',
     name: 'Java',
+    isRelevant: true,
     icon: FaJava,
     color: '',
     category: 'language',
@@ -189,6 +198,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   javascript: {
     id: 'javascript',
     name: 'JavaScript',
+    isRelevant: true,
     icon: IoLogoJavascript,
     color: '',
     category: 'language',
@@ -221,6 +231,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   kotlin: {
     id: 'kotlin',
     name: 'Kotlin',
+    isRelevant: true,
     icon: SiKotlin,
     color: '',
     category: 'language',
@@ -244,6 +255,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   mysql: {
     id: 'mysql',
     name: 'MySQL',
+    isRelevant: true,
     icon: DiMysql,
     color: '',
     category: 'database',
@@ -292,6 +304,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   postgresql: {
     id: 'postgresql',
     name: 'PostgreSQL',
+    isRelevant: true,
     icon: DiPostgresql,
     color: '',
     category: 'database',
@@ -308,6 +321,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   react: {
     id: 'react',
     name: 'React',
+    isRelevant: true,
     icon: FaReact,
     color: '',
     category: 'library',
@@ -323,6 +337,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   'spring-boot': {
     id: 'spring-boot',
     name: 'Spring Boot',
+    isRelevant: true,
     icon: SiSpringboot,
     color: '',
     category: 'framework',
@@ -331,6 +346,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   sqlite: {
     id: 'sqlite',
     name: 'SQLite',
+    isRelevant: true,
     icon: SiSqlite,
     color: '',
     category: 'database',
@@ -355,6 +371,7 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
   typescript: {
     id: 'typescript',
     name: 'TypeScript',
+    isRelevant: true,
     icon: SiTypescript,
     color: '',
     category: 'language',
