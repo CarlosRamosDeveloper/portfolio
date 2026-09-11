@@ -6,8 +6,7 @@ import {
   FeaturedProjectStatusSection,
   FeaturedTitle,
 } from '.';
-
-import { useImageViewer } from '@/hooks';
+import { useImageViewer, useMaxTechPerRow } from '@/hooks';
 import { ImageOverlay } from '@/components/custom/ImageOverlay';
 import { ROUTES } from '@/constants';
 import { TechStackList } from '@/portfolio/pages/components';
@@ -18,6 +17,7 @@ interface Props {
 
 export const FeaturedProjectCard = ({ project }: Props) => {
   const { image, isOpen, closeImage, openImage } = useImageViewer();
+  const maxTechPerRow = useMaxTechPerRow();
 
   return (
     <div className="my-6 w-full border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
@@ -33,7 +33,12 @@ export const FeaturedProjectCard = ({ project }: Props) => {
         onClick={() => openImage(project.screenshots?.[0] ?? '')}
       />
       <ImageOverlay image={image!} onClose={closeImage} isOpen={isOpen} />
-      <TechStackList techStack={project.techStack} botSeparator topSeparator />
+      <TechStackList
+        techStack={project.techStack}
+        botSeparator
+        topSeparator
+        maxTechPerRow={maxTechPerRow}
+      />
       <FeaturedNavigation url={project.repository} type="repository" />
     </div>
   );
