@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { GalleryButton, GalleryThumbnail } from '.';
 
 interface Props {
@@ -7,6 +8,18 @@ interface Props {
 }
 
 export const GallerySlider = ({ images, currentIndex, onChange }: Props) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const selectedThumbnail = containerRef.current?.children[currentIndex];
+
+    selectedThumbnail?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center',
+    });
+  }, [currentIndex]);
+
   const handlePrevItem = () => {
     onChange(currentIndex === 0 ? images.length - 1 : currentIndex - 1);
   };
@@ -22,7 +35,7 @@ export const GallerySlider = ({ images, currentIndex, onChange }: Props) => {
   return (
     <div className="flex items-center bg-black mt-3">
       <GalleryButton label="<-" onClick={handlePrevItem} location="left" />
-      <div className="flex flex-1 overflow-x-auto mx-2">
+      <div ref={containerRef} className="flex flex-1 overflow-x-auto mx-2">
         {images.map((image, index) => (
           <GalleryThumbnail
             image={image}
