@@ -5,6 +5,7 @@ import { Separator, TechStackList } from '../..';
 import { EducationalRepositoryItem, EducationProjectTitle } from '.';
 import { DescriptionList } from '..';
 import { ROUTES } from '@/constants';
+import { useMaxTechPerRow } from '@/hooks';
 
 interface Props {
   project: Project;
@@ -16,6 +17,8 @@ export const EducationalProjectItem = ({ project }: Props) => {
   const handleVisibilityToggle = () => {
     setIsOpen((prev) => !prev);
   };
+
+  const maxTechPerRow = useMaxTechPerRow();
 
   return (
     <>
@@ -34,7 +37,7 @@ export const EducationalProjectItem = ({ project }: Props) => {
           <EducationalRepositoryItem repositoryUrl={project.repository} />
           <TechStackList
             techStack={project.techStack}
-            maxTechPerRow={3}
+            maxTechPerRow={maxTechPerRow}
             topSeparator
           />
           <DescriptionList descriptions={project.description} />
