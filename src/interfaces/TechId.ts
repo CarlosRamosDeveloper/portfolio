@@ -13,6 +13,8 @@ export type TechId =
   | 'flutter'
   | 'git-flow'
   | 'git'
+  | 'github-actions'
+  | 'github-projects'
   | 'gitlab'
   | 'html'
   | 'java'

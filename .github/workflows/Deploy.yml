@@ -5,8 +5,7 @@ name: Deploy portfolio
 on:
   push:
     branches:
-      # - main
-      - 121-refactor
+      - main
 
 permissions:
   contents: read

@@ -22,6 +22,7 @@ import { IoLogoJavascript } from 'react-icons/io5';
 import { DiJqueryLogo, DiMysql, DiPostgresql } from 'react-icons/di';
 import {
   SiDart,
+  SiGithubactions,
   SiJetpackcompose,
   SiJira,
   SiKotlin,
@@ -146,6 +147,19 @@ export const TECHNOLOGIES: Record<TechId, Technology> = {
     id: 'git-flow',
     name: 'Git Flow',
     category: 'version-control',
+    areas: ['general'],
+  },
+  'github-actions': {
+    id: 'github-actions',
+    name: 'GitHub Actions',
+    icon: SiGithubactions,
+    category: 'tool',
+    areas: ['devops'],
+  },
+  'github-projects': {
+    id: 'github-projects',
+    name: 'GitHub Projects',
+    category: 'tool',
     areas: ['general'],
   },
   gitlab: {
