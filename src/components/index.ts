@@ -4,6 +4,7 @@ export { CustomFooter } from './custom/CustomFooter';
 export { DesktopNavigation } from './custom/DesktopNavigation';
 export { FramePage } from './custom/FramePage';
 export { ImageOverlay } from './custom/ImageOverlay';
+export { MainLayout } from './custom/MainLayout';
 export { MobileNavigation } from './custom/MobileNavigation';
 export { MobileNavigationItem } from './custom/MovileNavigationItem';
 export { NavigateButton } from './custom/NavigateButton';
