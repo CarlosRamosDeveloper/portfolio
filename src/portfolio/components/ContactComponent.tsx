@@ -15,7 +15,10 @@ export const ContactComponent = ({
   isFooter = false,
 }: Props) => {
   return (
-    <div onClick={onClick} className="flex flex-col items-center mx-2 p-3">
+    <div
+      onClick={onClick}
+      className="flex flex-col items-center mx-2 p-3 cursor-pointer"
+    >
       <Icon className={cn(isFooter ? 'size-5' : 'size-12')} />
       <p className="mt-0">{label}</p>
     </div>
