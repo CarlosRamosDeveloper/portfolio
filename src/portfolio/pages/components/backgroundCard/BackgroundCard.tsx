@@ -26,7 +26,7 @@ export const BackgroundCard = ({ experience }: Props) => {
 
   return (
     <div className="my-3 w-full border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
-      <div className="flex p-3 justify-between">
+      <div className="flex p-3 flex-col-reverse text-center sm:justify-between sm:flex-row sm:text-left">
         <div className="font-semibold text-xl">
           {type === 'education' && data.title}
           {type === 'job' && data.company}
@@ -34,12 +34,12 @@ export const BackgroundCard = ({ experience }: Props) => {
         <DateLabel start={data.startYear} end={data.endYear} />
       </div>
       {type === 'job' && (
-        <>
+        <div className="text-center sm:text-left">
           <ExperienceWorkingPositionText
             workingPosition={data.workingPosition}
           />
           <ExperienceSubtitle text={data.subtitle} />
-        </>
+        </div>
       )}
       <div className="flex flex-1 justify-between">
         {type === 'education' && (
