@@ -20,14 +20,18 @@ export const ProjectSummaryCard = ({ project }: Props) => {
 
   return (
     <div className="my-6 border border-foreground rounded-2xl bg-card text-card-foreground overflow-hidden">
-      <div className="flex p-3 justify-between">
-        <span className="font-semibold text-xl">{project.name}</span>
+      <div className="flex flex-col sm:flex-row p-3 justify-between text-center sm:text-left">
+        <span className="font-semibold text-3xl sm:text-xl text-center mb-3 sm:mb-0">
+          {project.name}
+        </span>
 
         <FeaturedProjectStatusSection status={project.status} />
       </div>
 
-      <ProjectSummarySubtitle text={project.shortDescription} />
-      <div className="flex justify-between">
+      <div className="">
+        <ProjectSummarySubtitle text={project.shortDescription} />
+      </div>
+      <div className="flex justify-between flex-col sm:flex-row">
         <ProjectSummarySubtitle
           text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
         />
@@ -39,6 +43,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
         botSeparator
         topSeparator
       />
+
       <ProjectImagesList images={project.screenshots || []} />
     </div>
   );
