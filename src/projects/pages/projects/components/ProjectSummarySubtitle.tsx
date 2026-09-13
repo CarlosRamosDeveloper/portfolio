@@ -10,7 +10,11 @@ export const ProjectSummarySubtitle = ({
   addTopMargin: hasSomethingOnTop = false,
 }: Props) => {
   return (
-    <div className={cn(`text-sm px-4 ${hasSomethingOnTop ? 'py-2' : 'pb-2'}`)}>
+    <div
+      className={cn(
+        `text-center sm:text-left text-sm px-4 ${hasSomethingOnTop ? 'py-2' : 'pb-2'}`,
+      )}
+    >
       <span>{text}</span>
     </div>
   );

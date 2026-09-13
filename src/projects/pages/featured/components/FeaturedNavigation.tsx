@@ -9,7 +9,7 @@ interface Props {
   type?: FeaturedNavigationItemType;
 }
 
-const style = 'cursor-pointer p-3';
+const style = 'block cursor-pointer p-3 text-center';
 
 export const FeaturedNavigation = ({ url, type }: Props) => {
   if (!url) return null;
