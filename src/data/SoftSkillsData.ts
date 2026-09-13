@@ -35,13 +35,13 @@ export const SoftSkillsData: SoftSkill[] = [
     id: 6,
     name: 'Código limpio y mantenible',
     description:
-      'Obsesión por escribir código claro, organizado y fácil de mantener, buscando separar responsabilidades, evitar complejidad innecesaria y favorecer la reutilización de componentes y lógica',
+      '"Obsesión" por escribir código claro, organizado y fácil de mantener, buscando separar responsabilidades, evitar complejidad innecesaria y favorecer la reutilización de componentes y lógica',
   },
   {
     id: 7,
     name: 'Iniciativa',
     description:
-      'Toma la iniciativa y llevo ideas a la práctica de forma autónoma, buscando nuevas formas de aplicar conocimientos adquiridos y planteando mejoras más allá de los requisitos iniciales',
+      'Tomo la iniciativa y llevo ideas a la práctica de forma autónoma, buscando nuevas formas de aplicar conocimientos adquiridos y planteando mejoras más allá de los requisitos iniciales',
   },
   {
     id: 8,
