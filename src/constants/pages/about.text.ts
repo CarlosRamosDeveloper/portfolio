@@ -8,7 +8,7 @@ export const ABOUT_TEXT = {
   ],
   longTermGoals: 'Objetivos a largo plazo',
   goalsData: [
-    'Me gusta entender el desarrollo de software como algo que va más allá de escribir código. Me interesa conocer cómo encajan las distintas partes de un sistema, desde el desarrollo y la arquitectura hasta el desplieguey el mantenimiento.',
+    'Me gusta entender el desarrollo de software como algo que va más allá de escribir código. Me interesa conocer cómo encajan las distintas partes de un sistema, desde el desarrollo y la arquitectura hasta el despliegue y el mantenimiento.',
     'Por eso, aunque actualmente trabajo con diferentes tecnologías y no me cierro al desarrollo frontend, mis principales intereses se encuentranen el backend, DevOps y desarrollo móvil. A largo plazo, me gustaría seguir ampliando mis conocimientos hasta poder asumir responsabilidades técnicas cada vez mayores, con el objetivo de llegar a desempeñar un rol de Tech Lead o Arquitecto de Software.',
   ],
 };
