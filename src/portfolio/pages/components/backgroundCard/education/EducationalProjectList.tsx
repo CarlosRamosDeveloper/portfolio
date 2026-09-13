@@ -12,7 +12,9 @@ export const EducationalProjectList = ({ projects = [] }: Props) => {
   return (
     <div>
       <Separator />
-      <h3 className="text-xl p-2">{EDUCATION_TEXT.courseProjects}</h3>
+      <h3 className="text-xl p-3 text-center sm:text-left">
+        {EDUCATION_TEXT.courseProjects}
+      </h3>
       {projects.map((project) => (
         <EducationalProjectItem project={project} key={project.name} />
       ))}

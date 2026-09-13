@@ -16,8 +16,8 @@ export const ProjectSubtitleSection = ({
 
   return (
     <div>
-      <div className="flex flex-1 justify-between m-3 text-xl">
-        <div>{status}</div>
+      <div className="flex flex-col text-center sm:flex-row justify-between m-3 text-xl">
+        <div className="mb-1 sm:mb-0">{status}</div>
         {repository && (
           <div
             onClick={() => handleNavigate(repository)}
@@ -27,7 +27,9 @@ export const ProjectSubtitleSection = ({
           </div>
         )}
       </div>
-      <div className="my-3 text-xl">{subtitle}</div>
+      <div className="my-3 pl-5 text-xl text-center sm:text-left">
+        {subtitle}
+      </div>
     </div>
   );
 };

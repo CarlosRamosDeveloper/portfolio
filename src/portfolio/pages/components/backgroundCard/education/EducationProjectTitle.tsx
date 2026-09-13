@@ -9,9 +9,9 @@ interface Props {
 
 export const EducationProjectTitle = ({ title, url }: Props) => {
   return (
-    <div className="justify-between flex flex-1 items-center">
-      <div className="text-base p-4">{title}</div>
-      <div className="p-4">
+    <div className="flex flex-1 flex-col items-center gap-2 sm:flex-row sm:justify-between p-2 sm:p-4">
+      <div className="text-base">{title}</div>
+      <div className="sm:pr-4">
         <Link to={url}>{EDUCATION_TEXT.viewProject}</Link>
       </div>
     </div>
