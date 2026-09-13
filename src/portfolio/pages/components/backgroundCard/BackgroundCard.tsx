@@ -41,7 +41,7 @@ export const BackgroundCard = ({ experience }: Props) => {
           <ExperienceSubtitle text={data.subtitle} />
         </div>
       )}
-      <div className="flex flex-1 justify-between">
+      <div className="text-center sm:text-left flex flex-col sm:flex-row sm:justify-between">
         {type === 'education' && (
           <>
             <InstitutionLabel institutionName={data.institution} />
