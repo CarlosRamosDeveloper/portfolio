@@ -2,6 +2,10 @@
 
 Este proyecto es mi portfolio personal, bienvenidos
 
+## Despliegue
+
+Puedes acceder al proyecto pinchando [aquí](https://carlosramosdeveloper.github.io/portfolio/)
+
 ## Tecnologías y herramientas
 
 - pnpm
