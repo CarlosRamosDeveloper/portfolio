@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react';
 
 import { Settings } from 'lucide-react';
-
 import { useTranslation } from 'react-i18next';
+
 import { MainThemeSelector } from './MainThemeSelector';
 import { useClickOutside } from '@/hooks';
 
