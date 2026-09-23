@@ -19,4 +19,8 @@ export const layout = {
     selectedTheme: 'Selected Theme',
     tbd: 'Soon',
   },
+  languages: {
+    es: 'Spanish',
+    en: 'English',
+  },
 };

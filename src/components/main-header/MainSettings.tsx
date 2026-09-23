@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { MainThemeSelector } from './MainThemeSelector';
 import { useClickOutside } from '@/hooks';
+import { MainLanguageSelector } from './MainLanguageSelector';
 
 export const MainSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +46,7 @@ export const MainSettings = () => {
             <p className="text-sm font-medium">
               {t('settings.languageSelector')}
             </p>
-            <p>{t('settings.tbd')}</p>
+            <MainLanguageSelector />
           </div>
           <div className="mt-4">
             <p className="text-sm font-medium">{t('settings.fontSize')}</p>
