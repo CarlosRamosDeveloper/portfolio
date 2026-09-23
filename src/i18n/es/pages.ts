@@ -28,4 +28,7 @@ export const pages = {
   projects: {
     title: 'Listado de mis Proyectos',
   },
+  featured: {
+    title: 'Proyectos Destacados',
+  },
 };
