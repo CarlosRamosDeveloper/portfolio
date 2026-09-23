@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
+import { useTranslation } from 'react-i18next';
+
 import { DescriptionButton, DescriptionLabel } from '.';
 import { Separator } from '..';
-import { PORTFOLIO_SHARED_TEXT } from '@/constants/pages';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
   descriptions: string[];
