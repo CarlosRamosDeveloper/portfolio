@@ -39,7 +39,9 @@ export const pages = {
   },
   search: {
     title: 'Search by Technologies',
-    cleanButton: 'Reset filters',
-    searchResult: 'Query results',
+    buttonClean: 'Reset filters',
+    results: 'Query results',
+    navigateToProject: 'Navigate to Project',
+    noCoincidences: 'No coincidences found',
   },
 };

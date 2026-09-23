@@ -16,7 +16,7 @@ export const SearchedProjectsList = ({ filteredProjects }: Props) => {
   return (
     <div className="flex flex-col">
       <span className="text-center mt-5 text-xl lg:text-2xl font-semibold">
-        {t('search.searchResult')}
+        {t('search.results')}
       </span>
       <div className="mt-2">
         {filteredProjects.map((project) => (
