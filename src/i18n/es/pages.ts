@@ -16,4 +16,7 @@ export const pages = {
   contact: {
     title: 'Datos de Contacto',
   },
+  education: {
+    title: 'Formación Académica',
+  },
 };

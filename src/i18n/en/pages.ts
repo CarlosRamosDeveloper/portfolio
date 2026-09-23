@@ -16,4 +16,7 @@ export const pages = {
   contact: {
     title: 'Contact Data',
   },
+  education: {
+    title: 'Education',
+  },
 };

@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next';
+
 import {
   BackgroundCardsList,
   type Background,
 } from '../components/backgroundCard';
 import { EducationData } from '@/data';
-import { EDUCATION_TEXT } from '@/constants/pages';
 import { FramePage, PageTitle } from '@/components';
 
 const data: Background[] = [
@@ -16,9 +17,11 @@ const data: Background[] = [
 ];
 
 export const EducationPage = () => {
+  const { t } = useTranslation('pages');
+
   return (
     <FramePage>
-      <PageTitle title={EDUCATION_TEXT.title} />
+      <PageTitle title={t('education.title')} />
       <BackgroundCardsList background={data} />
     </FramePage>
   );
