@@ -1,8 +1,9 @@
 import { Link } from 'react-router';
 
+import { useTranslation } from 'react-i18next';
+
 import type { FeaturedNavigationItemType } from '@/interfaces';
 import { handleNavigateOnNewWindow } from '@/portfolio/shared';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
   url?: string | null;
