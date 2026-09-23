@@ -19,4 +19,7 @@ export const pages = {
   education: {
     title: 'Education',
   },
+  experience: {
+    title: 'Work Experience',
+  },
 };

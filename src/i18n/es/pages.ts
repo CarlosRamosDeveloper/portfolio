@@ -19,4 +19,7 @@ export const pages = {
   education: {
     title: 'Formación Académica',
   },
+  experience: {
+    title: 'Experiencia Laboral',
+  },
 };
