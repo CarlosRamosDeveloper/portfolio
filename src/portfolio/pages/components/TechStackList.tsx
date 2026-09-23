@@ -1,10 +1,11 @@
+import { useState } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import type { Technology } from '@/interfaces';
 import { Separator, TechCard } from '.';
-import { useState } from 'react';
-import { TECHSTACK_LABEL } from '@/constants';
 import { cn } from '@/lib/utils';
 import { splitIntoRows } from '@/portfolio/shared';
-import { useTranslation } from 'react-i18next';
 
 interface Props {
   techStack: Technology[];
