@@ -18,6 +18,12 @@ export const pages = {
   },
   education: {
     title: 'Formación Académica',
+    types: {
+      vocational_training: 'Formación Profesional',
+      certification: 'Certificación',
+      course: 'Curso Online',
+      specialization: 'Curso de especialización',
+    },
   },
   experience: {
     title: 'Experiencia Laboral',

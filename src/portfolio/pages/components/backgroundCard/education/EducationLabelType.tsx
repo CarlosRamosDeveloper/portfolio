@@ -1,4 +1,5 @@
-import { EDUCATION_TYPE_LABELS } from '@/constants';
+import { useTranslation } from 'react-i18next';
+
 import type { EducationType } from '@/interfaces';
 
 interface Props {
@@ -6,9 +7,11 @@ interface Props {
 }
 
 export const EducationLabelType = ({ type }: Props) => {
+  const { t } = useTranslation('pages');
+
   return (
     <div className="text-sm text-muted-foreground pb-3 px-2">
-      {EDUCATION_TYPE_LABELS[type]}
+      {t(`education.types.${type}`)}
     </div>
   );
 };

@@ -18,6 +18,12 @@ export const pages = {
   },
   education: {
     title: 'Education',
+    types: {
+      vocational_training: 'Vocational Training',
+      certification: 'Certification',
+      course: 'Online Course',
+      specialization: 'Specialized Course',
+    },
   },
   experience: {
     title: 'Work Experience',

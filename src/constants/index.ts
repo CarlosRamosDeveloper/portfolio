@@ -1,4 +1,3 @@
-export { EDUCATION_TYPE_LABELS } from './education.type.label';
 export { EXTERNAL_URL, REPOSITORIES, VIDEO_URLS } from './externalUrls';
 export { PORTFOLIO_TEXT } from './portfolio.text';
 export { ROUTES } from './routes';
