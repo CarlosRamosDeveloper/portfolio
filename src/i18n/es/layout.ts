@@ -12,7 +12,7 @@ export const layout = {
   settings: {
     colorblind: 'Daltónico',
     configuration: 'Configuración',
-    darkTheme: 'Darks',
+    darkTheme: 'Oscuro',
     fontSize: 'Tamaño de fuente',
     languageSelector: 'Selector de idioma',
     lightTheme: 'Claro',
