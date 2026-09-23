@@ -31,4 +31,9 @@ export const pages = {
   featured: {
     title: 'Featured Projects',
   },
+  search: {
+    title: 'Search by Technologies',
+    cleanButton: 'Reset filters',
+    searchResult: 'Query results',
+  },
 };
