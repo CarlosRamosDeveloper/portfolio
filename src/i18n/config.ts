@@ -5,7 +5,6 @@ import {
   layout as esLayout,
   pages as esPages,
   components as esComponents,
-  components,
 } from './es';
 import {
   layout as enLayout,
