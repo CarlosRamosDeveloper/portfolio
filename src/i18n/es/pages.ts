@@ -22,4 +22,7 @@ export const pages = {
   experience: {
     title: 'Experiencia Laboral',
   },
+  softSkills: {
+    title: 'Mis Habilidades Blandas',
+  },
 };

@@ -22,4 +22,7 @@ export const pages = {
   experience: {
     title: 'Work Experience',
   },
+  softSkills: {
+    title: 'My Soft Skills',
+  },
 };
