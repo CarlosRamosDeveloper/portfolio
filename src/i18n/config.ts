@@ -1,10 +1,8 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import { layout as esLayout } from './es/layout';
-import { layout as enLayout } from './en/layout';
-import { pages as esPages } from './es/pages';
-import { pages as enPages } from './en/pages';
+import { layout as esLayout, pages as esPages } from './es';
+import { layout as enLayout, pages as enPages } from './en';
 import { STORAGE_KEY_LANGUAGE } from '@/hooks/useLanguage';
 
 const savedLanguage = localStorage.getItem(STORAGE_KEY_LANGUAGE);
