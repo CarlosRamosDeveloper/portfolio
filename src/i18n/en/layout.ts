@@ -5,7 +5,7 @@ export const layout = {
     education: 'Education',
     experience: 'Working Experience',
     featured: 'Featured Projects',
-    softSkills: 'Softskills',
+    softSkills: 'Soft Skills',
     projects: 'All my Projects',
     search: 'Search',
   },
