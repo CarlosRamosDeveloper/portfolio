@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next';
+
 import { PageTitle } from '@/components';
 import { FramePage } from '@/components/custom/FramePage';
-import { CONTACT_TEXT } from '@/constants/pages';
 import { ContactComponentsList } from '@/portfolio/components';
 
 export const ContactPage = () => {
+  const { t } = useTranslation('pages');
+
   return (
     <FramePage>
-      <PageTitle title={CONTACT_TEXT.title} />
+      <PageTitle title={t('contact.title')} />
       <ContactComponentsList />
     </FramePage>
   );

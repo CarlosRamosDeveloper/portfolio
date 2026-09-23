@@ -8,7 +8,7 @@ export const AboutPage = () => {
 
   return (
     <FramePage>
-      <PageTitle title={t('about.aboutMe')} />
+      <PageTitle title={t('about.title')} />
       <GreetSection />
       <GoalsSection />
     </FramePage>

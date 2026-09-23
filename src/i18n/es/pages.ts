@@ -1,6 +1,6 @@
 export const pages = {
   about: {
-    aboutMe: 'Acerca de mi',
+    title: 'Acerca de mi',
     greet: 'Hola, bienvenido o bienvenida a mi Portfolio',
     greetData: [
       'Llevo aprendiendo sobre desarrollo de software desde 2019. Lo que comenzó como algo que quería aprender terminó convirtiéndose en un hobby al poco tiempo, lo que me llevó a dedicar cada vez más tiempo a aprender y experimentar con nuevas tecnologías mientras disfrutaba del proceso.',
@@ -12,5 +12,8 @@ export const pages = {
       'Me gusta entender el desarrollo de software como algo que va más allá de escribir código. Me interesa conocer cómo encajan las distintas partes de un sistema, desde el desarrollo y la arquitectura hasta el despliegue y el mantenimiento.',
       'Por eso, aunque actualmente trabajo con diferentes tecnologías y no me cierro al desarrollo frontend, mis principales intereses se encuentranen el backend, DevOps y desarrollo móvil. A largo plazo, me gustaría seguir ampliando mis conocimientos hasta poder asumir responsabilidades técnicas cada vez mayores, con el objetivo de llegar a desempeñar un rol de Tech Lead o Arquitecto de Software.',
     ],
+  },
+  contact: {
+    title: 'Datos de Contacto',
   },
 };

@@ -1,6 +1,6 @@
 export const pages = {
   about: {
-    aboutMe: 'About me',
+    title: 'About me',
     greet: 'Hello and welcome to my portfolio',
     greetData: [
       'I have been learning about software development since 2019. What started as something I simply wanted to learn quickly became a hobby, leading me to dedicate more and more time to learning and experimenting with new technologies while enjoying the process.',
@@ -12,5 +12,8 @@ export const pages = {
       'I see software development as something that goes beyond writing code. I am interested in understanding how the different parts of a system fit together, from development and architecture to deployment and maintenance.',
       'That is why, although I currently work with different technologies and I am open to frontend development, my main areas of interest are backend, DevOps, and mobile development. In the long term, I would like to continue expanding my knowledge so that I can take on increasingly greater technical responsibilities, with the goal of eventually working as a Tech Lead or Software Architect.',
     ],
+  },
+  contact: {
+    title: 'Contact Data',
   },
 };
