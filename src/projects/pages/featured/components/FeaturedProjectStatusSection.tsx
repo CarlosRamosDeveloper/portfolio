@@ -1,4 +1,5 @@
-import { STATUS_LABEL } from '@/constants';
+import { useTranslation } from 'react-i18next';
+
 import type { ProjectStatus } from '@/interfaces';
 
 interface Props {
@@ -6,9 +7,11 @@ interface Props {
 }
 
 export const FeaturedProjectStatusSection = ({ status }: Props) => {
+  const { t } = useTranslation('components');
+
   return (
     <div className="text-card-details-foreground flex flex-col items-center">
-      {STATUS_LABEL[status]}
+      {t(`projectCard.status.${status}`)}
     </div>
   );
 };

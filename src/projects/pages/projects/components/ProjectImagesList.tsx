@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
 
-import { PROJECT_TEXT } from '@/constants/projects/pages';
+import { useTranslation } from 'react-i18next';
+
+import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
 import { FeaturedImage } from '../../featured/components';
 
 interface Props {
@@ -10,11 +11,12 @@ interface Props {
 
 export const ProjectImagesList = ({ images }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation('components');
 
   if (images.length === 0)
     return (
       <ProjectSummarySubtitle
-        text={PROJECT_TEXT.noImages}
+        text={t('projectCard.noImages')}
         addTopMargin={true}
       />
     );
@@ -27,7 +29,7 @@ export const ProjectImagesList = ({ images }: Props) => {
     <div onClick={handleToggle}>
       {!isOpen ? (
         <ProjectSummarySubtitle
-          text={`${PROJECT_TEXT.seeImagesStart}${images.length}${PROJECT_TEXT.seeImagesEnd}`}
+          text={`${t('projectCard.seeImagesStart')}${images.length}${t('projectCard.seeImagesEnd')}`}
           addTopMargin={true}
         />
       ) : (

@@ -18,6 +18,12 @@ export const pages = {
   },
   education: {
     title: 'Education',
+    types: {
+      vocational_training: 'Vocational Training',
+      certification: 'Certification',
+      course: 'Online Course',
+      specialization: 'Specialized Course',
+    },
   },
   experience: {
     title: 'Work Experience',
@@ -33,7 +39,28 @@ export const pages = {
   },
   search: {
     title: 'Search by Technologies',
-    cleanButton: 'Reset filters',
-    searchResult: 'Query results',
+    buttonClean: 'Reset filters',
+    results: 'Query results',
+    navigateToProject: 'Navigate to Project',
+    noCoincidences: 'No coincidences found',
+    techCategories: {
+      cms: 'CMS',
+      database: 'Databases',
+      erp: 'ERP',
+      framework: 'Frameworks',
+      'game-engine': 'Videogame engines',
+      language: 'Languages',
+      library: 'Libraries',
+      markup: 'Markup Languages',
+      platform: 'Platform',
+      'state-management': 'State Management',
+      tool: 'Tools',
+      'ui-toolkit': 'Ui Toolkits',
+      'version-control': 'Version Control',
+    },
+  },
+  nonFound: {
+    title: 'No project was found with that ID',
+    returnButton: 'Back to all projects',
   },
 };

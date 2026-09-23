@@ -1,16 +1,19 @@
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
+
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
-import { PROJECT_TEXT } from '@/constants/projects/pages';
 
 interface Props {
   projectUrl: string;
 }
 
 export const ProjectNavigation = ({ projectUrl }: Props) => {
+  const { t } = useTranslation('components');
+
   return (
     <div className="text-blue-600 font-semibold">
       <Link to={projectUrl}>
-        <ProjectSummarySubtitle text={PROJECT_TEXT.navigateToProject} />
+        <ProjectSummarySubtitle text={t('projectCard.navigateToProject')} />
       </Link>
     </div>
   );

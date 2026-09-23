@@ -18,6 +18,12 @@ export const pages = {
   },
   education: {
     title: 'Formación Académica',
+    types: {
+      vocational_training: 'Formación Profesional',
+      certification: 'Certificación',
+      course: 'Curso Online',
+      specialization: 'Curso de especialización',
+    },
   },
   experience: {
     title: 'Experiencia Laboral',
@@ -33,7 +39,28 @@ export const pages = {
   },
   search: {
     title: 'Búsqueda por Tecnologías',
-    cleanButton: 'Limpiar filtros',
-    searchResult: 'Resultados de la búsqueda',
+    buttonClean: 'Limpiar filtros',
+    results: 'Resultados de búsqueda',
+    navigateToProject: 'Navegar al proyecto',
+    noCoincidences: 'No se han encontrado coincidencias',
+    techCategories: {
+      cms: 'CMS',
+      database: 'Bases de datos',
+      erp: 'ERP',
+      framework: 'Frameworks',
+      'game-engine': 'Motores de desarrollo de videojuegos',
+      language: 'Lenguajes',
+      library: 'Bibliotecas',
+      markup: 'Lenguajes de marcas',
+      platform: 'Plataformas',
+      'state-management': 'Control de estado',
+      tool: 'Herramientas',
+      'ui-toolkit': 'Ui Toolkits',
+      'version-control': 'Control de versiones',
+    },
+  },
+  nonFound: {
+    title: 'No existe un proyecto con este ID',
+    returnButton: 'Volver a todos los proyectos',
   },
 };

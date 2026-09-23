@@ -1,9 +1,9 @@
+import { useTranslation } from 'react-i18next';
+
 import type { Project } from '@/interfaces';
 import { TechStackList } from '@/portfolio/pages/components';
-
 import { ProjectSummarySubtitle } from './ProjectSummarySubtitle';
 import { ProjectImagesList } from './ProjectImagesList';
-import { PROJECT_TEXT } from '@/constants/projects/pages';
 import { ProjectNavigation } from './ProjectNavigation';
 import { FeaturedProjectStatusSection } from '../../featured/components';
 import { useMaxTechPerRow } from '@/hooks';
@@ -15,6 +15,8 @@ interface Props {
 const maxTech = 3;
 
 export const ProjectSummaryCard = ({ project }: Props) => {
+  const { t } = useTranslation('components');
+
   const shortStack = project.techStack.slice(0, maxTech);
   const maxTechPerRow = useMaxTechPerRow();
 
@@ -33,7 +35,7 @@ export const ProjectSummaryCard = ({ project }: Props) => {
       </div>
       <div className="flex justify-between flex-col sm:flex-row">
         <ProjectSummarySubtitle
-          text={`${PROJECT_TEXT.totalTech}${project.techStack.length}`}
+          text={`${t('projectCard.totalTech')}${project.techStack.length}`}
         />
         <ProjectNavigation projectUrl={project.idSlug} />
       </div>

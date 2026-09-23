@@ -10,7 +10,7 @@ export const CleanFiltersButton = ({ onClick }: Props) => {
   return (
     <div className="flex mx-auto">
       <button className="py-2 px-4 bg-accent" onClick={onClick}>
-        {t('search.cleanButton')}
+        {t('search.buttonClean')}
       </button>
     </div>
   );
