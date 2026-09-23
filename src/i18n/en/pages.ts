@@ -25,4 +25,7 @@ export const pages = {
   softSkills: {
     title: 'My Soft Skills',
   },
+  projects: {
+    title: 'Projects List',
+  },
 };
