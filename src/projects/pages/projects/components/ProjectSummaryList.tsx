@@ -1,6 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 import type { Project } from '@/interfaces';
 import { ProjectSummaryCard } from './ProjectSummaryCard';
-import { PROJECT_TEXT } from '@/constants/projects/pages';
 import { PageTitle } from '@/components';
 
 interface Props {
@@ -8,9 +9,11 @@ interface Props {
 }
 
 export const ProjectSummaryList = ({ projects }: Props) => {
+  const { t } = useTranslation('pages');
+
   return (
     <div>
-      <PageTitle title={PROJECT_TEXT.title} />
+      <PageTitle title={t('projects.title')} />
       {projects.map((project) => (
         <ProjectSummaryCard project={project} key={project.id} />
       ))}

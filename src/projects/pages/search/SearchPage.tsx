@@ -1,7 +1,9 @@
+import { useState } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import { FramePage, PageTitle } from '@/components';
 import { TECHNOLOGIES } from '@/constants';
-import { SEARCH_TEXT } from '@/constants/projects/pages';
-import { useState } from 'react';
 import type { TechCategory, TechId, Technology } from '@/interfaces';
 import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
@@ -14,6 +16,7 @@ const techList = (
 
 export const SearchPage = () => {
   const [selectedTechIds, setSelectedTechIds] = useState<TechId[]>([]);
+  const { t } = useTranslation('pages');
 
   const filteredProjects = ProjectsData.filter((project) =>
     selectedTechIds.every((selectedTechId) =>
@@ -47,7 +50,7 @@ export const SearchPage = () => {
   return (
     <FramePage>
       <div className="flex flex-col">
-        <PageTitle title={SEARCH_TEXT.title} />
+        <PageTitle title={t('search.title')} />
         <CleanFiltersButton onClick={handleClearFilters} />
         <CategorySection title="language">
           <TechFilters
