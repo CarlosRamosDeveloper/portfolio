@@ -3,7 +3,7 @@ export const layout = {
     about: 'About me',
     contact: 'Contact',
     education: 'Education',
-    experience: 'Working Experience',
+    experience: 'Work Experience',
     featured: 'Featured Projects',
     softSkills: 'Soft Skills',
     projects: 'All my Projects',
