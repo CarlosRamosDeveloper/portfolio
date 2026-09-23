@@ -1,6 +1,7 @@
-import type { Project } from '@/interfaces';
-import { EDUCATION_TEXT } from '@/constants/pages';
+import { useTranslation } from 'react-i18next';
+
 import { EducationalProjectItem } from '.';
+import type { Project } from '@/interfaces';
 import { Separator } from '../..';
 
 interface Props {
@@ -9,11 +10,14 @@ interface Props {
 
 export const EducationalProjectList = ({ projects = [] }: Props) => {
   if (projects.length === 0) return null;
+
+  const { t } = useTranslation('components');
+
   return (
     <div>
       <Separator />
       <h3 className="text-xl p-3 text-center sm:text-left">
-        {EDUCATION_TEXT.courseProjects}
+        {t('backgroundCard.courseProjects')}
       </h3>
       {projects.map((project) => (
         <EducationalProjectItem project={project} key={project.name} />

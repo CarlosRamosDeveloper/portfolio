@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { DescriptionButton, DescriptionLabel } from '.';
 import { Separator } from '..';
 import { PORTFOLIO_SHARED_TEXT } from '@/constants/pages';
+import { useTranslation } from 'react-i18next';
 
 interface Props {
   descriptions: string[];
@@ -14,6 +15,7 @@ export const DescriptionList = ({ descriptions }: Props) => {
   if (descriptions.length === 0) return null;
 
   const [isExpanded, setIsExpanded] = useState(false);
+  const { t } = useTranslation('components');
 
   const hasLongDescription = descriptions.length > longDescriptionLines;
   const visibleDescription = !isExpanded
@@ -35,8 +37,8 @@ export const DescriptionList = ({ descriptions }: Props) => {
           <DescriptionButton
             isOpen={isExpanded}
             onClick={handleToggleVisibility}
-            trueText={PORTFOLIO_SHARED_TEXT.buttonViewLess}
-            falseText={PORTFOLIO_SHARED_TEXT.buttonViewMore}
+            trueText={t('button.viewLess')}
+            falseText={t('button.viewMore')}
           />
         )}
       </div>

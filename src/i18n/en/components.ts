@@ -5,4 +5,13 @@ export const components = {
     moreTechRemainingStart: 'See ',
     moreTechRemainingEnd: ' more technologies.',
   },
+  backgroundCard: {
+    courseProjects: 'Course Projects',
+    viewProject: 'See the Project',
+    navigateRepository: 'Go to repository',
+  },
+  button: {
+    viewMore: 'See more',
+    viewLess: 'See less',
+  },
 };
