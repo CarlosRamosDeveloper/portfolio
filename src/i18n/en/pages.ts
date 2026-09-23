@@ -59,4 +59,8 @@ export const pages = {
       'version-control': 'Version Control',
     },
   },
+  nonFound: {
+    title: 'No project was found with that ID',
+    returnButton: 'Back to all projects',
+  },
 };

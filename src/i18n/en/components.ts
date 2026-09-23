@@ -19,6 +19,7 @@ export const components = {
     navigateToProject: 'Navigate to project',
     navigateToRepository: 'Navigate to repository',
     projectDescription: 'Project Description',
+    galleryTitle: 'Gallery',
     status: {
       abandoned: 'Abandoned',
       deployed: 'Deployed',

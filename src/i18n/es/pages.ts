@@ -59,4 +59,8 @@ export const pages = {
       'version-control': 'Control de versiones',
     },
   },
+  nonFound: {
+    title: 'No existe un proyecto con este ID',
+    returnButton: 'Volver a todos los proyectos',
+  },
 };
