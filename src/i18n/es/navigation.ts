@@ -1,4 +1,4 @@
-export const NAVIGATION_LINKS_LABEL = {
+export const navigation = {
   portfolioTitle: 'Portfolio',
   portfolioAbout: 'Acerca de',
   portolioEducation: 'Educación',
