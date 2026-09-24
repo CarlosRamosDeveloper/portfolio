@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import {
   components as esComponents,
   education as esEducation,
+  experience as esExperience,
   landing as esLanding,
   layout as esLayout,
   navigation as esNavigation,
@@ -13,6 +14,7 @@ import {
 import {
   components as enComponents,
   education as enEducation,
+  experience as enExperience,
   landing as enLanding,
   layout as enLayout,
   navigation as enNavigation,
@@ -29,6 +31,7 @@ const resources = {
   es: {
     components: esComponents,
     education: esEducation,
+    experience: esExperience,
     landing: esLanding,
     layout: esLayout,
     navigation: esNavigation,
@@ -38,6 +41,7 @@ const resources = {
   en: {
     components: enComponents,
     education: enEducation,
+    experience: enExperience,
     landing: enLanding,
     layout: enLayout,
     navigation: enNavigation,

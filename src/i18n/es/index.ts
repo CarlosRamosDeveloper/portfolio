@@ -1,5 +1,6 @@
 export { components } from './components';
 export { education } from './education';
+export { experience } from './experience';
 export { landing } from './landing';
 export { layout } from './layout';
 export { navigation } from './navigation';

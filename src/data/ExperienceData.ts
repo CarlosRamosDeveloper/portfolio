@@ -1,12 +1,10 @@
 import { TECHNOLOGIES } from '@/constants';
 import type { JobExperience } from '@/interfaces';
 
-export const ExperienceData: JobExperience[] = [
+export const ExperienceData = [
   {
     id: 1,
     company: 'Soluciones 480',
-    workingPosition: 'Desarrollador FullStack',
-    subtitle: 'Formación Profesional Dual en empresa durante 6 meses',
     startYear: 2021,
     endYear: 2022,
     techStack: [
@@ -17,18 +15,11 @@ export const ExperienceData: JobExperience[] = [
       TECHNOLOGIES.gitlab,
       TECHNOLOGIES['git-flow'],
     ],
-    description: [
-      'Formación con Java y Flutter',
-      'Migración de aplicación escrita en Xamarin a Flutter',
-      'Formación en patrones de diseño, principios solid y buenas prácticas',
-    ],
     isInternship: true,
   },
   {
     id: 2,
     company: 'Fujitsu',
-    workingPosition: 'Desarrollador FullStack',
-    subtitle: 'Sector bancario',
     startYear: 2023,
     endYear: 2024,
     techStack: [
@@ -40,18 +31,10 @@ export const ExperienceData: JobExperience[] = [
       TECHNOLOGIES.gitlab,
       TECHNOLOGIES.subversion,
     ],
-    description: [
-      'Trabajo en cliente en entorno multidisciplinar',
-      'Detección y resolución de bugs en el sistema',
-      'Implementación de nuevas funcionalidades',
-      'Métodologías agile mediante el uso de la plataforma "Rally"',
-    ],
   },
   {
     id: 3,
     company: 'BorealOS',
-    workingPosition: 'Desarrollador FullStack',
-    subtitle: 'Desarrollo y mantenimiento de aplicaciones en producción',
     startYear: 2026,
     endYear: 2026,
     techStack: [
@@ -66,13 +49,9 @@ export const ExperienceData: JobExperience[] = [
       TECHNOLOGIES['git-flow'],
       TECHNOLOGIES.odoo,
     ],
-    description: [
-      'Identifiqué y optimicé un cuello de botella en el proceso de eliminación de archivos del backend PHP, reduciendo el tiempo de ejecución de ~50 segundos para 10 archivos a menos de 4 segundos para 200, aproximadamente 250× más rápido.',
-      'Migración y estandarización del código tras la actualización del sistema de linting, resolviendo más de 30.000 incidencias y adaptando el proyecto a las nuevas reglas y buenas prácticas.',
-      'Trabajo de proyecto en producción',
-      'Metodologías Agile',
-      'Detección y resolución de bugs',
-    ],
     isInternship: true,
   },
-];
+] satisfies Omit<
+  JobExperience,
+  'workingPosition' | 'subtitle' | 'description'
+>[];
