@@ -1,21 +1,21 @@
+import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
+
 import { SoftSkillsData } from '@/data/SoftSkillsData';
 import { LandingSoftskillItem } from './LandingSoftskillItem';
-import { Link } from 'react-router';
 import { ROUTES } from '@/constants';
-import { LANDING_TEXT } from '@/constants/pages';
 import { LandingLabel } from './LandingLabel';
 
 const skillsList = [...SoftSkillsData];
 
 export const LandingSoftskillsList = () => {
+  const { t } = useTranslation('landing');
+
   return (
     <div>
       <div className="text-center">
         <Link to={ROUTES.softSkills}>
-          <LandingLabel
-            text={`[${LANDING_TEXT.softSkills}]`}
-            type="navigation"
-          />
+          <LandingLabel text={`[${t('softSkills')}]`} type="navigation" />
         </Link>
       </div>
       <div className="mx-auto grid grid-cols-2 lg:grid-cols-4 gap-3 bg-card p-2 mt-2">
