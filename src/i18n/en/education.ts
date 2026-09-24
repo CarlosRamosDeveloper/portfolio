@@ -9,19 +9,18 @@ export const education = {
       ],
     },
     2: {
-      title:
-        'Especialización en Desarrollo de Videojuegos y Realidad Aumentada',
+      title: 'Specialization in Video Game Development and Augmented Reality',
       description: [
-        'Formación basada en el desarrollo de proyectos mediante retos prácticos',
-        'Asumí el puesto de Project Leader y gestioné dos equipos diferentes para realizar dos retos',
+        'Training based on project development through practical challenges',
+        'I took on the role of Project Leader and managed two different teams to complete two challenges',
       ],
     },
     3: {
-      title: 'Desarrollo de Aplicaciones Multiplataforma',
+      title: 'Multiplatform Application Development',
       description: [
-        'Formación orientada al desarrollo de aplicaciones móviles utilizando Kotlin y Jetpack Compose',
-        'Uso de bases de datos relacionales y no relacionales',
-        'Despliegue de APIs backend en AWS para su consumo desde aplicaciones móviles.',
+        'Training focused on mobile application development using Kotlin and Jetpack Compose',
+        'Use of relational and non-relational databases',
+        'Deployment of backend APIs on AWS for consumption by mobile applications',
       ],
     },
   },
