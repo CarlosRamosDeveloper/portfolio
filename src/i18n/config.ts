@@ -7,6 +7,7 @@ import {
   layout as esLayout,
   navigation as esNavigation,
   pages as esPages,
+  softSkills as esSoftSkills,
 } from './es';
 import {
   components as enComponents,
@@ -14,6 +15,7 @@ import {
   layout as enLayout,
   navigation as enNavigation,
   pages as enPages,
+  softSkills as enSoftSkills,
 } from './en';
 import { STORAGE_KEY_LANGUAGE } from '@/hooks/useLanguage';
 
@@ -28,6 +30,7 @@ const resources = {
     layout: esLayout,
     navigation: esNavigation,
     pages: esPages,
+    softSkills: esSoftSkills,
   },
   en: {
     components: enComponents,
@@ -35,6 +38,7 @@ const resources = {
     layout: enLayout,
     navigation: enNavigation,
     pages: enPages,
+    softSkills: enSoftSkills,
   },
 };
 
