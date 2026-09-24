@@ -1,44 +1,44 @@
 export const softSkills = {
   items: {
     1: {
-      name: 'Pensamiento analítico',
+      name: 'Analytical Thinking',
       description:
-        'Intento dividir los problemas complejos en múltiples partes más pequeñas y manejables, analizando sus causas, dependencias y posibles soluciones antes de tomar una decisión.',
+        'I try to break complex problems down into smaller, more manageable parts, analyzing their causes, dependencies, and possible solutions before making a decision.',
     },
     2: {
-      name: 'Resolución de problemas',
+      name: 'Problem Solving',
       description:
-        'Intento identificar el origen de los problemas, investigar sus causas y plantear soluciones que permitan resolverlos de forma eficaz, buscando entender el problema en lugar de limitarme a solucionarlo sin más.',
+        'I try to identify the root cause of problems, investigate their underlying causes, and come up with effective solutions, focusing on understanding the problem rather than simply fixing it.',
     },
     3: {
-      name: 'Pensamiento crítico',
+      name: 'Critical Thinking',
       description:
-        'Tengo interés en cuestionar las soluciones existentes y valorar diferentes alternativas antes de adoptarlas, teniendo en cuenta sus ventajas, limitaciones y consecuencias a largo plazo.',
+        'I am interested in questioning existing solutions and considering different alternatives before adopting them, taking into account their advantages, limitations, and long-term consequences.',
     },
     4: {
-      name: 'Aprendizaje continuo',
+      name: 'Continuous Learning',
       description:
-        'Tengo interés en seguir ampliando y consolidando mis conocimientos mediante la práctica y la creación de proyectos propios, ya sea explorando nuevas tecnologías o profundizando en las que ya conozco.',
+        'I am interested in continuously expanding and strengthening my knowledge through practice and personal projects, whether by exploring new technologies or deepening my understanding of the ones I already know.',
     },
     5: {
-      name: 'Atención al detalle',
+      name: 'Attention to Detail',
       description:
-        'Intento prestar atención tanto al funcionamiento como a los pequeños detalles de una aplicación, buscando que la interfaz, la experiencia de usuario, la estructura del código y el comportamiento de los componentes sean coherentes y consistentes.',
+        'I try to pay attention both to how an application works and to its finer details, aiming for consistency across the interface, user experience, code structure, and component behavior.',
     },
     6: {
-      name: 'Código limpio y mantenible',
+      name: 'Clean and Maintainable Code',
       description:
-        '"Obsesión" por escribir código claro, organizado y fácil de mantener, buscando separar responsabilidades, evitar complejidad innecesaria y favorecer la reutilización de componentes y lógica.',
+        '"Obsession" with writing clear, organized, and maintainable code, aiming to separate responsibilities, avoid unnecessary complexity, and encourage the reuse of components and logic.',
     },
     7: {
-      name: 'Iniciativa',
+      name: 'Initiative',
       description:
-        'Tomo la iniciativa y llevo ideas a la práctica de forma autónoma, buscando nuevas formas de aplicar conocimientos adquiridos y planteando mejoras más allá de los requisitos iniciales.',
+        'I take the initiative and turn ideas into practice independently, looking for new ways to apply what I have learned and suggesting improvements beyond the initial requirements.',
     },
     8: {
-      name: 'Concentración y enfoque',
+      name: 'Focus and Concentration',
       description:
-        'Tengo facilidad para mantener la concentración y profundizar durante periodos prolongados en problemas o proyectos que me resulten interesantes, manteniendo el foco incluso cuando la tarea requiere investigación, probar diferentes alternativas y realizar varias iteraciones.',
+        'I am able to stay focused and dive deeply into problems or projects that interest me for extended periods, maintaining that focus even when the task requires research, trying different alternatives, and going through multiple iterations.',
     },
   },
 };
