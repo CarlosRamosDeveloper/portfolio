@@ -1,4 +1,5 @@
 import { useParams } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 import {
   NonFoundProject,
@@ -7,17 +8,16 @@ import {
   ProjectTitle,
 } from './components';
 import { TechStackList } from '@/portfolio/pages/components';
-import { STATUS_LABEL } from '@/constants';
 import { ProjectGallery } from './components/gallery';
-import { ProjectsData } from '@/data/ProjectsData';
 import { FramePage } from '@/components';
-import { useMaxTechPerRow } from '@/hooks';
+import { useMaxTechPerRow, useProject } from '@/hooks';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();
+  const { t } = useTranslation('components');
   const maxTechPerRow = useMaxTechPerRow();
 
-  const project = ProjectsData.find((project) => project.idSlug === idSlug);
+  const project = useProject().find((project) => project.idSlug === idSlug);
 
   if (!project) return <NonFoundProject />;
 
@@ -26,7 +26,7 @@ export const ProjectPage = () => {
       <div className="my-6 flex flex-col">
         <ProjectTitle title={project.name} />
         <ProjectSubtitleSection
-          status={STATUS_LABEL[project.status]}
+          status={`${t(`projectCard.status.${project.status}`)}`}
           subtitle={project.shortDescription}
           repository={project.repository}
         />

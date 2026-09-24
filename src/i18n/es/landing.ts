@@ -1,4 +1,4 @@
-export const LANDING_TEXT = {
+export const landing = {
   title: 'Bienvenido o bienvenida, soy Carlos Ramos.',
   subtitle: 'Desarrollador de Software fullstack.',
   projects: 'Proyectos',

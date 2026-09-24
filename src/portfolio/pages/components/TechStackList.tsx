@@ -1,7 +1,9 @@
+import { useState } from 'react';
+
+import { useTranslation } from 'react-i18next';
+
 import type { Technology } from '@/interfaces';
 import { Separator, TechCard } from '.';
-import { useState } from 'react';
-import { TECHSTACK_LABEL } from '@/constants';
 import { cn } from '@/lib/utils';
 import { splitIntoRows } from '@/portfolio/shared';
 
@@ -19,7 +21,7 @@ export const TechStackList = ({
   maxTechPerRow: maxTechRow = 5,
 }: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
-
+  const { t } = useTranslation('components');
   if (techStack.length === 0) return;
 
   const visibleTech = isExpanded ? techStack : techStack.slice(0, maxTechRow);
@@ -63,10 +65,10 @@ export const TechStackList = ({
               onClick={() => setIsExpanded((previous) => !previous)}
             >
               {isExpanded
-                ? TECHSTACK_LABEL.viewLessButton
+                ? t('techStack.viewLessButton')
                 : onlyRemainingOneTech
-                  ? TECHSTACK_LABEL.oneTechRemaining
-                  : `${TECHSTACK_LABEL.moreTechRemainingStart} ${remainingTech} ${TECHSTACK_LABEL.moreTechRemainingEnd}`}
+                  ? t('techStack.oneTechRemaining')
+                  : `${t('techStack.moreTechRemainingStart')} ${remainingTech} ${t('techStack.moreTechRemainingEnd')}`}
             </button>
           )}
         </div>

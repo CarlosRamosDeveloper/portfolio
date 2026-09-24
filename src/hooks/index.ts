@@ -1,5 +1,10 @@
+export { useBackground } from './useBackground';
 export { useClickOutside } from './useClickOutside';
+export { useEducation } from './useEducation';
+export { useExperience } from './useExperience';
 export { useImageViewer } from './useImageViewer';
 export { useMaxTechPerRow } from './useMaxTechPerRow';
 export { useMediaQuery } from './useMediaQuery';
+export { useProject } from './useProject';
+export { useSoftSkills } from './useSoftSkills';
 export { useTheme } from './useTheme';

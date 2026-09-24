@@ -1,4 +1,5 @@
-import { PROJECT_TEXT } from '@/constants/projects/pages';
+import { useTranslation } from 'react-i18next';
+
 import { handleNavigateOnNewWindow } from '@/portfolio/shared';
 
 interface Props {
@@ -12,6 +13,8 @@ export const ProjectSubtitleSection = ({
   subtitle,
   repository,
 }: Props) => {
+  const { t } = useTranslation('components');
+
   const handleNavigate = handleNavigateOnNewWindow;
 
   return (
@@ -23,7 +26,7 @@ export const ProjectSubtitleSection = ({
             onClick={() => handleNavigate(repository)}
             className="cursor-pointer"
           >
-            {PROJECT_TEXT.navigateToRepository}
+            {t('projectCard.navigateToRepository')}
           </div>
         )}
       </div>

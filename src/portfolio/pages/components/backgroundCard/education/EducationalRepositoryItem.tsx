@@ -1,4 +1,5 @@
-import { EDUCATION_TEXT } from '@/constants/pages';
+import { useTranslation } from 'react-i18next';
+
 import { Separator } from '../..';
 
 interface Props {
@@ -7,12 +8,15 @@ interface Props {
 
 export const EducationalRepositoryItem = ({ repositoryUrl }: Props) => {
   if (!repositoryUrl) return null;
+
+  const { t } = useTranslation('components');
+
   return (
     <div>
       <Separator />
       <div className="m-1 px-6">
         <a className="text-xs" href={repositoryUrl} target="_blank">
-          {EDUCATION_TEXT.navigateRepository}
+          {t('backgroundCard.navigateRepository')}
         </a>
       </div>
     </div>

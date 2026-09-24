@@ -1,14 +1,16 @@
-import { SoftSkillsData } from '@/data/SoftSkillsData';
-import { SoftSkillsCardList } from './components';
-import { SOFT_SKILLS_TEXT } from '@/constants/pages/soft-skills.text';
-import { FramePage, PageTitle } from '@/components';
+import { useTranslation } from 'react-i18next';
 
-const softSkills = [...SoftSkillsData];
+import { SoftSkillsCardList } from './components';
+import { FramePage, PageTitle } from '@/components';
+import { useSoftSkills } from '@/hooks';
 
 export const SoftSkillsPage = () => {
+  const { t } = useTranslation('pages');
+  const softSkills = useSoftSkills();
+
   return (
     <FramePage>
-      <PageTitle title={SOFT_SKILLS_TEXT.title} />
+      <PageTitle title={t('softSkills.title')} />
       <SoftSkillsCardList skills={softSkills} />
     </FramePage>
   );

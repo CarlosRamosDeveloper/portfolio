@@ -1,24 +1,16 @@
-import {
-  BackgroundCardsList,
-  type Background,
-} from '../components/backgroundCard';
-import { EducationData } from '@/data';
-import { EDUCATION_TEXT } from '@/constants/pages';
-import { FramePage, PageTitle } from '@/components';
+import { useTranslation } from 'react-i18next';
 
-const data: Background[] = [
-  ...EducationData.sort()
-    .reverse()
-    .map((experience) => ({
-      type: 'education' as const,
-      data: experience,
-    })),
-];
+import { BackgroundCardsList } from '../components/backgroundCard';
+import { FramePage, PageTitle } from '@/components';
+import { useBackground } from '@/hooks';
 
 export const EducationPage = () => {
+  const { t } = useTranslation('pages');
+  const data = useBackground({ type: 'education' });
+
   return (
     <FramePage>
-      <PageTitle title={EDUCATION_TEXT.title} />
+      <PageTitle title={t('education.title')} />
       <BackgroundCardsList background={data} />
     </FramePage>
   );

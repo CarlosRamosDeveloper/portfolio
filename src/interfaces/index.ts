@@ -1,4 +1,5 @@
 export type { Education } from './Education';
+export type { EducationDataType } from './EducationDataType';
 export type { EducationType } from './EducationalType';
 export type { FeaturedNavigationItemType } from './FeaturedNavigationItemType';
 export type { HamburgerNavigationItem } from './HamburgerNavigationItem';

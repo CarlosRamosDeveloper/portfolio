@@ -1,24 +1,16 @@
-import {
-  BackgroundCardsList,
-  type Background,
-} from '../components/backgroundCard';
-import { ExperienceData } from '@/data';
-import { EXPERIENCE_TEXT } from '@/constants/pages';
-import { FramePage, PageTitle } from '@/components';
+import { useTranslation } from 'react-i18next';
 
-const data: Background[] = [
-  ...ExperienceData.sort()
-    .reverse()
-    .map((experience) => ({
-      type: 'job' as const,
-      data: experience,
-    })),
-];
+import { BackgroundCardsList } from '../components/backgroundCard';
+import { FramePage, PageTitle } from '@/components';
+import { useBackground } from '@/hooks';
 
 export const ExperiencePage = () => {
+  const { t } = useTranslation('pages');
+  const data = useBackground({ type: 'job' });
+
   return (
     <FramePage>
-      <PageTitle title={EXPERIENCE_TEXT.title} />
+      <PageTitle title={t('experience.title')} />
       <BackgroundCardsList background={data} />
     </FramePage>
   );

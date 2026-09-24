@@ -1,8 +1,9 @@
-import { SETTINGS_TEXT } from '@/constants/layout';
 import { useTheme } from '@/hooks';
+import { useTranslation } from 'react-i18next';
 
 export const MainThemeSelector = () => {
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation('layout');
 
   return (
     <div className="flex w-fit rounded-lg border border-border overflow-hidden">
@@ -10,19 +11,19 @@ export const MainThemeSelector = () => {
         className={`px-3 ${theme === 'light' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('light')}
       >
-        {SETTINGS_TEXT.lightTheme}
+        {t('settings.lightTheme')}
       </button>
       <button
         className={`px-3 ${theme === 'dark' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('dark')}
       >
-        {SETTINGS_TEXT.darkTheme}
+        {t('settings.darkTheme')}
       </button>
       <button
         className={`px-3 ${theme === 'colorblind' ? 'bg-muted' : ''}`}
         onClick={() => setTheme('colorblind')}
       >
-        {SETTINGS_TEXT.colorblind}
+        {t('settings.colorblind')}
       </button>
     </div>
   );

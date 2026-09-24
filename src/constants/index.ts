@@ -1,6 +1,5 @@
-export { EDUCATION_TYPE_LABELS } from './education.type.label';
 export { EXTERNAL_URL, REPOSITORIES, VIDEO_URLS } from './externalUrls';
+export { PORTFOLIO_TEXT } from './portfolio.text';
 export { ROUTES } from './routes';
-export { STATUS_LABEL } from './status.label';
+export { SOFT_SKILL_IDS } from './soft-skills-ids';
 export { TECHNOLOGIES } from './Technologies';
-export { TECHSTACK_LABEL } from './techstack.label';
