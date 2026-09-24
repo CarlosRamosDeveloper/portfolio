@@ -1,7 +1,7 @@
 export const experience = {
   items: {
     1: {
-      workingPosition: 'Desarrollador FullStack',
+      workingPosition: 'FullStack Developer',
       subtitle: 'Formación Profesional Dual en empresa durante 6 meses',
       description: [
         'Formación con Java y Flutter',
@@ -10,7 +10,7 @@ export const experience = {
       ],
     },
     2: {
-      workingPosition: 'Desarrollador FullStack',
+      workingPosition: 'FullStack Developer',
       subtitle: 'Sector bancario',
       description: [
         'Trabajo en cliente en entorno multidisciplinar',
@@ -20,7 +20,7 @@ export const experience = {
       ],
     },
     3: {
-      workingPosition: 'Desarrollador FullStack',
+      workingPosition: 'FullStack Developer',
       subtitle: 'Desarrollo y mantenimiento de aplicaciones en producción',
       description: [
         'Identifiqué y optimicé un cuello de botella en el proceso de eliminación de archivos del backend PHP, reduciendo el tiempo de ejecución de ~50 segundos para 10 archivos a menos de 4 segundos para 200, aproximadamente 250× más rápido.',
