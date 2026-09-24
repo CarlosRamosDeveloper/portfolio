@@ -1,5 +1,4 @@
 import type { Education } from '@/interfaces';
-import { ProjectsData } from './ProjectsData';
 import { TECHNOLOGIES } from '@/constants';
 
 export const EducationData = [
@@ -25,7 +24,7 @@ export const EducationData = [
       TECHNOLOGIES.xml,
       TECHNOLOGIES.css,
     ],
-    projects: [ProjectsData[0]],
+    projects: [1],
   },
   {
     id: 2,
@@ -41,7 +40,7 @@ export const EducationData = [
       TECHNOLOGIES.git,
       TECHNOLOGIES['git-flow'],
     ],
-    projects: [ProjectsData[3], ProjectsData[4]],
+    projects: [4, 5],
   },
   {
     id: 3,
@@ -63,6 +62,6 @@ export const EducationData = [
       TECHNOLOGIES.mongodb,
       TECHNOLOGIES.git,
     ],
-    projects: [ProjectsData[5], ProjectsData[6]],
+    projects: [6, 7],
   },
 ] satisfies Omit<Education, 'title' | 'description'>[];

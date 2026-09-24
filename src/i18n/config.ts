@@ -9,6 +9,7 @@ import {
   layout as esLayout,
   navigation as esNavigation,
   pages as esPages,
+  projects as esProjects,
   softSkills as esSoftSkills,
 } from './es';
 import {
@@ -19,6 +20,7 @@ import {
   layout as enLayout,
   navigation as enNavigation,
   pages as enPages,
+  projects as enProjects,
   softSkills as enSoftSkills,
 } from './en';
 import { STORAGE_KEY_LANGUAGE } from '@/hooks/useLanguage';
@@ -36,6 +38,7 @@ const resources = {
     layout: esLayout,
     navigation: esNavigation,
     pages: esPages,
+    projects: esProjects,
     softSkills: esSoftSkills,
   },
   en: {
@@ -46,6 +49,7 @@ const resources = {
     layout: enLayout,
     navigation: enNavigation,
     pages: enPages,
+    projects: enProjects,
     softSkills: enSoftSkills,
   },
 };

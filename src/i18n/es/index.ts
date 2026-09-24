@@ -5,4 +5,5 @@ export { landing } from './landing';
 export { layout } from './layout';
 export { navigation } from './navigation';
 export { pages } from './pages';
+export { projects } from './projects';
 export { softSkills } from './soft-skills';
