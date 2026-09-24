@@ -1,7 +1,7 @@
 import { REPOSITORIES, TECHNOLOGIES } from '@/constants';
-import type { Project } from '@/interfaces/Project';
+import type { ProjectDataType } from '@/interfaces';
 
-export const ProjectsData = [
+export const ProjectsData: ProjectDataType[] = [
   // {
   //   id: 0,
   //   idSlug: '',
@@ -165,4 +165,4 @@ export const ProjectsData = [
     url: null,
     video: null,
   },
-] satisfies Omit<Project, 'name' | 'shortDescription' | 'description'>[];
+];

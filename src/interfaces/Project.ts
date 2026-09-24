@@ -1,4 +1,4 @@
-import type { ProjectStatus, Technology } from '.';
+import type { ProjectStatus, RoadmapPhase, Technology } from '.';
 
 export type Project = {
   id: number;
@@ -13,4 +13,5 @@ export type Project = {
   isFeatured: boolean;
   video?: string[] | null;
   status: ProjectStatus;
+  roadmap?: RoadmapPhase[];
 };
