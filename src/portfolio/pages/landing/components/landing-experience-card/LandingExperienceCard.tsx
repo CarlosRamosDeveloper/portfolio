@@ -1,7 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 import type { Education, JobExperience } from '@/interfaces';
 import { LandingExperienceHeader } from './LandingExperienceHeader';
 import { LandingExperienceCardBody } from './LandingExperienceCardBody';
-import { LANDING_TEXT } from '@/constants/pages';
 
 export type LandingExperience =
   | {
@@ -18,6 +19,8 @@ interface Props {
 }
 
 export const LandingExperienceCard = ({ item }: Props) => {
+  const { t } = useTranslation('landing');
+
   const { data, type } = item;
 
   return (
@@ -28,11 +31,11 @@ export const LandingExperienceCard = ({ item }: Props) => {
         }
         subtitle={
           type === 'education'
-            ? `${LANDING_TEXT.education}`
+            ? `${t('education')}`
             : type === 'job'
               ? data.isInternship === true
-                ? `${LANDING_TEXT.internship}`
-                : `${LANDING_TEXT.work}`
+                ? `${t('internship')}`
+                : `${t('work')}`
               : ''
         }
         type={type}
@@ -40,7 +43,7 @@ export const LandingExperienceCard = ({ item }: Props) => {
       <LandingExperienceCardBody
         description={
           type === 'education'
-            ? `${LANDING_TEXT.projectQuantity}: ${data.projects?.length}`
+            ? `${t('projectQuantity')}: ${data.projects?.length}`
             : type === 'job'
               ? data.workingPosition
               : ''
