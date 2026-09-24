@@ -3,16 +3,11 @@ import {
   type LandingExperience,
 } from './landing-experience-card/LandingExperienceCard';
 import { useBackground } from '@/hooks';
-import { useExperience } from '@/hooks/useExperience';
 
 export const LandingExperienceCardList = () => {
-  const experience = useExperience();
   const data: LandingExperience[] = [
     ...useBackground({ type: 'education' }),
-    ...experience.map((experience) => ({
-      type: 'job' as const,
-      data: experience,
-    })),
+    ...useBackground({ type: 'job' }),
   ];
 
   const sortedData = [...data].sort((a, b) => {
