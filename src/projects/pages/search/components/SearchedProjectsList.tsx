@@ -20,7 +20,7 @@ export const SearchedProjectsList = ({ filteredProjects }: Props) => {
       </span>
       <div className="mt-2">
         {filteredProjects.map((project) => (
-          <SearchedProject project={project} />
+          <SearchedProject project={project} key={project.id} />
         ))}
       </div>
     </div>
