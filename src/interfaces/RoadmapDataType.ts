@@ -1,5 +1,5 @@
 export interface RoadmapDataType {
   id: number;
-  estimatedDate: string;
+  estimatedTime: string;
   milestoneIds: number[];
 }
