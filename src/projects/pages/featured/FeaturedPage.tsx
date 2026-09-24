@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
 
 import { FramePage, PageTitle } from '@/components';
-import { ProjectsData } from '@/data';
 import { FeaturedProjectsList } from './components';
-
-const data = ProjectsData.filter((project) => project.isFeatured).reverse();
+import { useProject } from '@/hooks';
 
 export const FeaturedPage = () => {
   const { t } = useTranslation('pages');
+  const data = useProject()
+    .filter((project) => project.isFeatured)
+    .reverse();
 
   return (
     <FramePage>
