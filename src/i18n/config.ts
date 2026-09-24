@@ -3,6 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 import {
   components as esComponents,
+  education as esEducation,
   landing as esLanding,
   layout as esLayout,
   navigation as esNavigation,
@@ -11,6 +12,7 @@ import {
 } from './es';
 import {
   components as enComponents,
+  education as enEducation,
   landing as enLanding,
   layout as enLayout,
   navigation as enNavigation,
@@ -26,6 +28,7 @@ const initialLanguage =
 const resources = {
   es: {
     components: esComponents,
+    education: esEducation,
     landing: esLanding,
     layout: esLayout,
     navigation: esNavigation,
@@ -34,6 +37,7 @@ const resources = {
   },
   en: {
     components: enComponents,
+    education: enEducation,
     landing: enLanding,
     layout: enLayout,
     navigation: enNavigation,
