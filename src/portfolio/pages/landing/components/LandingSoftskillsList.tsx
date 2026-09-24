@@ -2,18 +2,13 @@ import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 
 import { LandingSoftskillItem } from './LandingSoftskillItem';
-import { ROUTES, SOFT_SKILL_IDS } from '@/constants';
+import { ROUTES } from '@/constants';
 import { LandingLabel } from './LandingLabel';
+import { useSoftSkills } from '@/hooks';
 
 export const LandingSoftskillsList = () => {
   const { t } = useTranslation('landing');
-  const { t: ts } = useTranslation('softSkills');
-
-  const softSkills = SOFT_SKILL_IDS.map((id) => ({
-    id,
-    name: ts(`items.${id}.name`),
-    description: ts(`items.${id}.description`),
-  }));
+  const softSkills = useSoftSkills();
 
   return (
     <div>
