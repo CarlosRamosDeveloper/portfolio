@@ -5,10 +5,10 @@ import { useTranslation } from 'react-i18next';
 import { FramePage, PageTitle } from '@/components';
 import { TECHNOLOGIES } from '@/constants';
 import type { TechCategory, TechId, Technology } from '@/interfaces';
-import { ProjectsData } from '@/data/ProjectsData';
 import { TechFilters } from './components/TechFilters';
 import { CategorySection } from './components/CategorySection';
 import { CleanFiltersButton, SearchedProjectsList } from './components';
+import { useProject } from '@/hooks';
 
 const techList = (
   Object.entries(TECHNOLOGIES) as [TechId, Technology][]
@@ -18,7 +18,7 @@ export const SearchPage = () => {
   const [selectedTechIds, setSelectedTechIds] = useState<TechId[]>([]);
   const { t } = useTranslation('pages');
 
-  const filteredProjects = ProjectsData.filter((project) =>
+  const filteredProjects = useProject().filter((project) =>
     selectedTechIds.every((selectedTechId) =>
       project.techStack.some((technology) => technology.id === selectedTechId),
     ),

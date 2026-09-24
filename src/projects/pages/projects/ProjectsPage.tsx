@@ -1,12 +1,10 @@
-import type { Project } from '@/interfaces';
-
-import { ProjectsData } from '@/data/ProjectsData';
 import { ProjectSummaryList } from './components';
 import { FramePage } from '@/components';
-
-const projectsList: Project[] = ProjectsData.sort().reverse();
+import { useProject } from '@/hooks';
 
 export const ProjectsPage = () => {
+  const projectsList = useProject().sort().reverse();
+
   return (
     <FramePage>
       <ProjectSummaryList projects={projectsList} />

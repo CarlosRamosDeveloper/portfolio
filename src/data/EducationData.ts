@@ -1,11 +1,9 @@
 import type { Education } from '@/interfaces';
-import { ProjectsData } from './ProjectsData';
 import { TECHNOLOGIES } from '@/constants';
 
-export const EducationData: Education[] = [
+export const EducationData = [
   {
     id: 1,
-    title: 'Desarrollo de Aplicaciones Web',
     type: 'vocational_training',
     institution: 'IES El Caminàs',
     startYear: 2019,
@@ -26,16 +24,10 @@ export const EducationData: Education[] = [
       TECHNOLOGIES.xml,
       TECHNOLOGIES.css,
     ],
-    description: [
-      'Formación orientada al desarrollo de aplicaciones web, cubriendo backend y frontend',
-      'Fuerte hincapié en patrones de diseño y desarrollo SOLID',
-      'Desarrollo de multiples páginas web durante la duración del curso',
-    ],
-    projects: [ProjectsData[0]],
+    projects: [1],
   },
   {
     id: 2,
-    title: 'Especialización en Desarrollo de Videojuegos y Realidad Aumentada',
     type: 'specialization',
     institution: 'IES El Caminàs',
     startYear: 2024,
@@ -48,15 +40,10 @@ export const EducationData: Education[] = [
       TECHNOLOGIES.git,
       TECHNOLOGIES['git-flow'],
     ],
-    description: [
-      'Formación basada en el desarrollo de proyectos mediante retos prácticos',
-      'Asumí el puesto de Project Leader y gestioné dos equipos diferentes para realizar dos retos',
-    ],
-    projects: [ProjectsData[3], ProjectsData[4]],
+    projects: [4, 5],
   },
   {
     id: 3,
-    title: 'Desarrollo de Aplicaciones Multiplataforma',
     type: 'vocational_training',
     institution: 'IES El Caminàs',
     startYear: 2025,
@@ -75,11 +62,6 @@ export const EducationData: Education[] = [
       TECHNOLOGIES.mongodb,
       TECHNOLOGIES.git,
     ],
-    description: [
-      'Formación orientada al desarrollo de aplicaciones móviles utilizando Kotlin y Jetpack Compose',
-      'Uso de bases de datos relacionales y no relacionales',
-      'Despliegue de APIs backend en AWS para su consumo desde aplicaciones móviles.',
-    ],
-    projects: [ProjectsData[5], ProjectsData[6]],
+    projects: [6, 7],
   },
-];
+] satisfies Omit<Education, 'title' | 'description'>[];

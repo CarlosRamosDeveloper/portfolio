@@ -9,16 +9,15 @@ import {
 } from './components';
 import { TechStackList } from '@/portfolio/pages/components';
 import { ProjectGallery } from './components/gallery';
-import { ProjectsData } from '@/data/ProjectsData';
 import { FramePage } from '@/components';
-import { useMaxTechPerRow } from '@/hooks';
+import { useMaxTechPerRow, useProject } from '@/hooks';
 
 export const ProjectPage = () => {
   const { idSlug } = useParams();
   const { t } = useTranslation('components');
   const maxTechPerRow = useMaxTechPerRow();
 
-  const project = ProjectsData.find((project) => project.idSlug === idSlug);
+  const project = useProject().find((project) => project.idSlug === idSlug);
 
   if (!project) return <NonFoundProject />;
 

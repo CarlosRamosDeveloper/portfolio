@@ -1,31 +1,12 @@
-import { EducationData, ExperienceData } from '@/data';
-import {
-  LandingExperienceCard,
-  type LandingExperience,
-} from './landing-experience-card/LandingExperienceCard';
-
-const data: LandingExperience[] = [
-  ...EducationData.map((education) => ({
-    type: 'education' as const,
-    data: education,
-  })),
-  ...ExperienceData.map((experience) => ({
-    type: 'job' as const,
-    data: experience,
-  })),
-];
-
-const sortedData = [...data].sort((a, b) => {
-  if (a.data.startYear === null) return -1;
-  if (b.data.startYear === null) return 1;
-
-  return b.data.startYear - a.data.startYear;
-});
+import { LandingExperienceCard } from './landing-experience-card/LandingExperienceCard';
+import { useBackground } from '@/hooks';
 
 export const LandingExperienceCardList = () => {
+  const data = useBackground({});
+
   return (
     <div className="mt-3">
-      {sortedData.map((item) => (
+      {data.map((item) => (
         <LandingExperienceCard
           item={item}
           key={`${item.type}-${item.data.id}`}
