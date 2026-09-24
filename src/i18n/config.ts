@@ -2,14 +2,16 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import {
+  components as esComponents,
+  landing as esLanding,
   layout as esLayout,
   pages as esPages,
-  components as esComponents,
 } from './es';
 import {
+  components as enComponents,
+  landing as enLanding,
   layout as enLayout,
   pages as enPages,
-  components as enComponents,
 } from './en';
 import { STORAGE_KEY_LANGUAGE } from '@/hooks/useLanguage';
 
@@ -20,11 +22,13 @@ const initialLanguage =
 const resources = {
   es: {
     components: esComponents,
+    landing: esLanding,
     layout: esLayout,
     pages: esPages,
   },
   en: {
     components: enComponents,
+    landing: enLanding,
     layout: enLayout,
     pages: enPages,
   },
